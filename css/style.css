@@ -29,9 +29,6 @@ html, body {
     display: block;
     font-family: 'Roboto', sans-serif;
 }
-footer {
-    margin-top: auto;
-}
 img, object, embed, canvas, video, audio, picture, svg {
     max-width: 100%;
     height: auto;
@@ -73,20 +70,33 @@ header {
    padding: 3px 20px;
    background-color: var(--dark-blue);
 }
+
+header img {
+   display: inline-block;
+   vertical-align: middle;
+   background-color: white;
+   border-radius: 50%;
+   padding: 3px;
+   border: solid 1px black;
+}
+
 header a#logo {
    display: inline-block;
+   color: white;
    font-size: 24px;
    font-weight: 700;
    line-height: 40px;
-   vertical-align: middle;;
+   vertical-align: middle;
 }
-header div#interface{
+
+header div#interface {
    display: inline-block;
    position: absolute;
-   top: 4px;
+   top: 6px;
    right: 20px;
 }
-header div#searchbar {
+
+header div#interface div#searchbar {
    display: inline-block;
    position: relative;
    background-color: lightgray;
@@ -94,11 +104,13 @@ header div#searchbar {
    padding: 8px 10px 10px 40px;
    width: 300px;
 }
-header div#searchbar input {
+
+header div#interface div#searchbar input {
    border: none;
    background-color: lightgray;
 }
-header div#searchbar button {
+
+header div#interface div#searchbar button {
    position: absolute;
    top: 0;
    bottom: 0;
@@ -109,11 +121,77 @@ header div#searchbar button {
    cursor: pointer;
 }
 
-header div#connect {
+header div#interface div#connect {
    display: inline-block;
+   vertical-align: middle;
 }
-header div#connect button {
+
+header div#interface div#connect button {
    cursor: pointer;
+   padding: 5px 30px;
+}
+
+main {
+   background-color: var(--opa-blue);
+}
+
+main aside#sidebar-nav {
+   height: calc(100vh - 74px);
+   background-color: white;
+   width: 300px;
+   position: relative;
+   z-index: 998;
+}
+
+main aside#sidebar-nav::after {
+   content: "";
+   display: block;
+   position: absolute;
+   top: 20px;
+   right: 30px;
+   width: 1px;
+   height: calc(100vh - 114px);
+   background-color: black;
+   
+}
+
+main aside#sidebar-nav ul { 
+   font-size: 0;
+   padding-top: 10px;
+}
+
+main aside#sidebar-nav ul li {
+   margin: 40px 20px 0 40px;
+}
+
+main aside#sidebar-nav ul li a {
+   font-size: 14px;
+}
+
+main aside#sidebar-nav ul li a i {
+   width: 30px;
+   text-align: center;
+   font-size: 24px;
+   color: var(--light-pink);
+   padding: 2px;
+   margin-right: 10px;
+   vertical-align: middle;
+
+}
+
+footer {
+   position: relative;
+   bottom: 0;
+   z-index: 999;
+   font-weight: 300;
+   border-top: solid 1px black;
+   text-align: center;
+   padding: 2px 20px;
+   background-color: white;
+}
+
+footer i {
+   color: var(--light-pink);
 }
 
 /* ------------------------ MEDIA QUERIES 960px ---- */
@@ -122,4 +200,20 @@ header div#connect button {
        width: 100%;
        margin: 0;
    }
+}
+
+@media screen and (max-width: 870px) {
+   header div#interface div#searchbar {
+      width: 150px;
+   }
+   header div#interface div#searchbar input {
+      width: 100px;
+   }  
+}
+
+@media screen and (max-height: 530px) {
+   main aside#sidebar-nav ul li {
+      margin: 5vh 20px 0 40px;
+   }
+   
 }
