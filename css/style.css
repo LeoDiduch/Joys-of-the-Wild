@@ -39,7 +39,8 @@ a {
 .clear {
  display: block;
  zoom: 1;
- &:after {
+}
+.clear:after {
    content: " ";
    display: block;
    font-size: 0;
@@ -47,7 +48,6 @@ a {
    clear: both;
    visibility: hidden;
  }
-}
 .center {
    width: 960px;
    margin: 0 auto;
