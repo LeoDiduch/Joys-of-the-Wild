@@ -62,28 +62,60 @@ a {
 }
 /* ------------------------------- END RECURENTES -- */
 /* ------------------------------- SIMILAIRES ------ */
-/* ------------------------------- END SIMILAIRES -- */
-
-header a {
-   font-weight: 700;
+.primary-btn {
+   border: solid 1px black;
+   padding: 8px 50px;
+   background-color: white;
+   border-radius: 5px;
 }
-header div#searchbar input#searchbox {
+/* ------------------------------- END SIMILAIRES -- */
+header {
+   padding: 3px 20px;
+   background-color: var(--dark-blue);
+}
+header a#logo {
+   display: inline-block;
+   font-size: 24px;
+   font-weight: 700;
+   line-height: 40px;
+   vertical-align: middle;;
+}
+header div#interface{
+   display: inline-block;
+   position: absolute;
+   top: 4px;
+   right: 20px;
+}
+header div#searchbar {
+   display: inline-block;
    position: relative;
-   border: none;
    background-color: lightgray;
    border-radius: 20px;
    padding: 8px 10px 10px 40px;
+   width: 300px;
+}
+header div#searchbar input {
+   border: none;
+   background-color: lightgray;
 }
 header div#searchbar button {
    position: absolute;
    top: 0;
    bottom: 0;
-   left: 0;
+   left: 5px;
    right: 0;
    border: none;
    background-color: transparent;
-
+   cursor: pointer;
 }
+
+header div#connect {
+   display: inline-block;
+}
+header div#connect button {
+   cursor: pointer;
+}
+
 /* ------------------------ MEDIA QUERIES 960px ---- */
 @media screen and (max-width: 960px) {
    .center {
