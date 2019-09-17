@@ -201,19 +201,3 @@ footer i {
        margin: 0;
    }
 }
-
-@media screen and (max-width: 870px) {
-   header div#interface div#searchbar {
-      width: 150px;
-   }
-   header div#interface div#searchbar input {
-      width: 100px;
-   }  
-}
-
-@media screen and (max-height: 530px) {
-   main aside#sidebar-nav ul li {
-      margin: 5vh 20px 0 40px;
-   }
-   
-}
