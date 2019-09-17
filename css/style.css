@@ -248,6 +248,13 @@ footer i {
    color: var(--light-pink);
 }
 
+/* Bottom-navbar */
+
+section #bottom-navbar {
+   display: none;
+}
+
+/* fin bottom-navbar */
 
 /*USER PROFILE*/
 
