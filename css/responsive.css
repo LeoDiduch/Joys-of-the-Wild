@@ -294,6 +294,40 @@ main aside#mobile-nav p i {
    color: var(--light-pink);
 }
 
+/* Sign-up page */
+
+#sign-up-form-container {
+   width: 100%;
+   padding-top: 200px;
+}
+
+#sign-up-form {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+#sign-up-form input, #sign-up-form label {
+   padding: 8px 5px;
+   width: 40%;
+   font-weight: 700;
+}
+
+#sign-up-form input {
+   border-radius: 2px;
+   border: 1px solid;
+}
+
+#sign-up-form button {
+   padding: 6px 15px;
+   margin: 20px 0;
+   background-color: #c06c84;
+   font-weight: 700;
+   border-radius: 2px;
+   border: 1px solid black;
+   color: white;
+}
+
 /* Bottom-navbar */
 
 #bottom-navbar {
