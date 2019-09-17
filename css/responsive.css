@@ -141,6 +141,7 @@ main aside#sidebar-nav {
    width: 300px;
    position: relative;
    z-index: 998;
+   display: none;
 }
 
 main aside#sidebar-nav::after {
