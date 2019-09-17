@@ -50,6 +50,54 @@
             </ul>
             
         </aside>
+        <div class="container">
+            <section id="user_profile">
+                <div id="profile_header">
+                    <img src="img/Wild-Logo.png" alt="Wild Code School logo">
+                    <h2>Team Wilders 1</h2>
+                </div>
+
+                <h3>Profil Settings</h3>
+                <form method ="post" action="update_profile_settings.php">
+                    <p>
+                        <label for="username">Username</label> 
+                        <input type="text" name="username" id="username"/> 
+
+                        <label for="email">Email</label> 
+                        <input type="email" name="email" id="email"/>
+
+                        <label for="avatar">Choose a profile picture:</label>
+                        <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg">
+
+                        <label for="biography">Biography</label>
+                        <textarea name="biography" id="biography"></textarea>
+
+                        <input type="submit" value="Save changes"/>
+                    </p>
+                </form>
+
+                <h3>Change your password</h3>
+                <form method ="post" action="update_user_password.php">
+                    <p>
+                        <label for="current_password">Current Password</label> 
+                        <input type="text" name="current_password" id="current_password"/> 
+        
+                        <label for="new_password">New Password</label> 
+                        <input type="text" name="new_password" id="new_password"/>
+        
+                        <label for="new_password_verification">Retape New Password</label>
+                        <input type="text" id="new_password_verification" name="new_password_verification"/>
+            
+                        <input type="submit" value="Save changes"/>
+                    </p>
+                </form>
+
+                <form>
+                    <input type="button" value="Delete your account"/> 
+                </form>
+            </section>
+        </div>
+
     </main>
 
     <footer>Made with <i class="fas fa-heart"></i> by <a href="https://www.wildcodeschool.com/">Wild Code School</a>. Copyright 2019®</footer> 

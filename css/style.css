@@ -136,6 +136,7 @@ main {
 }
 
 main aside#sidebar-nav {
+   display : inline-block;
    height: calc(100vh - 74px);
    background-color: white;
    width: 300px;
@@ -192,6 +193,36 @@ footer {
 
 footer i {
    color: var(--light-pink);
+}
+
+
+/*USER PROFILE*/
+
+#user_profile{
+   display : inline-block;
+   width : calc(80vw - 320px);
+   
+}
+
+#profile_header{
+   display : flex;
+   margin-bottom : 4%;
+}
+
+#profile_header img{
+   width : 7%;
+   margin-left : 1%;
+}
+
+#profile_header h2{
+   display : flex;
+   align-items : center;
+   margin-left : 2%;
+}
+
+#user_profile h3{
+   margin-left : 1%;
+   border-bottom : 3px var(--light-pink) solid;
 }
 
 /* ------------------------ MEDIA QUERIES 960px ---- */
