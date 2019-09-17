@@ -134,8 +134,11 @@ main {
    background-color: var(--opa-blue);
    display: flex;
    align-items: stretch;
+   min-height: calc(100vh - 74px);
+   
 }
 div.container {
+   
    width: calc(100vw - 300px);
    padding: 10px 20px;
 }
@@ -145,6 +148,7 @@ main aside#sidebar-nav {
    width: 300px;
    position: relative;
    z-index: 998;
+   padding-bottom: 40px;
    
 }
 main aside#sidebar-nav::after {
@@ -187,8 +191,6 @@ main aside#mobile-nav {
 }
 /* ---------- FOOTER ---------- */
 footer {
-   position: relative;
-   bottom: 0;
    z-index: 999;
    font-weight: 300;
    border-top: solid 1px black;

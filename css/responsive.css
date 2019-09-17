@@ -177,6 +177,7 @@ header div#interface div#connect {
 /* ---------- MAIN CONTENT ---------- */
 main {
    background-color: var(--opa-blue);
+   
 }
 main div.container {
    padding: 10px 20px;
