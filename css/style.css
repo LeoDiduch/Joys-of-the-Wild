@@ -251,12 +251,6 @@ footer i {
 
 /*USER PROFILE*/
 
-#user_profile{
-   display : inline-block;
-   width : calc(80vw - 320px);
-   
-}
-
 #profile_header{
    display : flex;
    margin-bottom : 4%;
@@ -277,5 +271,16 @@ footer i {
    margin-left : 1%;
    border-bottom : 3px var(--light-pink) solid;
 }
+
+#user_profile form{
+   display : flex;
+   flex-direction : column;
+
+}
+
+#user_profile input[type=submit]{
+   margin-top : 3%;
+}
+
 
 /* ------------------------ MEDIA QUERIES 960px ---- */

@@ -50,6 +50,7 @@
             </ul>
             
         </aside>
+
         <div class="container">
             <section id="user_profile">
                 <div id="profile_header">
@@ -57,28 +58,21 @@
                     <h2>Team Wilders 1</h2>
                 </div>
 
-                <h3>Profil Settings</h3>
-                <form method ="post" action="update_profile_settings.php">
-                    <p>
-                        <label for="username">Username</label> 
-                        <input type="text" name="username" id="username"/> 
-
-                        <label for="email">Email</label> 
-                        <input type="email" name="email" id="email"/>
-
-                        <label for="avatar">Choose a profile picture:</label>
-                        <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg">
-
-                        <label for="biography">Biography</label>
-                        <textarea name="biography" id="biography"></textarea>
-
-                        <input type="submit" value="Save changes"/>
-                    </p>
-                </form>
+                <h3>Profil</h3>
+                <h4>Username :</h4>
+                <p>Team Wilders 1</p>
+                <h4>Email :</h4>
+                <p>thebestwildersever@wcs.com</p>
+                <h4>Avatar :</h4>
+                <a href="avatar.jpeg">avatar.jpeg</a> 
+                <h4>Biography :</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore non ut corporis, vitae harum quos fuga, magnam assumenda pariatur perspiciatis ipsa eaque impedit eos odio saepe quam ab eius? Minima? </p>
+                
+                
 
                 <h3>Change your password</h3>
                 <form method ="post" action="update_user_password.php">
-                    <p>
+                    
                         <label for="current_password">Current Password</label> 
                         <input type="text" name="current_password" id="current_password"/> 
         
@@ -89,8 +83,10 @@
                         <input type="text" id="new_password_verification" name="new_password_verification"/>
             
                         <input type="submit" value="Save changes"/>
-                    </p>
+                    
                 </form>
+
+                <hr/>
 
                 <form>
                     <input type="button" value="Delete your account"/> 
