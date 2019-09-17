@@ -200,4 +200,46 @@ footer i {
    color: var(--light-pink);
 }
 
+/* Bottom-navbar */
+
+section #bottom-navbar {
+   display: none;
+}
+
+/* fin bottom-navbar */
+
+/*USER PROFILE*/
+
+#profile_header{
+   display : flex;
+   margin-bottom : 4%;
+}
+
+#profile_header img{
+   width : 7%;
+   margin-left : 1%;
+}
+
+#profile_header h2{
+   display : flex;
+   align-items : center;
+   margin-left : 2%;
+}
+
+#user_profile h3{
+   margin-left : 1%;
+   border-bottom : 3px var(--light-pink) solid;
+}
+
+#user_profile form{
+   display : flex;
+   flex-direction : column;
+
+}
+
+#user_profile input[type=submit]{
+   margin-top : 3%;
+}
+
+
 /* ------------------------ MEDIA QUERIES 960px ---- */

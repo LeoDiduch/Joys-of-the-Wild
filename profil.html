@@ -11,7 +11,8 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/8529c819c9.js"></script>
     <meta content="width=device-width, initial-scale=1" name="viewport">
-    <meta name="description" content="Joys of the Wild is a site where you can share your feelings about IT with your Wild side !" />
+    <meta name="description"
+        content="Joys of the Wild is a site where you can share your feelings about IT with your Wild side !" />
     <meta name="author" content="Group 1 (The finest)">
     <!--[if lt IE 9]>
        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -20,6 +21,7 @@
        <link href="css/stylesie7.css" rel="stylesheet" type="text/css" media="screen">
    <![endif]-->
 </head>
+
 <body>
     <header>
         <div id="logo-div">
@@ -51,6 +53,7 @@
                 <li><a href=""><i class="fas fa-power-off"></i> Disconnect</a></li>
             </ul>
 
+
         </aside>
 
         <div id="burger">
@@ -59,7 +62,7 @@
         </div>
 
         <aside id="mobile-nav">
-            
+
             <ul>
                 <li><a href=""><i class="fas fa-home"></i> Home</a></li>
                 <!--<li><a href=""><i class="fas fa-bell"></i> Notifications</a></li>-->
@@ -70,11 +73,69 @@
                 <li><a href=""><i class="fas fa-user-circle"></i> Signup</a></li>
                 <li><a href=""><i class="fas fa-power-off"></i> Disconnect</a></li>
             </ul>
-            <p>Made with <i class="fas fa-heart"></i> by <a href="https://www.wildcodeschool.com/">Wild Code School</a>. <br> Copyright 2019®</p>
+            <p>Made with <i class="fas fa-heart"></i> by <a href="https://www.wildcodeschool.com/">Wild Code School</a>.
+                <br> Copyright 2019®</p>
         </aside>
+
+        <div class="container">
+            <section id="user_profile">
+                <div id="profile_header">
+                    <img src="img/Wild-Logo.png" alt="Wild Code School logo">
+                    <h2>Team Wilders 1</h2>
+                </div>
+
+                <h3>Profil</h3>
+                <h4>Username :</h4>
+                <p>Team Wilders 1</p>
+                <h4>Email :</h4>
+                <p>thebestwildersever@wcs.com</p>
+                <h4>Avatar :</h4>
+                <a href="avatar.jpeg">avatar.jpeg</a>
+                <h4>Biography :</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore non ut corporis, vitae harum quos
+                    fuga, magnam assumenda pariatur perspiciatis ipsa eaque impedit eos odio saepe quam ab eius? Minima?
+                </p>
+
+
+
+                <h3>Change your password</h3>
+                <form method="post" action="update_user_password.php">
+
+                    <label for="current_password">Current Password</label>
+                    <input type="text" name="current_password" id="current_password" />
+
+                    <label for="new_password">New Password</label>
+                    <input type="text" name="new_password" id="new_password" />
+
+                    <label for="new_password_verification">Retape New Password</label>
+                    <input type="text" id="new_password_verification" name="new_password_verification" />
+
+                    <input type="submit" value="Save changes" />
+
+                    <hr />
+
+                    <form>
+                        <input type="button" value="Delete your account" />
+                    </form>
+            </section>
+        </div>
+        <section>
+            <ul id="bottom-navbar">
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <!--<li><a href=""><i class="fas fa-bell"></i> Notifications</a></li>-->
+                <li><a href=""><i class="fas fa-star"></i> Hot Posts</a></li>
+                <!--<li><a href=""><i class="fas fa-list-alt"></i> Categories</a></li>-->
+                <li><a href="profil.html"><i class="fas fa-user-circle"></i> Your Profile</a></li>
+                <li><a href="index.html"><i class="fas fa-user-circle"></i> Login</a></li>
+                <li><a href="sign-up.html"><i class="fas fa-user-circle"></i> Signup</a></li>
+                <li><a href="index.html"><i class="fas fa-power-off"></i> Disconnect</a></li>
+            </ul>
+        </section>
+
     </main>
 
-    <footer>Made with <i class="fas fa-heart"></i> by <a href="https://www.wildcodeschool.com/">Wild Code School</a>. Copyright 2019®</footer> 
+    <footer>Made with <i class="fas fa-heart"></i> by <a href="https://www.wildcodeschool.com/">Wild Code School</a>.
+        Copyright 2019®</footer>
 </body>
 
 </html>
