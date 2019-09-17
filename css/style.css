@@ -133,6 +133,7 @@ header div#interface div#connect button {
 
 main {
    background-color: var(--opa-blue);
+   display: flex;
 }
 
 main aside#sidebar-nav {
@@ -177,6 +178,16 @@ main aside#sidebar-nav ul li a i {
    margin-right: 10px;
    vertical-align: middle;
 
+}
+
+div.container {
+   width: calc(100vw - 300px);
+}
+main div#burger {
+   display: none;
+}
+main aside#mobile-nav {
+   display: none;
 }
 
 footer {
