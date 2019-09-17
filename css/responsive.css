@@ -135,49 +135,37 @@ main {
    background-color: var(--opa-blue);
 }
 
-main aside#sidebar-nav {
-   height: calc(100vh - 74px);
-   background-color: white;
-   width: 300px;
-   position: relative;
-   z-index: 998;
+
+/* Style de la navbar collée en bans de l'cran */
+
+main aside ul {
+   display: flex;
+   flex-flow: row nowrap;
+   justify-content: space-around;
+   align-items: flex-end;
+   background-color: var(--dark-blue);
+   padding: 10px 0;
+   position: fixed;
+   bottom: 0;
+   width: 100%;
+
 }
 
-main aside#sidebar-nav::after {
-   content: "";
-   display: block;
-   position: absolute;
-   top: 20px;
-   right: 30px;
-   width: 1px;
-   height: calc(100vh - 114px);
-   background-color: black;
-   
+main aside ul li {
+   list-style-type: none;
+
 }
 
-main aside#sidebar-nav ul { 
+main aside ul li a {
    font-size: 0;
-   padding-top: 10px;
 }
 
-main aside#sidebar-nav ul li {
-   margin: 40px 20px 0 40px;
-}
-
-main aside#sidebar-nav ul li a {
-   font-size: 14px;
-}
-
-main aside#sidebar-nav ul li a i {
-   width: 30px;
-   text-align: center;
-   font-size: 24px;
+main aside ul li a i {
+   font-size: 16px;
    color: var(--light-pink);
-   padding: 2px;
-   margin-right: 10px;
-   vertical-align: middle;
-
 }
+
+/* Fin du style de la navbar collée en bas de l'ecran */
 
 /* Style pour la page sign up */
 
@@ -221,6 +209,7 @@ form button {
 /* fin du style pour la page sign up */
 
 footer {
+   display: none;
    position: relative;
    bottom: 0;
    z-index: 999;
