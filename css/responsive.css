@@ -292,9 +292,9 @@ main aside#mobile-nav p {
    padding: 0 10px 20px 10px;
    position: absolute;
 }
-/* Style de la navbar collée en bans de l'cran */
+/* bottom-navbar */
 
-main aside ul {
+#bottom-navbar {
    display: flex;
    flex-flow: row nowrap;
    justify-content: space-around;
@@ -304,28 +304,29 @@ main aside ul {
    position: fixed;
    bottom: 0;
    width: 100%;
+   z-index: 999;
 
 }
 
-main aside ul li {
+#bottom-navbar li {
    list-style-type: none;
 
 }
 
-main aside ul li a {
+#bottom-navbar li a {
    font-size: 0;
 }
 
-main aside ul li a i {
+#bottom-navbar li a i {
    font-size: 16px;
    color: var(--light-pink);
 }
 
-/* Fin du style de la navbar collée en bas de l'ecran */
+/* Fin bottom-navbar */
 
 /* Style pour la page sign up */
 
-form {
+#sign-up-form {
    height: calc(100vh - 74px);
    display: flex;
    flex-direction: column;
@@ -336,7 +337,7 @@ form {
 
 }
 
-form input, form label {
+#sign-up-form input, #sign-up-form label {
    padding: 8px 5px;
    width: 40%;
    font-weight: 700;
@@ -344,14 +345,14 @@ form input, form label {
 
 }
 
-form input {
+#sign-up-form input {
    border-radius: 2px;
    border: 1px solid;
    
 
 }
 
-form button {
+#sign-up-form button {
    padding: 6px 15px;
    margin: 20px 0;
    background-color: #c06c84;
