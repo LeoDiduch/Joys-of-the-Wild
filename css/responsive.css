@@ -292,9 +292,13 @@ main aside#mobile-nav p {
    padding: 0 10px 20px 10px;
    position: absolute;
 }
+
+main aside#mobile-nav p i {
+   color: var(--light-pink);
+}
 /* Style de la navbar collée en bans de l'cran */
 
-main aside ul {
+/*main aside ul {
    display: flex;
    flex-flow: row nowrap;
    justify-content: space-around;
@@ -304,7 +308,6 @@ main aside ul {
    position: fixed;
    bottom: 0;
    width: 100%;
-
 }
 
 main aside ul li {
@@ -321,9 +324,6 @@ main aside ul li a i {
    color: var(--light-pink);
 }
 
-/* Fin du style de la navbar collée en bas de l'ecran */
-
-/* Style pour la page sign up */
 
 form {
    height: calc(100vh - 74px);
@@ -360,7 +360,7 @@ form button {
    border: 1px solid black;
    color: white;
 
-}
+}*/
 
 /* fin du style pour la page sign up */
 
