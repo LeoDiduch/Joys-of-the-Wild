@@ -194,18 +194,20 @@ main aside#mobile-nav {
 
 /* style pour la page sign up */
 
-form {
+#sign-up-form-container {
+   width: 100%;
+}
+
+#sign-up-form {
    height: calc(100vh - 74px);
    display: flex;
    flex-direction: column;
    align-items: center;
    align-content: center;
    justify-content: center;
-   
-
 }
 
-form input, form label {
+#sign-up-form input, #sign-up-form label {
    padding: 8px 5px;
    width: 40%;
    font-weight: 700;
@@ -213,14 +215,14 @@ form input, form label {
 
 }
 
-form input {
+#sign-up-form input {
    border-radius: 2px;
    border: 1px solid;
    
 
 }
 
-form button {
+#sign-up-form button {
    padding: 6px 15px;
    margin: 20px 0;
    background-color: #c06c84;
