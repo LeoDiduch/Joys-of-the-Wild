@@ -3,7 +3,8 @@
 :root {
    --dark-blue: #665c84;
    --light-pink: #c06c84;
-   --opa-blue: #665c8421;
+   /*--opa-blue: #665c8421;*/
+   --opa-blue: #ee0083c4;
 }
 
 
@@ -111,16 +112,20 @@ a {
    border-radius: 5px;
 }
 
-/* ------------------------------- END SIMILAIRES -- */
+/* ---------- DEBUT CSS MOBILE ---------- */
+
+/* ---------- HEADER ---------- */
 header {
    padding: 3px 20px;
    background-color: var(--dark-blue);
+   position: fixed;
+   width: 100%;
+   z-index: 999;
+   top: 0;
 }
-
-header div#logodiv {
+header div#logo-div {
    display: block;
 }
-
 header div#logo-div img {
    display: inline-block;
    vertical-align: middle;
@@ -129,7 +134,6 @@ header div#logo-div img {
    padding: 3px;
    border: solid 1px black;
 }
-
 header div#logo-div a#logo {
    display: inline-block;
    color: white;
@@ -138,12 +142,12 @@ header div#logo-div a#logo {
    line-height: 40px;
    vertical-align: middle;
 }
-
+/* ---------- SEARCH + LOGS ---------- */
 header div#interface {
    display: block;
    margin: 10px auto 5px auto;
 }
-
+/* ---------- SEARCH ---------- */
 header div#interface div#searchbar {
    position: relative;
    background-color: lightgray;
@@ -151,13 +155,11 @@ header div#interface div#searchbar {
    padding: 8px 10px 10px 40px;
    width: 100%;
 }
-
 header div#interface div#searchbar input {
    border: none;
    background-color: lightgray;
    width: 100%;
 }
-
 header div#interface div#searchbar button {
    position: absolute;
    top: 0px;
@@ -168,32 +170,28 @@ header div#interface div#searchbar button {
    background-color: transparent;
    cursor: pointer;
 }
-
+/* ---------- LOGIN ---------- */
 header div#interface div#connect {
    display: none;
 }
-
+/* ---------- MAIN CONTENT ---------- */
 main {
-   height: 100%;
    background-color: var(--opa-blue);
+   min-height: calc(100vh - 42px);
+   margin-top: 101px 0;
 }
-
+main div.container {
+   padding: 10px 20px;
+}
+/* ---------- MENU DESKTOP ---------- */
 main aside#sidebar-nav {
    display: none;
 }
-
-main aside#mobile-nav {
-   background-color: white;
-   width: 300px;
-   position: absolute;
-   top: 102px;
-   z-index: 998;
-   height: 100%;
-   /*transform: translateX(-300px);*/
-}
+/* ---------- MENU MOBILE ---------- */
 
 main div#burger {
    position: fixed;
+   z-index: 999;
    background-color: rgba(211, 211, 211, 0.233);
    color: black;
    padding: 8px 6px;
@@ -202,7 +200,6 @@ main div#burger {
    right: 20px;
    cursor: pointer;
 }
-
 main div#burger span {
    position: relative;
    top: -3px;
@@ -211,21 +208,11 @@ main div#burger span {
    height: 4px;
    border-radius: 5px;
    background-color: black;
-   transition: all 0.7s;
+   transition: all 0.2s;
 }
-
 main div#burger:hover span {
    background-color: transparent;
 }
-main div#burger:hover span:before {
-   transform: rotate(45deg);
-   top: 0;
-}
-main div#burger:hover span:after {
-   transform: rotate(-45deg);
-   top: 0;
-}
-
 main div#burger span:before {
    content: "";
    display: block;
@@ -235,9 +222,8 @@ main div#burger span:before {
    height: 4px;
    border-radius: 5px;
    background-color: black;
-   transition: all 0.5s;
+   transition: all 0.3s;
 }
-
 main div#burger span:after {
    content: "";
    display: block;
@@ -247,35 +233,49 @@ main div#burger span:after {
    height: 4px;
    border-radius: 5px;
    background-color: black;
-   transition: all 0.5s;
+   transition: all 0.3s;
 
 }
-
+main div#burger:hover span:before {
+   transform: rotate(-45deg);
+   top: 0;
+}
+main div#burger:hover span:after {
+   transform: rotate(45deg);
+   top: 0;
+}
+main aside#mobile-nav {
+   background-color: white;
+   width: 300px;
+   height: 100vh;
+   position: fixed;
+   top: 0;
+   z-index: 998;
+   padding-top: 80px;
+   transform: translateX(-300px);
+   
+}
 main aside#mobile-nav::after {
    content: "";
    display: block;
    position: absolute;
-   top: 20px;
+   top: 120px;
    right: 30px;
+   bottom: 20px;
    width: 1px;
-   height: calc(100% - 40px);
    background-color: black;
 }
-
 main aside#mobile-nav ul {
    font-size: 0;
    padding-top: 10px;
    margin-bottom: 40px;
 }
-
 main aside#mobile-nav ul li {
-   margin: 40px 20px 0 40px;
+   margin: 30px 20px 0 40px;
 }
-
 main aside#mobile-nav ul li a {
    font-size: 14px;
 }
-
 main aside#mobile-nav ul li a i {
    width: 30px;
    text-align: center;
@@ -285,71 +285,39 @@ main aside#mobile-nav ul li a i {
    margin-right: 10px;
    vertical-align: middle;
 }
-
 main aside#mobile-nav p {
    text-align: left;
    font-size: 14px;
    padding: 0 10px 20px 10px;
-   position: absolute;
-}
-/* bottom-navbar */
-
-#bottom-navbar {
-   display: flex;
-   flex-flow: row nowrap;
-   justify-content: space-around;
-   align-items: flex-end;
-   background-color: var(--dark-blue);
-   padding: 10px 0;
    position: fixed;
-   bottom: 0;
-   width: 100%;
-   z-index: 999;
-
+   bottom: 5px;
 }
-
-#bottom-navbar li {
-   list-style-type: none;
-
-}
-
-#bottom-navbar li a {
-   font-size: 0;
-}
-
-#bottom-navbar li a i {
-   font-size: 16px;
+main aside#mobile-nav p i {
    color: var(--light-pink);
 }
 
-/* Fin bottom-navbar */
+/* Sign-up page */
 
-/* Style pour la page sign up */
+#sign-up-form-container {
+   width: 100%;
+   padding-top: 130px;
+}
 
 #sign-up-form {
-   height: calc(100vh - 74px);
    display: flex;
    flex-direction: column;
    align-items: center;
-   align-content: center;
-   justify-content: center;
-   
-
 }
 
 #sign-up-form input, #sign-up-form label {
    padding: 8px 5px;
    width: 40%;
    font-weight: 700;
-   
-
 }
 
 #sign-up-form input {
    border-radius: 2px;
    border: 1px solid;
-   
-
 }
 
 #sign-up-form button {
@@ -360,10 +328,8 @@ main aside#mobile-nav p {
    border-radius: 2px;
    border: 1px solid black;
    color: white;
-
 }
 
-/* fin du style pour la page sign up */
 
 /*USER PROFILE*/
 
@@ -450,25 +416,37 @@ main aside#mobile-nav p {
    height : 15vh;
 }
 
-footer {
-   display: none;
-   position: relative;
+/* Bottom-navbar */
+
+#bottom-navbar {
+   display: flex;
+   flex-flow: row nowrap;
+   justify-content: space-around;
+   align-items: flex-end;
+   background-color: var(--dark-blue);
+   padding: 10px 0;
+   position: fixed;
    bottom: 0;
+   width: 100%;
+   z-index: 999;
+
 }
 
-main aside#mobile-nav p i {
-   color: var(--light-pink);
+#bottom-navbar li {
+   list-style-type: none;
+
 }
 
+#bottom-navbar li a {
+   font-size: 0;
+}
+
+#bottom-navbar li a i {
+   font-size: 20px;
+   color: white;
+}
+
+/* ---------- FOOTER ---------- */
 footer {
    display: none;
-}
-
-/* ------------------------ MEDIA QUERIES 960px ---- */
-
-@media screen and (max-width: 400px) {
-   .center {
-       width: 100%;
-       margin: 0;
-   }
 }
