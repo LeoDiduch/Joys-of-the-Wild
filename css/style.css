@@ -241,10 +241,10 @@ footer {
    z-index: 999;
    font-weight: 300;
    border-top: solid 1px black;
-   text-align: center;
-   padding: 2px 20px;
-   background-color: white;
-}
+   text-align: center;Formul
+   padding: 2px 20px;Formul
+   background-color: white;Formul
+}Formul
 
 footer i {
    color: var(--light-pink);
@@ -262,7 +262,7 @@ section #bottom-navbar {
 
 #profile_header{
    display : flex;
-   margin-bottom : 4%;
+   margin-bottom : 2%;
 }
 
 #profile_header img{
@@ -278,18 +278,74 @@ section #bottom-navbar {
 
 #user_profile h3{
    margin-left : 1%;
+   margin-bottom : 2%;
+   margin-top : 2%;
    border-bottom : 3px var(--light-pink) solid;
+   font-size : 1.4em;
+}
+
+#profil_items{
+   margin : 2%;
+}
+
+#profil_items h4{
+   margin-top : 2%;
+}
+
+#edit_profil a{
+   padding: 6px 15px;
+   background-color: #c06c84;
+   font-weight: 700;
+   border-radius: 2px;
+   border: 1px solid black;
+   color: white;
+}
+
+#edit_profil{
+   width : 146px;
+   margin : auto;
 }
 
 #user_profile form{
    display : flex;
    flex-direction : column;
+   align-items : center;
+}
 
+#user_profile input, #user_profile label{
+   padding: 8px 5px;
+   width: 40%;
+   font-weight: 700;
 }
 
 #user_profile input[type=submit]{
    margin-top : 3%;
+   padding: 6px 15px;
+   background-color: #c06c84;
+   font-weight: 700;
+   border-radius: 2px;
+   border: 1px solid black;
+   color: white;
+   width : 20%;
 }
 
+#user_profile input[type=button]{
+   margin-top : 2%;
+   margin-bottom : 5%;
+   padding: 6px 15px;
+   background-color: #c06c84;
+   font-weight: 700;
+   border-radius: 2px;
+   border: 1px solid black;
+   color: white;
+   width : 20%;
+}
+
+/*EDIT PROFIL*/
+
+#user_profile textarea{
+   width : 40%;
+   height : 15vh;
+}
 
 /* ------------------------ MEDIA QUERIES 960px ---- */
