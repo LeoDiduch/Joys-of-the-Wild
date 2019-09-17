@@ -293,6 +293,37 @@ main aside#mobile-nav p {
 main aside#mobile-nav p i {
    color: var(--light-pink);
 }
+
+/* Bottom-navbar */
+
+#bottom-navbar {
+   display: flex;
+   flex-flow: row nowrap;
+   justify-content: space-around;
+   align-items: flex-end;
+   background-color: var(--dark-blue);
+   padding: 10px 0;
+   position: fixed;
+   bottom: 0;
+   width: 100%;
+   z-index: 999;
+
+}
+
+#bottom-navbar li {
+   list-style-type: none;
+
+}
+
+#bottom-navbar li a {
+   font-size: 0;
+}
+
+#bottom-navbar li a i {
+   font-size: 16px;
+   color: var(--light-pink);
+}
+
 /* ---------- FOOTER ---------- */
 footer {
    display: none;
