@@ -1,0 +1,203 @@
+@charset "utf-8";
+
+:root {
+   --dark-blue: #665c84;
+   --light-pink: #c06c84;
+   --opa-blue: #665c8421;
+ }
+
+
+header, section, footer, aside, nav, main, article, figure {
+   display: block;
+}
+div, header, nav, article, section, aside, footer, h1, h2, h3, h4, h5, h6, p, a, ul, li, figure, figcaption, class, img {
+    margin: 0;
+    padding: 0;
+}
+*{
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+    background-color: white;
+    border: 0 solid transparent;
+    font-size: 16px;
+    margin: 0;
+    min-height: 100%;
+    padding: 0;
+    width: 100%;
+    display: block;
+    font-family: 'Roboto', sans-serif;
+}
+img, object, embed, canvas, video, audio, picture, svg {
+    max-width: 100%;
+    height: auto;
+}
+img {
+   display: block;
+}
+a {
+   text-decoration: none;
+   color: black;
+}
+/* ------------------------------- RECURENTES -- */
+.clear {
+ display: block;
+ zoom: 1;
+}
+.clear:after {
+   content: " ";
+   display: block;
+   font-size: 0;
+   height: 0;
+   clear: both;
+   visibility: hidden;
+ }
+.center {
+   width: 960px;
+   margin: 0 auto;
+}
+/* ------------------------------- END RECURENTES -- */
+/* ------------------------------- SIMILAIRES ------ */
+.primary-btn {
+   border: solid 1px black;
+   padding: 8px 50px;
+   background-color: white;
+   border-radius: 5px;
+}
+/* ------------------------------- END SIMILAIRES -- */
+header {
+   padding: 3px 20px;
+   background-color: var(--dark-blue);
+}
+
+header img {
+   display: inline-block;
+   vertical-align: middle;
+   background-color: white;
+   border-radius: 50%;
+   padding: 3px;
+   border: solid 1px black;
+}
+
+header a#logo {
+   display: inline-block;
+   color: white;
+   font-size: 24px;
+   font-weight: 700;
+   line-height: 40px;
+   vertical-align: middle;
+}
+
+header div#interface {
+   display: inline-block;
+   position: absolute;
+   top: 6px;
+   right: 20px;
+}
+
+header div#interface div#searchbar {
+   display: inline-block;
+   position: relative;
+   background-color: lightgray;
+   border-radius: 20px;
+   padding: 8px 10px 10px 40px;
+   width: 300px;
+}
+
+header div#interface div#searchbar input {
+   border: none;
+   background-color: lightgray;
+}
+
+header div#interface div#searchbar button {
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   left: 5px;
+   right: 0;
+   border: none;
+   background-color: transparent;
+   cursor: pointer;
+}
+
+header div#interface div#connect {
+   display: inline-block;
+   vertical-align: middle;
+}
+
+header div#interface div#connect button {
+   cursor: pointer;
+   padding: 5px 30px;
+}
+
+main {
+   background-color: var(--opa-blue);
+}
+
+main aside#sidebar-nav {
+   height: calc(100vh - 74px);
+   background-color: white;
+   width: 300px;
+   position: relative;
+   z-index: 998;
+}
+
+main aside#sidebar-nav::after {
+   content: "";
+   display: block;
+   position: absolute;
+   top: 20px;
+   right: 30px;
+   width: 1px;
+   height: calc(100vh - 114px);
+   background-color: black;
+   
+}
+
+main aside#sidebar-nav ul { 
+   font-size: 0;
+   padding-top: 10px;
+}
+
+main aside#sidebar-nav ul li {
+   margin: 40px 20px 0 40px;
+}
+
+main aside#sidebar-nav ul li a {
+   font-size: 14px;
+}
+
+main aside#sidebar-nav ul li a i {
+   width: 30px;
+   text-align: center;
+   font-size: 24px;
+   color: var(--light-pink);
+   padding: 2px;
+   margin-right: 10px;
+   vertical-align: middle;
+
+}
+
+footer {
+   position: relative;
+   bottom: 0;
+   z-index: 999;
+   font-weight: 300;
+   border-top: solid 1px black;
+   text-align: center;
+   padding: 2px 20px;
+   background-color: white;
+}
+
+footer i {
+   color: var(--light-pink);
+}
+
+/* ------------------------ MEDIA QUERIES 960px ---- */
+@media screen and (max-width: 960px) {
+   .center {
+       width: 100%;
+       margin: 0;
+   }
+}
