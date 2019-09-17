@@ -3,7 +3,8 @@
 :root {
    --dark-blue: #665c84;
    --light-pink: #c06c84;
-   --opa-blue: #665c8421;
+   /*--opa-blue: #665c8421;*/
+   --opa-blue: #ee0083c4;
  }
 
 
@@ -65,13 +66,14 @@ a {
    background-color: white;
    border-radius: 5px;
 }
-/* ------------------------------- END SIMILAIRES -- */
+/* ---------- DEBUT CSS DESKTOP ---------- */
+
+/* ---------- HEADER ---------- */
 header {
    padding: 3px 20px;
    background-color: var(--dark-blue);
 }
-
-header img {
+header div#logo-div img {
    display: inline-block;
    vertical-align: middle;
    background-color: white;
@@ -79,8 +81,7 @@ header img {
    padding: 3px;
    border: solid 1px black;
 }
-
-header a#logo {
+header div#logo-div a#logo {
    display: inline-block;
    color: white;
    font-size: 24px;
@@ -88,14 +89,14 @@ header a#logo {
    line-height: 40px;
    vertical-align: middle;
 }
-
+/* ---------- SEARCH + LOGS ---------- */
 header div#interface {
    display: inline-block;
    position: absolute;
    top: 6px;
    right: 20px;
 }
-
+/* ---------- SEARCH ---------- */
 header div#interface div#searchbar {
    display: inline-block;
    position: relative;
@@ -104,12 +105,10 @@ header div#interface div#searchbar {
    padding: 8px 10px 10px 40px;
    width: 300px;
 }
-
 header div#interface div#searchbar input {
    border: none;
    background-color: lightgray;
 }
-
 header div#interface div#searchbar button {
    position: absolute;
    top: 0;
@@ -120,31 +119,34 @@ header div#interface div#searchbar button {
    background-color: transparent;
    cursor: pointer;
 }
-
+/* ---------- LOGIN ---------- */
 header div#interface div#connect {
    display: inline-block;
    vertical-align: middle;
 }
-
 header div#interface div#connect button {
    cursor: pointer;
    padding: 5px 30px;
 }
 
+/* ---------- MAIN CONTENT ---------- */
 main {
    background-color: var(--opa-blue);
    display: flex;
+   align-items: stretch;
 }
-
+div.container {
+   width: calc(100vw - 300px);
+   padding: 10px 20px;
+}
+/* ---------- MENU DESKTOP ---------- */
 main aside#sidebar-nav {
-   display : inline-block;
-   height: calc(100vh - 74px);
    background-color: white;
    width: 300px;
    position: relative;
    z-index: 998;
+   
 }
-
 main aside#sidebar-nav::after {
    content: "";
    display: block;
@@ -152,24 +154,20 @@ main aside#sidebar-nav::after {
    top: 20px;
    right: 30px;
    width: 1px;
-   height: calc(100vh - 114px);
+   height: calc(100% - 40px);
    background-color: black;
    
 }
-
 main aside#sidebar-nav ul { 
    font-size: 0;
    padding-top: 10px;
 }
-
 main aside#sidebar-nav ul li {
    margin: 40px 20px 0 40px;
 }
-
 main aside#sidebar-nav ul li a {
    font-size: 14px;
 }
-
 main aside#sidebar-nav ul li a i {
    width: 30px;
    text-align: center;
@@ -180,61 +178,14 @@ main aside#sidebar-nav ul li a i {
    vertical-align: middle;
 
 }
-
-div.container {
-   width: calc(100vw - 300px);
-}
+/* ---------- MENU MOBILE ---------- */
 main div#burger {
    display: none;
 }
 main aside#mobile-nav {
    display: none;
 }
-
-
-/* style pour la page sign up */
-
-#sign-up-form-container {
-   width: 100%;
-}
-
-#sign-up-form {
-   height: calc(100vh - 74px);
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   align-content: center;
-   justify-content: center;
-}
-
-#sign-up-form input, #sign-up-form label {
-   padding: 8px 5px;
-   width: 40%;
-   font-weight: 700;
-   
-
-}
-
-#sign-up-form input {
-   border-radius: 2px;
-   border: 1px solid;
-   
-
-}
-
-#sign-up-form button {
-   padding: 6px 15px;
-   margin: 20px 0;
-   background-color: #c06c84;
-   font-weight: 700;
-   border-radius: 2px;
-   border: 1px solid black;
-   color: white;
-
-}
-
-/* fin du style pour la page sign up */
-
+/* ---------- FOOTER ---------- */
 footer {
    position: relative;
    bottom: 0;
@@ -245,7 +196,6 @@ footer {
    padding: 2px 20px;
    background-color: white;
 }
-
 footer i {
    color: var(--light-pink);
 }
