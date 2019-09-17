@@ -175,9 +175,10 @@ main aside#sidebar-nav ul li a {
 main aside#sidebar-nav ul li a:after {
    content: "";
    display: block;
-   height: 1px;
+   height: 2px;
    width: 0%;
    margin-left: 40px;
+   background: linear-gradient(to right, orange , yellow, green, cyan, blue, violet);
    transition: all .7s;
 }
 main aside#sidebar-nav ul li a:hover::after {
