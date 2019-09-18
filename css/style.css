@@ -325,7 +325,7 @@ footer i {
 #sign-up-form button {
    padding: 6px 15px;
    margin: 20px 0;
-   background-color: #c06c84;
+   background-color: var(--light-pink);
    font-weight: 700;
    border-radius: 2px;
    border: 1px solid black;
