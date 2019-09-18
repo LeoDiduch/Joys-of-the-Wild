@@ -271,6 +271,7 @@ main aside#mobile-nav ul {
 }
 main aside#mobile-nav ul li {
    margin: 30px 20px 0 40px;
+   font-weight: 700;
 }
 main aside#mobile-nav ul li a {
    font-size: 14px;

@@ -225,6 +225,7 @@ main aside#sidebar-nav ul {
 
 main aside#sidebar-nav ul li {
    margin: 40px 20px 0 40px;
+   font-weight: 700;
 }
 
 main aside#sidebar-nav ul li a {
@@ -503,6 +504,7 @@ aside#you-may-like, aside#partners {
 aside#you-may-like h2, aside#partners h2 {
    text-decoration: underline;
    text-align: center;
+   font-size: 18px;
 }
 
 /* Fin page home*/
