@@ -191,7 +191,8 @@ header div#interface div#connect {
    vertical-align: middle;
 }
 
-header div#interface div#connect button {
+header div#interface div#connect a {
+   width: 100px;
    cursor: pointer;
    padding: 5px 30px;
 }

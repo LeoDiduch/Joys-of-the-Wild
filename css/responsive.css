@@ -267,7 +267,7 @@ main aside#mobile-nav {
    top: 0;
    z-index: 998;
    padding-top: 80px;
-   transform: translateX(-300px);
+   /*transform: translateX(-300px);*/
    
 }
 main aside#mobile-nav::after {
