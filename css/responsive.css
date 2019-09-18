@@ -1,9 +1,10 @@
 @charset "utf-8";
 
 :root {
-   --dark-blue: #665c84;
-   --light-pink: #c06c84;
-   --opa-blue: #665c8421;
+   --dark-blue: #616161;
+   --light-pink: #9c27b0;
+   --opa-blue: #61616113;
+   /*--opa-blue: #ee0083c4;*/
 }
 
 
@@ -180,7 +181,9 @@ main {
    margin-top: 101px 0;
 }
 main div.container {
+   margin-top: 101px;
    padding: 10px 20px;
+   margin-bottom: 40px;
 }
 /* ---------- MENU DESKTOP ---------- */
 main aside#sidebar-nav {
@@ -442,6 +445,170 @@ main aside#mobile-nav p i {
    font-size: 20px;
    color: white;
 }
+
+/*---- fin bottom navbar ----*/
+
+/*---- debut page home------ */
+
+#add-post {
+   background-color: white;
+   width: 100%;
+   display: flex;
+   border: solid 1px black;
+   margin-bottom: 20px;
+}
+
+#blank {
+   display: none;
+}
+
+#blank:after {
+   content: "";
+   display: block;
+   width: 1px;
+   height: calc(100% - 20px);
+   background-color: black;
+   position: absolute;
+   right: 0;
+   margin-top: 10px;
+}
+
+#post-form {
+   display: inline-block;
+   width: 100%;
+   vertical-align: top;
+   padding: 5px;
+}
+
+#post {
+   border: solid 1px black;
+   padding: 10px 20px 15px 20px;
+}
+#post img {
+   border: solid 1px black;
+   border-radius: 50%;
+   width: 50px;
+   display: inline-block;
+   padding: 10px;
+   margin-right: 20px;
+}
+#control {
+   
+   justify-content: space-between;
+}
+#control-btn button {
+   cursor: pointer;
+   padding: 8px 10px;
+   width: 48%;
+}
+#control-btn, #control-send{
+   padding: 10px;
+}
+#control-send {
+   display: flex;
+   justify-content: space-around;
+}
+#control-send a {
+   display: inline-block;
+}
+#control-send a i {
+   font-size: 28px;
+   color: var(--dark-blue);
+   
+}
+textarea#post-text {
+   display: inline-block;
+   vertical-align: top;
+   padding: 5px 15px;
+   width: calc(100% - 75px);
+   min-height: 80px;
+   resize: none;
+   border: none;
+}
+/*---- Debut css CARD -----*/
+article.card {
+   display: block;
+   margin: 0 auto 20px auto;
+   width: 100%;
+   background-color: white;
+   border: solid 1px black;
+   padding: 20px;
+   border-radius: 5px;
+}
+div#info-post {
+   margin-bottom: 20px;
+}
+
+div#info-post img {
+   border: solid 1px black;
+   border-radius: 50%;
+   width: 50px;
+   display: inline-block;
+   padding: 10px;
+   margin-right: 20px;
+}
+div#profile-post {
+   display: inline-block;
+   vertical-align: top;
+}
+div#info-post div#profile-post strong {
+   display: block;
+   font-size: 20px;
+}
+div#info-post div#profile-post p {
+   color: lightgrey;
+}
+div#card-text {
+   margin-bottom: 20px;
+}
+figure.post-media {
+   margin-bottom: 20px;
+}
+figure.post-media img {
+   display: block;
+   margin: 0 auto;
+   width: 100%;
+}
+figure.post-media video {
+   display: block;
+   margin: 0 auto;
+   width: 100%;
+}
+div#card-buttons {
+   display: flex;
+   justify-content: space-around;
+}
+div#card-buttons div#share ul {
+   font-size: 0;
+   list-style-type: none;
+   margin-top: 5px;
+
+}
+div#card-buttons div#share ul li {
+   display: inline-block;
+   margin: 0 10px;
+}
+
+div#card-buttons div#share ul li a i {
+   font-size: 24px;
+   color: var(--light-pink);
+}
+div#card-buttons button {
+   padding: 8px 20px;
+}
+div#card-buttons button i {
+   color: var(--dark-blue);
+}
+
+div#asides-partners {
+   width: calc(20% - 20px);
+   margin: 10px 10px 10px 0;
+}
+aside#you-may-like, aside#partners {
+   display: none;
+}
+
+/*------ Fin page home Mobile ----*/
 
 /* ---------- FOOTER ---------- */
 footer {
