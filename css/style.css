@@ -333,10 +333,11 @@ section #bottom-navbar {
    padding: 6px 15px;
    background-color: #c06c84;
    font-weight: 700;
-   border-radius: 2px;
+   border-radius: 5px;
    border: 1px solid black;
    color: white;
    width : 20%;
+   box-shadow: 0px 2px 10px rgba(0,0,0,0.75);
 }
 
 #user_profile input[type=button]{
@@ -345,10 +346,11 @@ section #bottom-navbar {
    padding: 6px 15px;
    background-color: #c06c84;
    font-weight: 700;
-   border-radius: 2px;
+   border-radius: 5px;
    border: 1px solid black;
    color: white;
    width : 20%;
+   box-shadow: 0px 2px 10px rgba(0,0,0,0.75);
 }
 
 /*EDIT PROFIL*/
