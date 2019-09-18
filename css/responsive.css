@@ -496,8 +496,8 @@ main aside#mobile-nav p i {
    padding: 10px;
    margin-right: 20px;
 }
-#control {
-   
+#control-btn {
+   display: flex;
    justify-content: space-between;
 }
 #control-btn button {
