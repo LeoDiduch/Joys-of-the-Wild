@@ -260,7 +260,7 @@ main div#burger:hover span:after {
    top: 0;
 }
 main aside#mobile-nav {
-   background-color: white;
+   background-color: rgba(97, 97, 97, 0.2);
    width: 300px;
    height: 100vh;
    position: fixed;
@@ -586,7 +586,7 @@ div#info-post div#profile-post strong {
    font-size: 20px;
 }
 div#info-post div#profile-post p {
-   color: lightgrey;
+   color: grey;
 }
 div#card-text {
    margin-bottom: 20px;

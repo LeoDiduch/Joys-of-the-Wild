@@ -131,6 +131,10 @@ a {
 header {
    padding: 3px 20px;
    background-color: var(--dark-blue);
+   position: fixed;
+   top: 0;
+   width: 100%;
+   z-index: 999;
 }
 
 header div#logo-div img {
@@ -203,6 +207,7 @@ main {
    display: flex;
    align-items: stretch;
    min-height: calc(100vh - 74px);
+   padding-top: 50px;
 }
 
 div.container {
@@ -212,7 +217,7 @@ div.container {
 
 /* ---------- MENU DESKTOP ---------- */
 main aside#sidebar-nav {
-   background-color: white;
+   background-color: rgba(97, 97, 97, 0.2);
    width: 300px;
    position: relative;
    z-index: 998;
@@ -235,6 +240,10 @@ main aside#sidebar-nav::after {
 main aside#sidebar-nav ul {
    font-size: 0;
    padding-top: 10px;
+   position: -webkit-sticky;
+   position: sticky;
+   top: 0;
+   padding-top: 50px;
 }
 
 main aside#sidebar-nav ul li {
@@ -243,7 +252,7 @@ main aside#sidebar-nav ul li {
 }
 
 main aside#sidebar-nav ul li a {
-   font-size: 14px;
+   font-size: 18px;
 }
 
 main aside#sidebar-nav ul li a:after {
@@ -463,7 +472,7 @@ div#info-post div#profile-post strong {
    font-size: 20px;
 }
 div#info-post div#profile-post p {
-   color: lightgrey;
+   color: grey;
 }
 div#card-text {
    margin-bottom: 20px;
