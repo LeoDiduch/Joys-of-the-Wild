@@ -1,51 +1,94 @@
 @charset "utf-8";
 
 :root {
-   --dark-blue: #665c84;
-   --light-pink: #c06c84;
-   /*--opa-blue: #665c8421;*/
-   --opa-blue: #ee0083c4;
- }
+   --dark-blue: #616161;
+   --light-pink: #9c27b0;
+   --opa-blue: #61616113;
+   /*--opa-blue: #ee0083c4;*/
+}
 
 
-header, section, footer, aside, nav, main, article, figure {
+header,
+section,
+footer,
+aside,
+nav,
+main,
+article,
+figure {
    display: block;
 }
-div, header, nav, article, section, aside, footer, h1, h2, h3, h4, h5, h6, p, a, ul, li, figure, figcaption, class, img {
-    margin: 0;
-    padding: 0;
+
+div,
+header,
+nav,
+article,
+section,
+aside,
+footer,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+ul,
+li,
+figure,
+figcaption,
+class,
+img {
+   margin: 0;
+   padding: 0;
 }
-*{
+
+* {
    box-sizing: border-box;
 }
-html, body {
-    height: 100%;
-    background-color: white;
-    border: 0 solid transparent;
-    font-size: 16px;
-    margin: 0;
-    min-height: 100%;
-    padding: 0;
-    width: 100%;
-    display: block;
-    font-family: 'Roboto', sans-serif;
+
+html,
+body {
+   height: 100%;
+   background-color: white;
+   border: 0 solid transparent;
+   font-size: 16px;
+   margin: 0;
+   min-height: 100%;
+   padding: 0;
+   width: 100%;
+   display: block;
+   font-family: 'Roboto', sans-serif;
 }
-img, object, embed, canvas, video, audio, picture, svg {
-    max-width: 100%;
-    height: auto;
+
+img,
+object,
+embed,
+canvas,
+video,
+audio,
+picture,
+svg {
+   max-width: 100%;
+   height: auto;
 }
+
 img {
    display: block;
 }
+
 a {
    text-decoration: none;
    color: black;
 }
+
 /* ------------------------------- RECURENTES -- */
 .clear {
- display: block;
- zoom: 1;
+   display: block;
+   zoom: 1;
 }
+
 .clear:after {
    content: " ";
    display: block;
@@ -53,11 +96,13 @@ a {
    height: 0;
    clear: both;
    visibility: hidden;
- }
+}
+
 .center {
    width: 960px;
    margin: 0 auto;
 }
+
 /* ------------------------------- END RECURENTES -- */
 /* ------------------------------- SIMILAIRES ------ */
 .primary-btn {
@@ -66,6 +111,7 @@ a {
    background-color: white;
    border-radius: 5px;
 }
+
 /* ---------- DEBUT CSS DESKTOP ---------- */
 
 /* ---------- HEADER ---------- */
@@ -73,6 +119,7 @@ header {
    padding: 3px 20px;
    background-color: var(--dark-blue);
 }
+
 header div#logo-div img {
    display: inline-block;
    vertical-align: middle;
@@ -81,6 +128,7 @@ header div#logo-div img {
    padding: 3px;
    border: solid 1px black;
 }
+
 header div#logo-div a#logo {
    display: inline-block;
    color: white;
@@ -89,6 +137,7 @@ header div#logo-div a#logo {
    line-height: 40px;
    vertical-align: middle;
 }
+
 /* ---------- SEARCH + LOGS ---------- */
 header div#interface {
    display: inline-block;
@@ -96,6 +145,7 @@ header div#interface {
    top: 6px;
    right: 20px;
 }
+
 /* ---------- SEARCH ---------- */
 header div#interface div#searchbar {
    display: inline-block;
@@ -105,10 +155,12 @@ header div#interface div#searchbar {
    padding: 8px 10px 10px 40px;
    width: 300px;
 }
+
 header div#interface div#searchbar input {
    border: none;
    background-color: lightgray;
 }
+
 header div#interface div#searchbar button {
    position: absolute;
    top: 0;
@@ -119,11 +171,13 @@ header div#interface div#searchbar button {
    background-color: transparent;
    cursor: pointer;
 }
+
 /* ---------- LOGIN ---------- */
 header div#interface div#connect {
    display: inline-block;
    vertical-align: middle;
 }
+
 header div#interface div#connect button {
    cursor: pointer;
    padding: 5px 30px;
@@ -138,10 +192,10 @@ main {
 }
 
 div.container {
-   
-   width: calc(100vw - 300px);
+   width: calc(100vw - 300px - 20%);
    padding: 10px 20px;
 }
+
 /* ---------- MENU DESKTOP ---------- */
 main aside#sidebar-nav {
    background-color: white;
@@ -149,8 +203,9 @@ main aside#sidebar-nav {
    position: relative;
    z-index: 998;
    padding-bottom: 40px;
-   
+
 }
+
 main aside#sidebar-nav::after {
    content: "";
    display: block;
@@ -160,30 +215,36 @@ main aside#sidebar-nav::after {
    width: 1px;
    height: calc(100% - 40px);
    background-color: black;
-   
+
 }
-main aside#sidebar-nav ul { 
+
+main aside#sidebar-nav ul {
    font-size: 0;
    padding-top: 10px;
 }
+
 main aside#sidebar-nav ul li {
    margin: 40px 20px 0 40px;
 }
+
 main aside#sidebar-nav ul li a {
    font-size: 14px;
 }
+
 main aside#sidebar-nav ul li a:after {
    content: "";
    display: block;
    height: 2px;
    width: 0%;
    margin-left: 40px;
-   background: linear-gradient(to right, orange , yellow, green, cyan, blue, violet);
+   background: linear-gradient(to right, orange, yellow, green, cyan, blue, violet);
    transition: all .7s;
 }
+
 main aside#sidebar-nav ul li a:hover::after {
-   width: 50%;
+   width: 40%;
 }
+
 main aside#sidebar-nav ul li a i {
    width: 30px;
    text-align: center;
@@ -193,13 +254,16 @@ main aside#sidebar-nav ul li a i {
    margin-right: 10px;
    vertical-align: middle;
 }
+
 /* ---------- MENU MOBILE ---------- */
 main div#burger {
    display: none;
 }
+
 main aside#mobile-nav {
    display: none;
 }
+
 /* ---------- FOOTER ---------- */
 
 footer {
@@ -231,7 +295,8 @@ footer i {
    align-items: center;
 }
 
-#sign-up-form input, #sign-up-form label {
+#sign-up-form input,
+#sign-up-form label {
    padding: 8px 5px;
    width: 40%;
    font-weight: 700;
@@ -278,41 +343,207 @@ section #bottom-navbar {
 
 /* fin bottom-navbar */
 
+/* Page home*/
+#add-post {
+   background-color: white;
+   width: 100%;
+   display: flex;
+   border: solid 1px black;
+   margin-bottom: 20px;
+}
+
+#blank {
+   width: 15%;
+   display: inline-block;
+   margin-left: 4px;
+   position: relative;
+   height: 
+}
+#blank:after {
+   content: "";
+   display: block;
+   width: 1px;
+   height: calc(100% - 20px);
+   background-color: black;
+   position: absolute;
+   right: 0;
+   margin-top: 10px;
+}
+
+#post-form {
+   display: inline-block;
+   width: 84%;
+   vertical-align: top;
+   padding: 5px;
+}
+
+#post {
+   border: solid 1px black;
+   padding: 10px 20px 15px 30px;
+}
+#post img {
+   border: solid 1px black;
+   border-radius: 50%;
+   width: 50px;
+   display: inline-block;
+   padding: 10px;
+   margin-right: 20px;
+}
+#control {
+   display: flex;
+   justify-content: space-between;
+}
+#control-btn button {
+   cursor: pointer;
+   padding: 8px 20px;
+}
+#control-btn, #control-send{
+   padding: 10px;
+}
+#control-send a {
+   margin-left: 15px;
+}
+#control-send a i {
+   font-size: 28px;
+   color: var(--dark-blue);
+   
+}
+textarea#post-text {
+   display: inline-block;
+   vertical-align: top;
+   padding: 5px 15px;
+   width: calc(100% - 75px);
+   min-height: 80px;
+   resize: none;
+   border: none;
+}
+/*---- Debut css CARD -----*/
+article.card {
+   display: block;
+   margin: 0 auto 20px auto;
+   width: 80%;
+   background-color: white;
+   border: solid 1px black;
+   padding: 20px;
+   border-radius: 5px;
+}
+div#info-post {
+   margin-bottom: 20px;
+}
+
+div#info-post img {
+   border: solid 1px black;
+   border-radius: 50%;
+   width: 50px;
+   display: inline-block;
+   padding: 10px;
+   margin-right: 20px;
+}
+div#profile-post {
+   display: inline-block;
+   vertical-align: top;
+}
+div#info-post div#profile-post strong {
+   display: block;
+   font-size: 20px;
+}
+div#info-post div#profile-post p {
+   color: lightgrey;
+}
+div#card-text {
+   margin-bottom: 20px;
+}
+figure.post-media {
+   margin-bottom: 20px;
+}
+figure.post-media img {
+   display: block;
+   margin: 0 auto;
+   width: 100%;
+}
+figure.post-media video {
+   display: block;
+   margin: 0 auto;
+   width: 100%;
+}
+div#card-buttons {
+   display: flex;
+   justify-content: space-between;
+   padding: 0 50px;
+}
+div#card-buttons div#share ul {
+   font-size: 0;
+   list-style-type: none;
+
+}
+div#card-buttons div#share ul li {
+   display: inline-block;
+   margin: 0 10px;
+}
+div#card-buttons div#share ul li a {
+   
+}
+div#card-buttons div#share ul li a i {
+   font-size: 24px;
+   color: var(--light-pink);
+}
+div#card-buttons button i {
+   color: var(--dark-blue);
+}
+
+div#asides-partners {
+   width: calc(20% - 20px);
+   margin: 10px 10px 10px 0;
+}
+aside#you-may-like, aside#partners {
+   background-color: white;
+   margin-bottom: 20px;
+   padding: 20px;
+   border: solid 1px black;
+   border-radius: 5px;
+}
+aside#you-may-like h2, aside#partners h2 {
+   text-decoration: underline;
+   text-align: center;
+}
+
+/* Fin page home*/
+
 /*USER PROFILE*/
 
-#profile_header{
-   display : flex;
-   margin-bottom : 2%;
+#profile_header {
+   display: flex;
+   margin-bottom: 2%;
 }
 
-#profile_header img{
-   width : 7%;
-   margin-left : 1%;
+#profile_header img {
+   width: 7%;
+   margin-left: 1%;
 }
 
-#profile_header h2{
-   display : flex;
-   align-items : center;
-   margin-left : 2%;
+#profile_header h2 {
+   display: flex;
+   align-items: center;
+   margin-left: 2%;
 }
 
-#user_profile h3{
-   margin-left : 1%;
-   margin-bottom : 2%;
-   margin-top : 2%;
-   border-bottom : 3px var(--light-pink) solid;
-   font-size : 1.4em;
+#user_profile h3 {
+   margin-left: 1%;
+   margin-bottom: 2%;
+   margin-top: 2%;
+   border-bottom: 3px var(--light-pink) solid;
+   font-size: 1.4em;
 }
 
-#profil_items{
-   margin : 2%;
+#profil_items {
+   margin: 2%;
 }
 
-#profil_items h4{
-   margin-top : 2%;
+#profil_items h4 {
+   margin-top: 2%;
 }
 
-#edit_profil a{
+#edit_profil a {
    padding: 6px 15px;
    background-color: #c06c84;
    font-weight: 700;
@@ -321,51 +552,65 @@ section #bottom-navbar {
    color: white;
 }
 
-#edit_profil{
-   width : 146px;
-   margin : auto;
+#edit_profil {
+   width: 146px;
+   margin: auto;
 }
 
-#user_profile form{
-   display : flex;
-   flex-direction : column;
-   align-items : center;
+#user_profile form {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
 }
 
-#user_profile input, #user_profile label{
+#user_profile input,
+#user_profile label {
    padding: 8px 5px;
    width: 40%;
    font-weight: 700;
 }
 
-#user_profile input[type=submit]{
-   margin-top : 3%;
+#user_profile input[type=submit] {
+   margin-top: 3%;
    padding: 6px 15px;
    background-color: #c06c84;
    font-weight: 700;
    border-radius: 2px;
    border: 1px solid black;
    color: white;
-   width : 20%;
+   width: 20%;
 }
 
-#user_profile input[type=button]{
-   margin-top : 2%;
-   margin-bottom : 5%;
+#user_profile input[type=button] {
+   margin-top: 2%;
+   margin-bottom: 5%;
    padding: 6px 15px;
    background-color: #c06c84;
    font-weight: 700;
    border-radius: 2px;
    border: 1px solid black;
    color: white;
-   width : 20%;
+   width: 20%;
 }
 
 /*EDIT PROFIL*/
 
-#user_profile textarea{
-   width : 40%;
-   height : 15vh;
+#user_profile textarea {
+   width: 40%;
+   height: 15vh;
 }
 
 /* ------------------------ MEDIA QUERIES 960px ---- */
+
+@media screen and (max-width: 1280px) {
+   .center {
+
+   }
+   article.card {
+      width: 100%;
+   }
+   div#card-buttons {
+      padding: 0 25px;
+   }
+}
+      
