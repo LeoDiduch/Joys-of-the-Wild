@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <title>Joys of the Wild</title>
 
-    <link type="text/css" media="(min-width: 960px)" rel="stylesheet" href="css/style.css" />
+    <link type="text/css" media="(min-width: 961px)" rel="stylesheet" href="css/style.css" />
     <link type="text/css" media="(max-width: 960px)" rel='stylesheet' href='css/responsive.css' />
 
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700&display=swap" rel="stylesheet">
@@ -54,7 +54,6 @@
                 <li><a href="login.html"><i class="fas fa-power-off"></i> Disconnect</a></li>
             </ul>
 
-
         </aside>
 
         <div id="burger">
@@ -76,53 +75,9 @@
                 <li><a href="login.html"><i class="fas fa-power-off"></i> Disconnect</a></li>
             </ul>
             <p>Made with <i class="fas fa-heart"></i> by <a href="https://www.wildcodeschool.com/">Wild Code School</a>.
-                <br> Copyright 2019®</p>
+                Copyright 2019®</p>
         </aside>
 
-        <div class="container">
-            <section id="user_profile">
-                <div id="profile_header">
-                    <img src="img/Wild-Logo.png" alt="Wild Code School logo">
-                    <h2>Team Wilders 1</h2>
-                </div>
-                
-                <h3>Profil</h3>
-                <div id="profile_items">
-                    <h4>Username :</h4>
-                    <p>Team Wilders 1</p>
-                    <h4>Email :</h4>
-                    <p>thebestwildersever@wcs.com</p>
-                    <h4>Avatar :</h4>
-                    <a href="avatar.jpeg">avatar.jpeg</a>
-                    <h4>Biography :</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore non ut corporis, vitae harum quos
-                        fuga, magnam assumenda pariatur perspiciatis ipsa eaque impedit eos odio saepe quam ab eius? Minima?
-                    </p>
-                </div>
-
-                <form action="edit-profile.html">
-                    <input type="submit" value="Edit your profile">
-                </form>
-
-                <h3>Change your password</h3>
-                <form method="post" action="update_user_password.php">
-
-                    <label for="current_password">Current Password</label>
-                    <input type="text" name="current_password" id="current_password" />
-
-                    <label for="new_password">New Password</label>
-                    <input type="text" name="new_password" id="new_password" />
-
-                    <label for="new_password_verification">Retype New Password</label>
-                    <input type="text" id="new_password_verification" name="new_password_verification" />
-
-                    <input type="submit" value="Save changes" />
-
-                    <form>
-                        <input type="button" value="Delete your account" />
-                    </form>
-            </section>
-        </div>
         <section>
             <ul id="bottom-navbar">
                 <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
@@ -137,10 +92,54 @@
             </ul>
         </section>
 
+        <div class="container">
+
+            <article class="card">
+
+                <div id="info-post">
+                    <img src="img/Wild-Logo.png" alt="">
+                    <div id="profile-post">
+                        <strong>Margot posted :</strong>
+                        <p>26/09/2019 - 15h37</p>
+                    </div>
+                </div>
+
+                <div id="card-text">
+                    <p>
+                    </p>
+                </div>
+
+                <figure class="post-media">
+                    <img src="https://images-cdn.9gag.com/photo/aV3wWMd_700b.jpg" alt="">
+                </figure>
+
+                <div id="card-buttons">
+                    <button class="primary-btn"><i class="fas fa-thumbs-up"></i> Wild It !</button>
+                    <div id="share">
+                        <ul>
+                            <li><a href=""><i class="fab fa-facebook-square"></i></a></li>
+                            <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                            <li><a href=""><i class="fab fa-slack-hash"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+        </div>
+
+        <div id="asides-partners">
+            <aside id="you-may-like">
+                <h2>You may like :</h2>
+            </aside>
+            <aside id="partners">
+                <h2>Partner Ads</h2>
+            </aside>
+        </div>
     </main>
 
-    <footer><p>Made with <i class="fas fa-heart"></i> by <a href="https://www.wildcodeschool.com/">Wild Code School</a>.
-        Copyright 2019®</p></footer>
+    <footer>
+        <p>Made with <i class="fas fa-heart"></i> by <a href="https://www.wildcodeschool.com/">Wild Code School</a>.
+            Copyright 2019®</p>
+    </footer>
 </body>
 
 </html>
