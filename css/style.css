@@ -420,7 +420,7 @@ section #bottom-navbar {
 }
 #control-send a i {
    font-size: 28px;
-   color: var(--dark-blue);
+   color: var(--light-pink);
    
 }
 textarea#post-text {
@@ -467,6 +467,9 @@ div#info-post div#profile-post p {
 }
 div#card-text {
    margin-bottom: 20px;
+}
+div#card-text p {
+   font-size: 24px;
 }
 figure.post-media {
    margin-bottom: 20px;
@@ -578,26 +581,28 @@ aside#you-may-like h2, aside#partners h2 {
 #user_profile input[type=submit]{
    margin-top : 3%;
    padding: 6px 15px;
-   background-color: #c06c84;
+   background-color: var(--light-pink);
    font-weight: 700;
    border-radius: 5px;
    border: 1px solid black;
    color: white;
    width : 20%;
    box-shadow: 0px 2px 10px rgba(0,0,0,0.75);
+   min-width: 158px;
 }
 
 #user_profile input[type=button] {
    margin-top: 2%;
    margin-bottom: 5%;
    padding: 6px 15px;
-   background-color: #c06c84;
+   background-color: var(--light-pink);
    font-weight: 700;
    border-radius: 5px;
    border: 1px solid black;
    color: white;
    width : 20%;
    box-shadow: 0px 2px 10px rgba(0,0,0,0.75);
+   min-width: 158px;
 }
 
 /*EDIT PROFIL*/
@@ -618,7 +623,7 @@ aside#you-may-like h2, aside#partners h2 {
 
 #login-form-container{
    width: 100%;
-   padding-top: 230px;      
+   padding-top: 180px;      
 }
 
 #login-form {
