@@ -312,20 +312,6 @@ section #bottom-navbar {
    margin-top : 2%;
 }
 
-#edit_profil a{
-   padding: 6px 15px;
-   background-color: #c06c84;
-   font-weight: 700;
-   border-radius: 2px;
-   border: 1px solid black;
-   color: white;
-}
-
-#edit_profil{
-   width : 146px;
-   margin : auto;
-}
-
 #user_profile form{
    display : flex;
    flex-direction : column;
@@ -336,6 +322,11 @@ section #bottom-navbar {
    padding: 8px 5px;
    width: 40%;
    font-weight: 700;
+}
+
+#user_profile input:not([type=file]){
+   border-radius: 2px;
+   border: 1px solid;
 }
 
 #user_profile input[type=submit]{

@@ -82,7 +82,7 @@
                     <img src="img/Wild-Logo.png" alt="Wild Code School logo">
                     <h2>Team Wilders 1</h2>
                 </div>
-                
+
                 <h3>Profil</h3>
                 <form method="post" action="update_user_profil.php">
 
@@ -90,18 +90,19 @@
                     <input type="text" name="username" id="username" value="Team Wilders 1" />
 
                     <label for="email">Email :</label>
-                    <input type="email" name="email" id="email" value="thebestwildersever@wcs.com"/>
+                    <input type="email" name="email" id="email" value="thebestwildersever@wcs.com" />
 
                     <label for="avatar">Avatar :</label>
                     <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg">
 
                     <label for="biography">Biography :</label>
-                    <textarea name="biography" id="biography">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore non ut corporis, vitae harum quos fuga, magnam assumenda pariatur perspiciatis ipsa eaque impedit eos odio saepe quam ab eius? Minima?</textarea> 
+                    <textarea name="biography"
+                        id="biography">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore non ut corporis, vitae harum quos fuga, magnam assumenda pariatur perspiciatis ipsa eaque impedit eos odio saepe quam ab eius? Minima?</textarea>
 
                     <input type="submit" value="Save changes" />
 
                 </form>
-              
+
 
                 <h3>Change your password</h3>
                 <form method="post" action="update_user_password.php">
@@ -112,14 +113,15 @@
                     <label for="new_password">New Password</label>
                     <input type="text" name="new_password" id="new_password" />
 
-                    <label for="new_password_verification">Retape New Password</label>
+                    <label for="new_password_verification">Retype New Password</label>
                     <input type="text" id="new_password_verification" name="new_password_verification" />
 
                     <input type="submit" value="Save changes" />
+                </form>
 
-                    <form>
-                        <input type="button" value="Delete your account" />
-                    </form>
+                <form>
+                    <input type="button" value="Delete your account" />
+                </form>
             </section>
         </div>
         <section>
@@ -138,8 +140,10 @@
 
     </main>
 
-    <footer><p>Made with <i class="fas fa-heart"></i> by <a href="https://www.wildcodeschool.com/">Wild Code School</a>.
-        Copyright 2019®</p></footer>
+    <footer>
+        <p>Made with <i class="fas fa-heart"></i> by <a href="https://www.wildcodeschool.com/">Wild Code School</a>.
+            Copyright 2019®</p>
+    </footer>
 </body>
 
 </html>
