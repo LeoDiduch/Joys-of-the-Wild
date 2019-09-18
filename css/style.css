@@ -357,8 +357,8 @@ section #bottom-navbar {
    display: inline-block;
    margin-left: 4px;
    position: relative;
-   height: 
 }
+
 #blank:after {
    content: "";
    display: block;
@@ -480,9 +480,7 @@ div#card-buttons div#share ul li {
    display: inline-block;
    margin: 0 10px;
 }
-div#card-buttons div#share ul li a {
-   
-}
+
 div#card-buttons div#share ul li a i {
    font-size: 24px;
    color: var(--light-pink);
@@ -535,32 +533,18 @@ aside#you-may-like h2, aside#partners h2 {
    font-size: 1.4em;
 }
 
-#profil_items {
-   margin: 2%;
+#profile_items{
+   margin : 2%;
 }
 
-#profil_items h4 {
-   margin-top: 2%;
+#profile_items h4{
+   margin-top : 2%;
 }
 
-#edit_profil a {
-   padding: 6px 15px;
-   background-color: #c06c84;
-   font-weight: 700;
-   border-radius: 2px;
-   border: 1px solid black;
-   color: white;
-}
-
-#edit_profil {
-   width: 146px;
-   margin: auto;
-}
-
-#user_profile form {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
+#user_profile form{
+   display : flex;
+   flex-direction : column;
+   align-items : center;
 }
 
 #user_profile input,
@@ -570,8 +554,13 @@ aside#you-may-like h2, aside#partners h2 {
    font-weight: 700;
 }
 
-#user_profile input[type=submit] {
-   margin-top: 3%;
+#user_profile input:not([type=file]){
+   border-radius: 2px;
+   border: 1px solid;
+}
+
+#user_profile input[type=submit]{
+   margin-top : 3%;
    padding: 6px 15px;
    background-color: #c06c84;
    font-weight: 700;
