@@ -85,7 +85,7 @@
                 </div>
                 
                 <h3>Profil</h3>
-                <div id="profil_items">
+                <div id="profile_items">
                     <h4>Username :</h4>
                     <p>Team Wilders 1</p>
                     <h4>Email :</h4>
@@ -98,9 +98,9 @@
                     </p>
                 </div>
 
-                <div id="edit_profil">
-                     <a href="#">Edit your profil</a>
-                </div>
+                <form action="edit-profile.html">
+                    <input type="submit" value="Edit your profile">
+                </form>
 
                 <h3>Change your password</h3>
                 <form method="post" action="update_user_password.php">
@@ -111,7 +111,7 @@
                     <label for="new_password">New Password</label>
                     <input type="text" name="new_password" id="new_password" />
 
-                    <label for="new_password_verification">Retape New Password</label>
+                    <label for="new_password_verification">Retype New Password</label>
                     <input type="text" id="new_password_verification" name="new_password_verification" />
 
                     <input type="submit" value="Save changes" />

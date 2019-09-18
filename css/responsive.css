@@ -356,21 +356,16 @@ main aside#mobile-nav p i {
    font-size : 1.4em;
 }
 
-#profil_items{
+#profile_items{
    margin : 2%;
 }
 
-#profil_items h4{
+#profile_items h4{
    margin-top : 2%;
 }
 
-#edit_profil a{
-   padding: 6px 15px;
-   background-color: #c06c84;
-   font-weight: 700;
-   border-radius: 2px;
-   border: 1px solid black;
-   color: white;
+#user_profile {
+   margin: 101px 0 41px 0;
 }
 
 #user_profile form{
@@ -394,6 +389,7 @@ main aside#mobile-nav p i {
    border: 1px solid black;
    color: white;
    width : 30%;
+   min-width: 158px;
 }
 
 #user_profile input[type=button]{
@@ -406,7 +402,9 @@ main aside#mobile-nav p i {
    border: 1px solid black;
    color: white;
    width : 30%;
+   min-width: 158px;
 }
+
 
 /*EDIT PROFIL*/
 
