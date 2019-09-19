@@ -201,7 +201,7 @@ main div#burger {
    position: fixed;
    z-index: 999;
    background-color: rgba(211, 211, 211, 0.233);
-   color: black;
+   color: white;
    padding: 8px 6px;
    border-radius: 5px;
    top: 6px;
@@ -215,7 +215,7 @@ main div#burger span {
    width: 25px;
    height: 4px;
    border-radius: 5px;
-   background-color: black;
+   background-color: white;
    transition: all 0.2s;
 }
 main div#burger span:before {
@@ -226,7 +226,7 @@ main div#burger span:before {
    width: 25px;
    height: 4px;
    border-radius: 5px;
-   background-color: black;
+   background-color: white;
    transition: all 0.3s;
 }
 main div#burger span:after {
@@ -237,11 +237,11 @@ main div#burger span:after {
    width: 25px;
    height: 4px;
    border-radius: 5px;
-   background-color: black;
+   background-color: white;
    transition: all 0.3s;
 }
 main aside#mobile-nav {
-   background-color: rgba(97, 97, 97, 0.2);
+   background-color: #d5d5d5;
    width: 300px;
    height: 100vh;
    position: fixed;
@@ -295,6 +295,7 @@ main aside#mobile-nav ul li {
 }
 main aside#mobile-nav ul li a {
    font-size: 14px;
+   font-weight: 300;
 }
 main aside#mobile-nav ul li a i {
    width: 30px;
@@ -414,14 +415,14 @@ main aside#mobile-nav p i {
 #user_profile input[type=submit]{
    margin-top : 5%;
    margin-bottom : 7%;
-   min-width: 158px;
+   min-width: 190px;
    cursor: pointer;
 }
 
 #user_profile input[type=button]{
    margin-top : 2%;
    margin-bottom : 7%;
-   min-width: 158px;
+   min-width: 190px;
    cursor: pointer;
 }
 
@@ -468,7 +469,7 @@ main aside#mobile-nav p i {
 
 #bottom-navbar li a i {
    font-size: 20px;
-   color: rgb(243, 130, 130);
+   color:white;
 }
 
 /*---- fin bottom navbar ----*/
@@ -605,6 +606,9 @@ figure.post-media video {
 div.card-buttons {
    display: flex;
    justify-content: space-around;
+}
+div.card-buttons button {
+   cursor: pointer;
 }
 div.card-buttons div.share ul {
    font-size: 0;
