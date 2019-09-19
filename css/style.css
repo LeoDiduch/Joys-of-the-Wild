@@ -628,7 +628,8 @@ aside#you-may-like h2, aside#partners h2 {
 
 #login-form-container{
    width: 100%;
-   padding-top: 180px;      
+   padding-top: 180px;
+   min-height: calc(100vh - 74px)      
 }
 
 #login-form {
