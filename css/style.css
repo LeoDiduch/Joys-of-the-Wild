@@ -2,7 +2,7 @@
 
 :root {
    --dark-blue: #616161;
-   --light-pink: #9c27b0;
+   --light-pink: rgb(234, 101, 90);
    --opa-blue: #61616113;
    /*--opa-blue: #ee0083c4;*/
 }
@@ -146,13 +146,17 @@ header div#logo-div img {
    border: solid 1px black;
 }
 
-header div#logo-div a#logo {
+#logo-div h1 {
    display: inline-block;
    color: white;
    font-size: 24px;
    font-weight: 700;
    line-height: 40px;
    vertical-align: middle;
+}
+
+header div#logo-div h1 a#logo {
+   color: white;
 }
 
 /* ---------- SEARCH + LOGS ---------- */
@@ -248,7 +252,7 @@ main aside#sidebar-nav ul {
 
 main aside#sidebar-nav ul li {
    margin: 40px 20px 0 40px;
-   font-weight: 700;
+   font-weight: 400;
 }
 
 main aside#sidebar-nav ul li a {
@@ -311,6 +315,7 @@ footer i {
 #sign-up-form-container {
    width: 100%;
    padding-top: 130px;
+   min-height: calc(100vh - 74px);
 }
 
 #sign-up-form {
@@ -333,13 +338,8 @@ footer i {
 
 #sign-up-form button {
    padding: 6px 15px;
-   margin: 20px 0;
-   background-color: var(--light-pink);
+   margin: 25px 0;
    font-weight: 700;
-   border-radius: 2px;
-   border: 1px solid black;
-   color: white;
-
 }
 
 /* fin du style pour la page sign up */
@@ -451,11 +451,11 @@ article.card {
    padding: 20px;
    border-radius: 5px;
 }
-div#info-post {
+div.info-post {
    margin-bottom: 20px;
 }
 
-div#info-post img {
+div.info-post img {
    border: solid 1px black;
    border-radius: 50%;
    width: 50px;
@@ -463,22 +463,22 @@ div#info-post img {
    padding: 10px;
    margin-right: 20px;
 }
-div#profile-post {
+div.profile-post {
    display: inline-block;
    vertical-align: top;
 }
-div#info-post div#profile-post strong {
+div.info-post div.profile-post strong {
    display: block;
    font-size: 20px;
 }
-div#info-post div#profile-post p {
+div.info-post div.profile-post p {
    color: grey;
 }
-div#card-text {
+div.card-text {
    margin-bottom: 20px;
 }
-div#card-text p {
-   font-size: 24px;
+div.card-text p {
+   font-size: 18px;
 }
 figure.post-media {
    margin-bottom: 20px;
@@ -493,32 +493,36 @@ figure.post-media video {
    margin: 0 auto;
    width: 100%;
 }
-div#card-buttons {
+div.card-buttons {
    display: flex;
    justify-content: space-between;
    padding: 0 50px;
 }
-div#card-buttons div#share ul {
+div.card-buttons div.share ul {
    font-size: 0;
    list-style-type: none;
 
 }
-div#card-buttons div#share ul li {
+div.card-buttons div.share ul li {
    display: inline-block;
    margin: 0 10px;
 }
 
-div#card-buttons div#share ul li a i {
+div.card-buttons div.share ul li a i {
    font-size: 24px;
    color: var(--light-pink);
 }
-div#card-buttons button i {
+div.card-buttons button i {
    color: var(--dark-blue);
 }
 
 div#asides-partners {
    width: calc(20% - 20px);
    margin: 10px 10px 10px 0;
+   position: fixed;
+   top: 54px;
+   right: 4px;;
+
 }
 aside#you-may-like, aside#partners {
    background-color: white;
@@ -629,7 +633,8 @@ aside#you-may-like h2, aside#partners h2 {
 
 #login-form-container{
    width: 100%;
-   padding-top: 180px;      
+   padding-top: 180px;
+   min-height: calc(100vh - 74px)      
 }
 
 #login-form {
@@ -643,12 +648,17 @@ aside#you-may-like h2, aside#partners h2 {
    width: 40%;
    font-weight: 700;
 }
+#login-form input {
+   border-radius: 2px;
+   border: 1px solid;
+}
 
 #login-form button {
    padding: 6px 15px;
    margin: 25px 0;
    font-weight: 700;
 }
+
 /* ------------------------ MEDIA QUERIES 960px ---- */
 
 @media screen and (max-width: 1280px) {
@@ -658,7 +668,7 @@ aside#you-may-like h2, aside#partners h2 {
    article.card {
       width: 100%;
    }
-   div#card-buttons {
+   div.card-buttons {
       padding: 0 25px;
    }
 }
