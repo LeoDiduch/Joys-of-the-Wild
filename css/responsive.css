@@ -289,7 +289,7 @@ main aside#mobile-nav ul li a i {
    width: 30px;
    text-align: center;
    font-size: 24px;
-   color: var(--light-pink);
+   color: rgb(243, 130, 130);
    padding: 2px;
    margin-right: 10px;
    vertical-align: middle;
@@ -302,7 +302,7 @@ main aside#mobile-nav p {
    bottom: 5px;
 }
 main aside#mobile-nav p i {
-   color: var(--light-pink);
+   color: rgb(243, 130, 130);
 }
 
 /* Sign-up page */
@@ -457,7 +457,7 @@ main aside#mobile-nav p i {
 
 #bottom-navbar li a i {
    font-size: 20px;
-   color: white;
+   color: rgb(243, 130, 130);
 }
 
 /*---- fin bottom navbar ----*/
@@ -527,7 +527,7 @@ main aside#mobile-nav p i {
 }
 #control-send a i {
    font-size: 28px;
-   color: var(--dark-blue);
+   color: rgb(243, 130, 130);
    
 }
 textarea#post-text {
@@ -608,7 +608,7 @@ div.card-buttons div.share ul li {
 
 div.card-buttons div.share ul li a i {
    font-size: 24px;
-   color: var(--light-pink);
+   color: rgb(243, 130, 130);
 }
 div.card-buttons button {
    padding: 8px 20px;
