@@ -2,7 +2,7 @@
 
 :root {
    --dark-blue: #616161;
-   --light-pink: #9c27b0;
+   --light-pink: rgb(234, 101, 90);
    --opa-blue: #61616113;
    /*--opa-blue: #ee0083c4;*/
 }
@@ -344,12 +344,8 @@ main aside#mobile-nav p i {
 
 #sign-up-form button {
    padding: 6px 15px;
-   margin: 20px 0;
-   background-color: var(--light-pink);
+   margin: 25px 0;
    font-weight: 700;
-   border-radius: 2px;
-   border: 1px solid black;
-   color: white;
 }
 
 
@@ -630,7 +626,7 @@ div#card-buttons button {
    padding: 8px 20px;
 }
 div#card-buttons button i {
-   color: var(--dark-blue);
+   color: #43ab92;
 }
 
 div#asides-partners {

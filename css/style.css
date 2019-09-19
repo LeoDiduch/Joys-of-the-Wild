@@ -2,7 +2,7 @@
 
 :root {
    --dark-blue: #616161;
-   --light-pink: #9c27b0;
+   --light-pink: rgb(234, 101, 90);
    --opa-blue: #61616113;
    /*--opa-blue: #ee0083c4;*/
 }
@@ -311,6 +311,7 @@ footer i {
 #sign-up-form-container {
    width: 100%;
    padding-top: 130px;
+   min-height: calc(100vh - 74px);
 }
 
 #sign-up-form {
@@ -333,13 +334,8 @@ footer i {
 
 #sign-up-form button {
    padding: 6px 15px;
-   margin: 20px 0;
-   background-color: var(--light-pink);
+   margin: 25px 0;
    font-weight: 700;
-   border-radius: 2px;
-   border: 1px solid black;
-   color: white;
-
 }
 
 /* fin du style pour la page sign up */
