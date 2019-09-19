@@ -108,13 +108,13 @@
                 <form method="post" action="update_user_password.php">
 
                     <label for="current_password">Current Password</label>
-                    <input type="password" name="current_password" id="current_password" />
+                    <input type="password" name="current_password" id="current_password" maxlength="16"/>
 
                     <label for="new_password">New Password</label>
-                    <input type="password" name="new_password" id="new_password" />
+                    <input type="password" name="new_password" id="new_password" maxlength="16"/>
 
                     <label for="new_password_verification">Retype New Password</label>
-                    <input type="text" id="new_password_verification" name="new_password_verification" />
+                    <input type="text" id="new_password_verification" name="new_password_verification" maxlength="16"/>
 
                     <input type="submit" value="Save changes" />
 

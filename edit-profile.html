@@ -89,7 +89,7 @@
                 <form method="post" action="update_user_profile.php">
 
                     <label for="username">Username :</label>
-                    <input type="text" name="username" id="username" placeholder="Team Wilders 1" />
+                    <input type="text" name="username" id="username" maxlength="30" placeholder="Team Wilders 1" />
 
                     <label for="email">Email :</label>
                     <input type="email" name="email" id="email" placeholder="thebestwildersever@wcs.com" />
@@ -99,7 +99,7 @@
 
                     <label for="biography">Biography :</label>
                     <textarea name="biography"
-                        id="biography" placeholder="Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore non ut corporis, vitae harum quos fuga, magnam assumenda pariatur perspiciatis ipsa eaque impedit eos odio saepe quam ab eius? Minima?"></textarea>
+                        id="biography" maxlength="500" placeholder="Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore non ut corporis, vitae harum quos fuga, magnam assumenda pariatur perspiciatis ipsa eaque impedit eos odio saepe quam ab eius? Minima?"></textarea>
 
                     <input type="submit" value="Save changes" />
 
@@ -110,13 +110,13 @@
                 <form method="post" action="edit-profile.html">
 
                     <label for="current_password">Current Password</label>
-                    <input type="password" name="current_password" id="current_password" />
+                    <input type="password" name="current_password" id="current_password" maxlength="16" />
 
                     <label for="new_password">New Password</label>
-                    <input type="password" name="new_password" id="new_password" />
+                    <input type="password" name="new_password" id="new_password" maxlength="16"/>
 
                     <label for="new_password_verification">Retype New Password</label>
-                    <input type="password" id="new_password_verification" name="new_password_verification" />
+                    <input type="password" id="new_password_verification" name="new_password_verification" maxlength="16" />
 
                     <input type="submit" value="Save changes" />
                 </form>
