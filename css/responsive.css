@@ -201,7 +201,7 @@ main div#burger {
    position: fixed;
    z-index: 999;
    background-color: rgba(211, 211, 211, 0.233);
-   color: black;
+   color: white;
    padding: 8px 6px;
    border-radius: 5px;
    top: 6px;
@@ -215,7 +215,7 @@ main div#burger span {
    width: 25px;
    height: 4px;
    border-radius: 5px;
-   background-color: black;
+   background-color: white;
    transition: all 0.2s;
 }
 main div#burger span:before {
@@ -226,7 +226,7 @@ main div#burger span:before {
    width: 25px;
    height: 4px;
    border-radius: 5px;
-   background-color: black;
+   background-color: white;
    transition: all 0.3s;
 }
 main div#burger span:after {
@@ -237,11 +237,11 @@ main div#burger span:after {
    width: 25px;
    height: 4px;
    border-radius: 5px;
-   background-color: black;
+   background-color: white;
    transition: all 0.3s;
 }
 main aside#mobile-nav {
-   background-color: rgba(97, 97, 97, 0.2);
+   background-color: #d5d5d5;
    width: 300px;
    height: 100vh;
    position: fixed;
