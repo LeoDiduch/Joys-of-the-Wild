@@ -2,7 +2,7 @@
 
 :root {
    --dark-blue: #616161;
-   --light-pink: #9c27b0;
+   --light-pink: rgb(234, 101, 90);
    --opa-blue: #61616113;
    /*--opa-blue: #ee0083c4;*/
 }
@@ -112,19 +112,6 @@ a {
    border-radius: 5px;
 }
 
-.secondary-btn{
-   margin-top: 2%;
-   margin-bottom: 5%;
-   padding: 6px 15px;
-   background-color: #c06c84;
-   font-weight: 700;
-   border-radius: 5px;
-   border: 1px solid black;
-   color: white;
-   width : 20%;
-   box-shadow: 0px 2px 10px rgba(0,0,0,0.75);
-}
-
 /* ---------- DEBUT CSS MOBILE ---------- */
 
 /* ---------- HEADER ---------- */
@@ -147,7 +134,8 @@ header div#logo-div img {
    padding: 3px;
    border: solid 1px black;
 }
-header div#logo-div a#logo {
+
+#logo-div h1 {
    display: inline-block;
    color: white;
    font-size: 20px;
@@ -155,6 +143,11 @@ header div#logo-div a#logo {
    line-height: 40px;
    vertical-align: middle;
 }
+
+header div#logo-div h1 a#logo {
+   color: white;
+}
+
 /* ---------- SEARCH + LOGS ---------- */
 header div#interface {
    display: block;
@@ -248,7 +241,7 @@ main div#burger span:after {
    transition: all 0.3s;
 }
 main aside#mobile-nav {
-   background-color: white;
+   background-color: rgba(97, 97, 97, 0.2);
    width: 300px;
    height: 100vh;
    position: fixed;
@@ -307,7 +300,7 @@ main aside#mobile-nav ul li a i {
    width: 30px;
    text-align: center;
    font-size: 24px;
-   color: var(--light-pink);
+   color: rgb(243, 130, 130);
    padding: 2px;
    margin-right: 10px;
    vertical-align: middle;
@@ -320,14 +313,14 @@ main aside#mobile-nav p {
    bottom: 25px;
 }
 main aside#mobile-nav p i {
-   color: var(--light-pink);
+   color: rgb(243, 130, 130);
 }
 
 /* Sign-up page */
 
 #sign-up-form-container {
    width: 100%;
-   padding-top: 130px;
+   padding-top: 180px;
 }
 
 #sign-up-form {
@@ -342,19 +335,21 @@ main aside#mobile-nav p i {
    font-weight: 700;
 }
 
+#sign-up-form label {
+   min-width: 190px;
+   text-align: center;
+}
+
 #sign-up-form input {
    border-radius: 2px;
    border: 1px solid;
+   min-width: 200px;
 }
 
 #sign-up-form button {
    padding: 6px 15px;
-   margin: 20px 0;
-   background-color: #c06c84;
+   margin: 25px 0;
    font-weight: 700;
-   border-radius: 2px;
-   border: 1px solid black;
-   color: white;
 }
 
 
@@ -379,7 +374,7 @@ main aside#mobile-nav p i {
 #user_profile h3{
    margin-left : 1%;
    margin-bottom : 2%;
-   margin-top : 2%;
+   margin-top : 4%;
    border-bottom : 3px var(--light-pink) solid;
    font-size : 1.4em;
 }
@@ -393,7 +388,7 @@ main aside#mobile-nav p i {
 }
 
 #user_profile {
-   margin: 101px 0 41px 0;
+   margin: 20px 0 0 0;
 }
 
 #user_profile form{
@@ -403,42 +398,35 @@ main aside#mobile-nav p i {
 }
 
 #user_profile input, #user_profile label{
-   padding: 8px 5px;
+   padding: 2% 2%;
    width: 40%;
    font-weight: 700;
+   min-width : 75%;
+   font-family : 'Roboto', sans-serif;
+   font-size : 0.9em;
 }
 
-#user_profile input:not([type=file]){
+#user_profile input:not([type=file], [type=button], [type=submit]){
    border-radius: 2px;
    border: 1px solid;
 }
 
 #user_profile input[type=submit]{
-   margin-top : 3%;
-   margin-bottom : 5%;
-   padding: 6px 15px;
-   background-color: #c06c84;
-   font-weight: 700;
-   border-radius: 5px;
-   border: 1px solid black;
-   color: white;
-   width : 30%;
+   margin-top : 5%;
+   margin-bottom : 7%;
    min-width: 158px;
-   box-shadow: 0px 2px 10px rgba(0,0,0,0.75);
+   cursor: pointer;
 }
 
 #user_profile input[type=button]{
    margin-top : 2%;
-   margin-bottom : 5%;
-   padding: 6px 15px;
-   background-color: #c06c84;
-   font-weight: 700;
-   border-radius: 5px;
-   border: 1px solid black;
-   color: white;
-   width : 30%;
+   margin-bottom : 7%;
    min-width: 158px;
-   box-shadow: 0px 2px 10px rgba(0,0,0,0.75);
+   cursor: pointer;
+}
+
+#user_profile input[type=file]{
+   cursor: pointer;
 }
 
 
@@ -446,9 +434,11 @@ main aside#mobile-nav p i {
 
 #user_profile textarea{
    width : 40%;
-   height : 15vh;
+   height : 20vh;
+   padding : 2% 2%;
    border-radius: 2px;
-   border: 1px solid;
+   min-width : 75%;
+   font-size : 0.9em;
 }
 
 /* Bottom-navbar */
@@ -478,7 +468,7 @@ main aside#mobile-nav p i {
 
 #bottom-navbar li a i {
    font-size: 20px;
-   color: white;
+   color: rgb(243, 130, 130);
 }
 
 /*---- fin bottom navbar ----*/
@@ -548,7 +538,7 @@ main aside#mobile-nav p i {
 }
 #control-send a i {
    font-size: 28px;
-   color: var(--dark-blue);
+   color: rgb(243, 130, 130);
    
 }
 textarea#post-text {
@@ -570,11 +560,11 @@ article.card {
    padding: 20px;
    border-radius: 5px;
 }
-div#info-post {
+div.info-post {
    margin-bottom: 20px;
 }
 
-div#info-post img {
+div.info-post img {
    border: solid 1px black;
    border-radius: 50%;
    width: 50px;
@@ -582,19 +572,22 @@ div#info-post img {
    padding: 10px;
    margin-right: 20px;
 }
-div#profile-post {
+div.profile-post {
    display: inline-block;
    vertical-align: top;
 }
-div#info-post div#profile-post strong {
+div.info-post div.profile-post strong {
    display: block;
    font-size: 20px;
 }
-div#info-post div#profile-post p {
-   color: lightgrey;
+div.info-post div.profile-post p {
+   color: grey;
 }
-div#card-text {
+div.card-text {
    margin-bottom: 20px;
+}
+div.card-text p {
+   font-size: 18px;
 }
 figure.post-media {
    margin-bottom: 20px;
@@ -609,30 +602,30 @@ figure.post-media video {
    margin: 0 auto;
    width: 100%;
 }
-div#card-buttons {
+div.card-buttons {
    display: flex;
    justify-content: space-around;
 }
-div#card-buttons div#share ul {
+div.card-buttons div.share ul {
    font-size: 0;
    list-style-type: none;
    margin-top: 5px;
 
 }
-div#card-buttons div#share ul li {
+div.card-buttons div.share ul li {
    display: inline-block;
    margin: 0 10px;
 }
 
-div#card-buttons div#share ul li a i {
+div.card-buttons div.share ul li a i {
    font-size: 24px;
-   color: var(--light-pink);
+   color: rgb(243, 130, 130);
 }
-div#card-buttons button {
+div.card-buttons button {
    padding: 8px 20px;
 }
-div#card-buttons button i {
-   color: var(--dark-blue);
+div.card-buttons button i {
+   color: #43ab92;
 }
 
 div#asides-partners {
@@ -642,7 +635,36 @@ div#asides-partners {
 aside#you-may-like, aside#partners {
    display: none;
 }
+/*------ Login Page ----*/
 
+#login-logo{
+   display: flex;
+   flex-direction: column;
+   align-items: center
+}
+
+#login-form-container{
+   width: 100%;
+   padding-top: 180px;      
+}
+
+#login-form {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+#login-form input, #login-form label {
+   padding: 8px 15px;
+   width: 70%;
+   font-weight: 700;
+}
+
+#login-form button {
+   padding: 6px 15px;
+   margin: 25px 0;
+   font-weight: 700;
+}
 /*------ Fin page home Mobile ----*/
 
 /* ---------- FOOTER ---------- */
