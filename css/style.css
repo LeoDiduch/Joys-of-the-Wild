@@ -515,6 +515,10 @@ div#card-buttons button i {
 div#asides-partners {
    width: calc(20% - 20px);
    margin: 10px 10px 10px 0;
+   position: fixed;
+   top: 54px;
+   right: 4px;;
+
 }
 aside#you-may-like, aside#partners {
    background-color: white;
