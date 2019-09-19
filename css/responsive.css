@@ -147,7 +147,8 @@ header div#logo-div img {
    padding: 3px;
    border: solid 1px black;
 }
-header div#logo-div a#logo {
+
+#logo-div h1 {
    display: inline-block;
    color: white;
    font-size: 20px;
@@ -155,6 +156,11 @@ header div#logo-div a#logo {
    line-height: 40px;
    vertical-align: middle;
 }
+
+header div#logo-div h1 a#logo {
+   color: white;
+}
+
 /* ---------- SEARCH + LOGS ---------- */
 header div#interface {
    display: block;
@@ -561,11 +567,11 @@ article.card {
    padding: 20px;
    border-radius: 5px;
 }
-div#info-post {
+div.info-post {
    margin-bottom: 20px;
 }
 
-div#info-post img {
+div.info-post img {
    border: solid 1px black;
    border-radius: 50%;
    width: 50px;
@@ -573,21 +579,21 @@ div#info-post img {
    padding: 10px;
    margin-right: 20px;
 }
-div#profile-post {
+div.profile-post {
    display: inline-block;
    vertical-align: top;
 }
-div#info-post div#profile-post strong {
+div.info-post div.profile-post strong {
    display: block;
    font-size: 20px;
 }
-div#info-post div#profile-post p {
+div.info-post div.profile-post p {
    color: grey;
 }
-div#card-text {
+div.card-text {
    margin-bottom: 20px;
 }
-div#card-text p {
+div.card-text p {
    font-size: 18px;
 }
 figure.post-media {
@@ -603,29 +609,29 @@ figure.post-media video {
    margin: 0 auto;
    width: 100%;
 }
-div#card-buttons {
+div.card-buttons {
    display: flex;
    justify-content: space-around;
 }
-div#card-buttons div#share ul {
+div.card-buttons div.share ul {
    font-size: 0;
    list-style-type: none;
    margin-top: 5px;
 
 }
-div#card-buttons div#share ul li {
+div.card-buttons div.share ul li {
    display: inline-block;
    margin: 0 10px;
 }
 
-div#card-buttons div#share ul li a i {
+div.card-buttons div.share ul li a i {
    font-size: 24px;
    color: var(--light-pink);
 }
-div#card-buttons button {
+div.card-buttons button {
    padding: 8px 20px;
 }
-div#card-buttons button i {
+div.card-buttons button i {
    color: #43ab92;
 }
 
