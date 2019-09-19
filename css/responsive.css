@@ -412,6 +412,10 @@ main aside#mobile-nav p i {
    cursor: pointer;
 }
 
+#user_profile input[type=file]{
+   cursor: pointer;
+}
+
 
 /*EDIT PROFIL*/
 
