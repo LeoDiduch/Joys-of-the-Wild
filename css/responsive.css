@@ -607,6 +607,9 @@ div.card-buttons {
    display: flex;
    justify-content: space-around;
 }
+div.card-buttons button {
+   cursor: pointer;
+}
 div.card-buttons div.share ul {
    font-size: 0;
    list-style-type: none;
