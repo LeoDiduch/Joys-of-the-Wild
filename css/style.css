@@ -607,7 +607,7 @@ aside#you-may-like h2, aside#partners h2 {
    margin-top: 2%;
    margin-bottom: 7%;
    width : 20%;
-   min-width: 158px;
+   min-width: 190px;
    cursor: pointer;
 }
 
@@ -626,6 +626,7 @@ aside#you-may-like h2, aside#partners h2 {
    font-size : 1em;
    height : 20vh;
 }
+
 /*LOGIN PAGE*/
 
 #login-logo{
