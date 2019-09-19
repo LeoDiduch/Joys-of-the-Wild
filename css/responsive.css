@@ -362,8 +362,11 @@ main aside#mobile-nav p i {
 }
 
 #profile_header img{
-   width : 7%;
+   min-width : 15%;
    margin-left : 1%;
+   border-radius : 50%;
+   border: solid 1px black;
+   padding: 10px;
 }
 
 #profile_header h2{
