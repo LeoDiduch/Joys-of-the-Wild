@@ -415,7 +415,7 @@ main aside#mobile-nav p i {
 #user_profile input[type=submit]{
    margin-top : 5%;
    margin-bottom : 7%;
-   min-width: 158px;
+   min-width: 190px;
    cursor: pointer;
 }
 
