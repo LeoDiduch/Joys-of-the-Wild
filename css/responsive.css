@@ -225,9 +225,9 @@ main div#burger span {
    background-color: black;
    transition: all 0.2s;
 }
-main div#burger:hover span {
+/*main div#burger:hover span {
    background-color: transparent;
-}
+}*/
 main div#burger span:before {
    content: "";
    display: block;
@@ -249,16 +249,15 @@ main div#burger span:after {
    border-radius: 5px;
    background-color: black;
    transition: all 0.3s;
-
 }
-main div#burger:hover span:before {
+/*main div#burger:hover span:before {
    transform: rotate(-45deg);
    top: 0;
 }
 main div#burger:hover span:after {
    transform: rotate(45deg);
    top: 0;
-}
+}*/
 main aside#mobile-nav {
    background-color: white;
    width: 300px;
@@ -268,8 +267,31 @@ main aside#mobile-nav {
    z-index: 998;
    padding-top: 80px;
    transform: translateX(-300px);
-   
+   transition: all 1s;
 }
+/* BURGER CLASSES */
+main aside#mobile-nav.open {
+   transform: translateX(-0px);
+}
+main div#burger span.crossed:before {
+   transform: rotate(-45deg);
+   top: 0;
+}
+main div#burger span.crossed:after {
+   transform: rotate(45deg);
+   top: 0;
+}
+main div#burger span.crossed {
+   background-color: transparent;
+}
+
+
+
+
+
+
+
+/* END BURGER CLASSES */
 main aside#mobile-nav::after {
    content: "";
    display: block;
@@ -306,7 +328,7 @@ main aside#mobile-nav p {
    font-size: 14px;
    padding: 0 10px 20px 10px;
    position: fixed;
-   bottom: 5px;
+   bottom: 25px;
 }
 main aside#mobile-nav p i {
    color: var(--light-pink);
