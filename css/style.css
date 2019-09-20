@@ -121,7 +121,7 @@ a {
 
 /* ---------- HEADER ---------- */
 header {
-   padding: 3px 20px;
+   padding: 8px 20px;
    background-color: var(--dark-blue);
    position: fixed;
    top: 0;
@@ -136,6 +136,7 @@ header div#logo-div img {
    border-radius: 50%;
    padding: 3px;
    border: solid 1px black;
+   margin-right: 8px;
 }
 
 #logo-div h1 {
@@ -155,7 +156,7 @@ header div#logo-div h1 a#logo {
 header div#interface {
    display: inline-block;
    position: absolute;
-   top: 6px;
+   top: 11px;
    right: 20px;
 }
 
@@ -184,6 +185,13 @@ header div#interface div#searchbar button {
    background-color: transparent;
    cursor: pointer;
 }
+header div#interface div#searchbar button:hover i {
+   transition: all .3s;
+   transform-origin: center;
+}
+header div#interface div#searchbar button:hover i {
+   transform: scale3d(1.1, 1.1, 1.1);
+}
 
 /* ---------- LOGIN ---------- */
 header div#interface div#connect {
@@ -195,6 +203,13 @@ header div#interface div#connect a {
    width: 100px;
    cursor: pointer;
    padding: 5px 30px;
+   transition: all .7s;
+}
+
+header div#interface div#connect a:hover {
+   background-color: var(--light-pink);
+   border: solid 1px transparent;
+   color: white;
 }
 
 /* ---------- MAIN CONTENT ---------- */
@@ -202,7 +217,7 @@ main {
    background-color: var(--opa-blue);
    display: flex;
    align-items: stretch;
-   min-height: calc(100vh - 74px);
+   min-height: calc(100vh - 84px);
    padding-top: 50px;
 }
 
@@ -249,6 +264,14 @@ main aside#sidebar-nav ul li {
 
 main aside#sidebar-nav ul li a {
    font-size: 18px;
+   transition: all .7s;
+}
+main aside#sidebar-nav ul li a i {
+   transition: all .7s;
+}
+
+main aside#sidebar-nav ul li a:hover i {
+   transform: rotate(360deg);
 }
 
 main aside#sidebar-nav ul li a:after {
@@ -262,7 +285,7 @@ main aside#sidebar-nav ul li a:after {
 }
 
 main aside#sidebar-nav ul li a:hover::after {
-   width: 40%;
+   width: 45%;
 }
 
 main aside#sidebar-nav ul li a i {
@@ -307,7 +330,13 @@ footer i {
 #sign-up-form-container {
    width: 100%;
    padding-top: 130px;
-   min-height: calc(100vh - 74px);
+   min-height: calc(100vh - 84px);
+}
+
+#login-logo{
+   display: flex;
+   flex-direction: column;
+   align-items: center
 }
 
 #sign-up-form {
@@ -639,7 +668,7 @@ aside#you-may-like h2, aside#partners h2 {
 #login-form-container{
    width: 100%;
    padding-top: 180px;
-   min-height: calc(100vh - 74px)      
+   min-height: calc(100vh - 84px)      
 }
 
 #login-form {

@@ -121,7 +121,7 @@ a {
 
 /* ---------- HEADER ---------- */
 header {
-   padding: 3px 20px;
+   padding: 5px 20px;
    background-color: var(--dark-blue);
    position: fixed;
    width: 100%;
@@ -209,7 +209,7 @@ main div#burger {
    color: white;
    padding: 8px 6px;
    border-radius: 5px;
-   top: 6px;
+   top: 9px;
    right: 20px;
    cursor: pointer;
 }
