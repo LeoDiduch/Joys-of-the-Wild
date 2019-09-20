@@ -684,7 +684,9 @@ aside#you-may-like h2, aside#partners h2 {
 }
 #login-form input {
    border-radius: 2px;
-   border: 1px solid;
+   border : 0px;
+   border-bottom: 1px solid;
+   background-color : transparent;
 }
 
 #login-form button {
