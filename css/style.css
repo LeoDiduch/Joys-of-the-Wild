@@ -415,7 +415,6 @@ section #bottom-navbar {
    margin-left: 4px;
    position: relative;
 }
-
 #blank:after {
    content: "";
    display: block;
@@ -457,6 +456,14 @@ section #bottom-navbar {
    cursor: pointer;
    padding: 8px 20px;
 }
+#control-btn button#add-media:hover i {
+   transition: all .5s;
+   color: rgb(50, 196, 31);
+}
+#control-btn button#add-tag:hover i {
+   transition: all .5s;
+   color: rgb(50, 196, 31);
+}
 
 #control-btn,
 #control-send {
@@ -469,8 +476,19 @@ section #bottom-navbar {
 
 #control-send a i {
    font-size: 28px;
+   color: var(--dark-blue);
+   /*color: rgb(243, 130, 130);*/
+   transition: all .2s;
+   transform-origin: center;
+}
+#control-send a i:hover {
+   transform: scale3d(1.1, 1.1, 1.1);
+}
+#control-send a#send:hover i {
+   color: rgb(50, 196, 31);
+}
+#control-send a#cancel:hover i {
    color: rgb(243, 130, 130);
-
 }
 
 textarea#post-text {
@@ -584,7 +602,7 @@ div#asides-partners {
    width: calc(20% - 20px);
    margin: 10px 10px 10px 0;
    position: fixed;
-   top: 54px;
+   top: 57px;
    right: 4px;
    ;
 
