@@ -219,6 +219,7 @@ main {
    align-items: stretch;
    min-height: calc(100vh - 84px);
    padding-top: 50px;
+   margin-top: 7px;
 }
 
 div.container {
@@ -329,6 +330,7 @@ footer i {
 
 #sign-up-form-container {
    width: 100%;
+   margin-top: 7px;
    padding-top: 130px;
    min-height: calc(100vh - 84px);
 }
