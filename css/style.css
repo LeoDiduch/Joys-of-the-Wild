@@ -225,7 +225,7 @@ main {
    align-items: stretch;
    min-height: calc(100vh - 84px);
    padding-top: 50px;
-   margin-top: 7px;
+   margin: 7px 0;
 }
 
 div.container {
@@ -321,7 +321,7 @@ footer {
    display: flex;
    justify-content: center;
    background-color: white;
-   padding: 8px 0;
+   padding: 5px 0;
    border-top: 1px solid black;
    position: fixed;
    bottom: 0;
@@ -352,6 +352,7 @@ footer i {
    display: flex;
    flex-direction: column;
    align-items: center;
+   margin-bottom: 25px;
 }
 
 #sign-up-form input,
@@ -375,22 +376,6 @@ footer i {
    font-weight: 700;
 }
 
-/* fin du style pour la page sign up */
-
-footer {
-   position: relative;
-   bottom: 0;
-   z-index: 999;
-   font-weight: 300;
-   border-top: solid 1px black;
-   text-align: center;
-   padding: 2px 20px;
-   background-color: white;
-}
-
-footer i {
-   color: var(--light-pink);
-}
 
 /* Bottom-navbar */
 
