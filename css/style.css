@@ -105,6 +105,9 @@ a {
 
 /* ------------------------------- END RECURENTES -- */
 /* ------------------------------- SIMILAIRES ------ */
+button {
+   cursor: pointer;
+}
 .primary-btn {
    border: solid 1px black;
    padding: 8px 50px;
