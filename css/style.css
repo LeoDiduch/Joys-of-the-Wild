@@ -305,6 +305,12 @@ footer i {
    min-height: calc(100vh - 74px);
 }
 
+#login-logo{
+   display: flex;
+   flex-direction: column;
+   align-items: center
+}
+
 #sign-up-form {
    display: flex;
    flex-direction: column;
