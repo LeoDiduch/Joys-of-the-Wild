@@ -105,6 +105,9 @@ a {
 
 /* ------------------------------- END RECURENTES -- */
 /* ------------------------------- SIMILAIRES ------ */
+button {
+   cursor: pointer;
+}
 .primary-btn {
    border: solid 1px black;
    padding: 8px 50px;
@@ -113,7 +116,7 @@ a {
 }
 
 ::placeholder {
-   color : rgb(199, 196, 196);
+   color : rgb(109, 107, 107);
    font-weight : 500;
 }
 
