@@ -333,6 +333,7 @@ main aside#mobile-nav p i {
    display: flex;
    flex-direction: column;
    align-items: center;
+   margin-bottom: 35px;
 }
 
 #sign-up-form input, #sign-up-form label {
