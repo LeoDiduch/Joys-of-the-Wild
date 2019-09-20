@@ -105,6 +105,9 @@ a {
 
 /* ------------------------------- END RECURENTES -- */
 /* ------------------------------- SIMILAIRES ------ */
+button {
+   cursor: pointer;
+}
 .primary-btn {
    border: solid 1px black;
    padding: 8px 50px;
@@ -113,7 +116,7 @@ a {
 }
 
 ::placeholder {
-   color : rgb(199, 196, 196);
+   color : rgb(109, 107, 107);
    font-weight : 500;
 }
 
@@ -219,6 +222,7 @@ main {
    align-items: stretch;
    min-height: calc(100vh - 84px);
    padding-top: 50px;
+   margin-top: 7px;
 }
 
 div.container {
@@ -329,6 +333,7 @@ footer i {
 
 #sign-up-form-container {
    width: 100%;
+   margin-top: 7px;
    padding-top: 130px;
    min-height: calc(100vh - 84px);
 }
@@ -668,6 +673,7 @@ aside#you-may-like h2, aside#partners h2 {
 #login-form-container{
    width: 100%;
    padding-top: 180px;
+   margin-top: 7px;
    min-height: calc(100vh - 84px)      
 }
 
