@@ -213,6 +213,9 @@ main div#burger {
    right: 20px;
    cursor: pointer;
 }
+main div#burger p {
+   display: inline-block;
+}
 main div#burger span {
    position: relative;
    top: -3px;
@@ -680,7 +683,9 @@ aside#you-may-like, aside#partners {
 }
 #login-form input {
    border-radius: 2px;
-   border: 1px solid;
+   border : 0px;
+   border-bottom: 1px solid;
+   background-color : transparent;
 }
 
 #login-form button {
@@ -693,4 +698,10 @@ aside#you-may-like, aside#partners {
 /* ---------- FOOTER ---------- */
 footer {
    display: none;
+}
+
+@media screen and (max-width: 400px) {
+   main div#burger p {
+      display: none;
+   }
 }

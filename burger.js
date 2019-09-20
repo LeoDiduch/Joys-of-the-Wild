@@ -3,4 +3,4 @@ function changeStyle() {
     element.classList.toggle("open");
     var element = document.getElementById("cross");
     element.classList.toggle("crossed");
-  } 
+  }
