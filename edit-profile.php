@@ -33,13 +33,13 @@
                 <h3>Change your password</h3>
                 <form method="post" action="edit-profile.php">
 
-                    <label for="current_password">Current Password</label>
+                    <label for="current_password">Current Password :</label>
                     <input type="password" name="current_password" id="current_password" maxlength="16" placeholder="Enter your current password"/>
 
-                    <label for="new_password">New Password</label>
+                    <label for="new_password">New Password :</label>
                     <input type="password" name="new_password" id="new_password" maxlength="16" placeholder="Enter your new password"/>
 
-                    <label for="new_password_verification">Retype New Password</label>
+                    <label for="new_password_verification">Retype New Password :</label>
                     <input type="password" id="new_password_verification" name="new_password_verification" maxlength="16" placeholder="Enter your new password again"/>
 
                     <input type="submit" value="Save changes" class="example_f"/>
