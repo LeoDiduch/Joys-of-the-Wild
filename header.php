@@ -24,7 +24,7 @@
 <body>
     <header>
         <div id="logo-div">
-            <h1><a href="index.html" id="logo"><img src="img/Wild-Logo.png" alt="wild-code-school-logo">JOYS OF THE WILD</a></h1>
+            <h1><a href="index.php" id="logo"><img src="img/Wild-Logo.png" alt="wild-code-school-logo">JOYS OF THE WILD</a></h1>
         </div>
 
         <div id="interface">
@@ -34,8 +34,8 @@
             </div>
 
             <div id="connect">
-                <a id="login" class="primary-btn" href="login.html">Login</a>
-                <a id="signup" class="primary-btn" href="sign-up.html">SignUp</a>
+                <a id="login" class="primary-btn" href="login.php">Login</a>
+                <a id="signup" class="primary-btn" href="sign-up.php">SignUp</a>
             </div>
         </div>
     </header> 

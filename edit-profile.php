@@ -31,7 +31,7 @@
 
 
                 <h3>Change your password</h3>
-                <form method="post" action="edit-profile.html">
+                <form method="post" action="edit-profile.php">
 
                     <label for="current_password">Current Password</label>
                     <input type="password" name="current_password" id="current_password" maxlength="16" placeholder="Enter your current password"/>
@@ -50,13 +50,5 @@
                 </form>
             </section>
         </div>
-        <section>
-            <ul id="bottom-navbar">
-                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
-                <li><a href="hot-post.html"><i class="fas fa-star"></i> Hot Posts</a></li>
-                <li><a href="profil.html"><i class="fas fa-user-circle"></i> Your Profile</a></li>
-                <li><a href="index.html"><i class="fas fa-plus-circle"></i> Add</a></li>
-            </ul>
-        </section>
 
 <?php include 'footer.php';?>

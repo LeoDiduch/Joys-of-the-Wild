@@ -1,20 +1,10 @@
 <?php include 'header.php';?>
 
 <?php include 'menus.php';?>
-        
-
-        <section>
-            <ul id="bottom-navbar">
-                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
-                <li><a href="hot-post.html"><i class="fas fa-star"></i> Hot Posts</a></li>
-                <li><a href="profil.html"><i class="fas fa-user-circle"></i> Your Profile</a></li>
-                <li><a href="index.html"><i class="fas fa-plus-circle"></i> Add</a></li>
-            </ul>
-        </section>
 
             <section id="login-form-container">
                 <div id="login-logo">
-                    <a href="index.html">
+                    <a href="index.php">
                         <img src="img/Wild-Logo.png" alt="Wild Code School logo">
                     </a>
                 </div>
