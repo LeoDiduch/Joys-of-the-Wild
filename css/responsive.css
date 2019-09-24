@@ -1,10 +1,14 @@
 @charset "utf-8";
 
 :root {
-   --dark-blue: #616161;
+   /*--mobile-gradient: #616161;
    --light-pink: rgb(234, 101, 90);
    --opa-blue: #61616113;
-   /*--opa-blue: #ee0083c4;*/
+   --opa-blue: #ee0083c4;*/
+   --gradient: radial-gradient( circle farthest-corner at 0% 0%,  rgba(247,108,108,1) 0%, rgb(238, 237, 237) 38%);
+   --mobile-gradient: radial-gradient( circle farthest-corner at 0% 0%,  rgba(247,108,108,1) 0%, rgb(238, 237, 237) 98%);
+   --wild-red: rgb(250, 82, 82);
+   --opa-blue: #61616113;
 }
 
 
@@ -46,6 +50,7 @@ img {
 
 * {
    box-sizing: border-box;
+   font-weight: 400;
 }
 
 html,
@@ -113,8 +118,12 @@ a {
 }
 
 ::placeholder {
-   color : rgb(199, 196, 196);
+   color : rgb(180, 180, 180);
    font-weight : 500;
+}
+
+label {
+   font-weight: 400;
 }
 
 /* ---------- DEBUT CSS MOBILE ---------- */
@@ -122,7 +131,7 @@ a {
 /* ---------- HEADER ---------- */
 header {
    padding: 5px 20px;
-   background-color: var(--dark-blue);
+   background: var(--mobile-gradient);
    position: fixed;
    width: 100%;
    z-index: 999;
@@ -131,13 +140,14 @@ header {
 header div#logo-div {
    display: block;
 }
-header div#logo-div img {
+header div#logo-div h1 a#logo img {
    display: inline-block;
    vertical-align: middle;
    background-color: white;
    border-radius: 50%;
    padding: 3px;
    border: solid 1px black;
+   margin-right: 8px;
 }
 
 #logo-div h1 {
@@ -161,14 +171,14 @@ header div#interface {
 /* ---------- SEARCH ---------- */
 header div#interface div#searchbar {
    position: relative;
-   background-color: lightgray;
+   background-color: white;
    border-radius: 20px;
    padding: 8px 10px 10px 40px;
    width: 100%;
 }
 header div#interface div#searchbar input {
    border: none;
-   background-color: lightgray;
+   background-color: white;
    width: 100%;
 }
 header div#interface div#searchbar button {
@@ -187,14 +197,14 @@ header div#interface div#connect {
 }
 /* ---------- MAIN CONTENT ---------- */
 main {
-   background-color: var(--opa-blue);
+   background-color: #fdfefe;
    min-height: calc(100vh - 42px);
    margin-top: 101px 0;
 }
 main div.container {
    margin-top: 101px;
    padding: 10px 20px;
-   margin-bottom: 40px;
+   margin-bottom: 50px;
 }
 /* ---------- MENU DESKTOP ---------- */
 main aside#sidebar-nav {
@@ -205,7 +215,7 @@ main aside#sidebar-nav {
 main div#burger {
    position: fixed;
    z-index: 999;
-   background-color: rgba(211, 211, 211, 0.233);
+   background-color: rgba(53, 53, 53, 0.233);
    color: white;
    padding: 8px 6px;
    border-radius: 5px;
@@ -249,7 +259,7 @@ main div#burger span:after {
    transition: all 0.3s;
 }
 main aside#mobile-nav {
-   background-color: #d5d5d5;
+   background-color: white;
    width: 300px;
    height: 100vh;
    position: fixed;
@@ -319,7 +329,7 @@ main aside#mobile-nav p {
    font-size: 14px;
    padding: 0 10px 20px 10px;
    position: fixed;
-   bottom: 25px;
+   bottom: 60px;
 }
 main aside#mobile-nav p i {
    color: rgb(243, 130, 130);
@@ -346,6 +356,7 @@ main aside#mobile-nav p i {
 }
 
 #sign-up-form label {
+   font-weight: 400;
    min-width: 190px;
    text-align: center;
 }
@@ -360,6 +371,7 @@ main aside#mobile-nav p i {
 }
 
 #sign-up-form button {
+   color: white;
    padding: 6px 15px;
    margin: 25px 0;
    font-weight: 700;
@@ -416,7 +428,7 @@ main aside#mobile-nav p i {
 #user_profile input, #user_profile label{
    padding: 2% 2%;
    width: 40%;
-   font-weight: 700;
+   font-weight: 400;
    min-width : 75%;
    font-family : 'Roboto', sans-serif;
    font-size : 0.9em;
@@ -431,6 +443,8 @@ main aside#mobile-nav p i {
 }
 
 #user_profile input[type=submit]{
+   font-weight: 400;
+   color: white;
    margin-top : 5%;
    margin-bottom : 7%;
    min-width: 220px;
@@ -438,6 +452,8 @@ main aside#mobile-nav p i {
 }
 
 #user_profile input[type=button]{
+   font-weight: 400;
+   color: white;
    margin-top : 2%;
    margin-bottom : 7%;
    min-width: 220px;
@@ -456,6 +472,9 @@ main aside#mobile-nav p i {
    height : 20vh;
    padding : 2% 2%;
    border-radius: 2px;
+   border: none;
+   border-bottom: solid 1px black;
+   resize: none;
    min-width : 75%;
    font-size : 0.9em;
 }
@@ -467,10 +486,10 @@ main aside#mobile-nav p i {
    flex-flow: row nowrap;
    justify-content: space-around;
    align-items: flex-end;
-   background-color: var(--dark-blue);
+   background-color: var(--mobile-gradient);
    padding: 10px 0;
    position: fixed;
-   bottom: 0;
+   bottom: -5px;
    width: 100%;
    z-index: 999;
 
@@ -478,16 +497,25 @@ main aside#mobile-nav p i {
 
 #bottom-navbar li {
    list-style-type: none;
-
+   width: 100%;
+   display: block;
+   
 }
 
 #bottom-navbar li a {
+   background-color: var(--wild-red);
+   text-align: center;
+   margin: 0 auto;
+   width: 50%;
+   display: block;
    font-size: 0;
+   border-radius: 60%;
 }
 
 #bottom-navbar li a i {
    font-size: 20px;
    color:white;
+   line-height: 65px;
 }
 
 /*---- fin bottom navbar ----*/
@@ -498,7 +526,6 @@ main aside#mobile-nav p i {
    background-color: white;
    width: 100%;
    display: flex;
-   border: solid 1px black;
    margin-bottom: 20px;
 }
 
@@ -575,9 +602,9 @@ article.card {
    margin: 0 auto 20px auto;
    width: 100%;
    background-color: white;
-   border: solid 1px black;
    padding: 20px;
-   border-radius: 5px;
+   border-radius: 15px;
+   box-shadow: 4px 7px 17px 2px rgba(0, 0, 0, 0.521);
 }
 div.info-post {
    margin-bottom: 20px;
@@ -689,11 +716,27 @@ aside#you-may-like, aside#partners {
 }
 
 #login-form button {
+   color: white;
    padding: 6px 15px;
    margin: 25px 0;
    font-weight: 700;
 }
 /*------ Fin page home Mobile ----*/
+/* ------ HOVERS BUTTONS -------*/
+.example_f {
+   border-radius: 4px;
+   background: var(--wild-red);
+   border: none;
+   color: black;
+   text-align: center;
+   text-transform: uppercase;
+   font-size: 22px;
+   padding: 20px;
+   width: 200px;
+   transition: all 0.4s;
+   cursor: pointer;
+   margin: 5px;
+ }
 
 /* ---------- FOOTER ---------- */
 footer {
