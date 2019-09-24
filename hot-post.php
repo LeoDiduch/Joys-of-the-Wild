@@ -1,84 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php include 'header.php';?>
 
-<head>
-    <meta charset="UTF-8">
-    <title>Joys of the Wild</title>
-
-    <link type="text/css" media="(min-width: 961px)" rel="stylesheet" href="css/style.css" />
-    <link type="text/css" media="(max-width: 960px)" rel='stylesheet' href='css/responsive.css' />
-
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/8529c819c9.js"></script>
-    <meta content="width=device-width, initial-scale=1" name="viewport">
-    <meta name="description"
-        content="Joys of the Wild is a site where you can share your feelings about IT with your Wild side !" />
-    <meta name="author" content="Group 1 (The finest)">
-    <!--[if lt IE 9]>
-       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-   <![endif]-->
-    <!--[if IE 7]>
-       <link href="css/stylesie7.css" rel="stylesheet" type="text/css" media="screen">
-   <![endif]-->
-</head>
-
-<body>
-    <header>
-        <div id="logo-div">
-            <h1><a href="index.html" id="logo"><img src="img/Wild-Logo.png" alt="wild-code-school-logo">JOYS OF THE WILD</a></h1>
-        </div>
-
-        <div id="interface">
-            <div id="searchbar">
-                <button type="submit"><i class="fa fa-search"></i></button>
-                <input type="text" id="searchbox" placeholder="Search ...">
-            </div>
-
-            <div id="connect">
-                <a id="login" class="primary-btn" href="login.html">Login</a>
-                <a id="signup" class="primary-btn" href="sign-up.html">SignUp</a>
-            </div>
-        </div>
-    </header>
-
-    <main>
-        <aside id="sidebar-nav">
-            <ul>
-                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
-                <li><a href="hot-post.html"><i class="fas fa-star"></i> Hot Posts</a></li>
-                <li><a href="random.html"><i class="fas fa-random"></i> Random</a></li>
-                <li><a href="profil.html"><i class="fas fa-user-circle"></i> Your Profile</a></li>
-                <li><a href="login.html"><i class="fas fa-power-off"></i> Disconnect</a></li>
-            </ul>
-
-        </aside>
-
-        <div id="burger" onclick="changeStyle()">
-            <p>MENU</p>
-            <span id="cross"></span>
-        </div>
-
-        <aside id="mobile-nav">
-
-            <ul>
-                <li><a href="random.html"><i class="fas fa-random"></i> Random</a></li>
-                <li><a href="login.html"><i class="fas fa-user-circle"></i> Login</a></li>
-                <li><a href="sign-up.html"><i class="fas fa-user-circle"></i> Signup</a></li>
-                <li><a href="login.html"><i class="fas fa-power-off"></i> Disconnect</a></li>
-            </ul>
-            <p>Made with <i class="fas fa-heart"></i> by <a href="https://www.wildcodeschool.com/">Wild Code
-                    School.</a><br>
-                Copyright 2019®</p>
-        </aside>
-
-        <section>
-            <ul id="bottom-navbar">
-                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
-                <li><a href="hot-post.html"><i class="fas fa-star"></i> Hot Posts</a></li>
-                <li><a href="profil.html"><i class="fas fa-user-circle"></i> Your Profile</a></li>
-                <li><a href="index.html"><i class="fas fa-plus-circle"></i> Add</a></li>
-            </ul>
-        </section>
+<?php include 'menus.php';?>
 
         <div class="container">
             <article class="card">
@@ -257,14 +179,5 @@
                 <h2>Partner Ads :</h2>
             </aside>
         </div>
-    </main>
 
-    <footer>
-        <p>Made with <i class="fas fa-heart"></i> by <a href="https://www.wildcodeschool.com/">Wild Code School</a>.
-            Copyright 2019®</p>
-    </footer>
-
-    <script type="text/javascript" src="burger.js"></script>
-</body>
-
-</html>
+<?php include 'footer.php';?>
