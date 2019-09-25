@@ -19,7 +19,7 @@
 
         <div class="card-text">
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet repellat quo placeat.
+                Quand tu commences un nouveau language
             </p>
         </div>
 
