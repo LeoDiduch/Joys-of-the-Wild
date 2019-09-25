@@ -734,6 +734,26 @@ aside#you-may-like, aside#partners {
    margin: 5px;
  }
 
+ /* Random page*/
+
+#randomButtonSection {
+   display: flex;
+   justify-content: flex-end;
+}
+
+#randomButton {
+   color: white;
+   background-color: var(--wild-red);
+   border: solid 1px var(--wild-red);
+   min-width: 120px;
+   padding: 5px 30px;
+   cursor: pointer;
+   transition: all .7s;
+   border-radius: 5px;
+   margin: 15px 0;
+   font-size: 16px;
+}
+
 /* ---------- FOOTER ---------- */
 footer {
    display: none;

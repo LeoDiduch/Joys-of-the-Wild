@@ -814,6 +814,30 @@ aside#partners h2:after {
    opacity: 1;
    right: 0;
  }
+
+/* Random page*/
+
+#randomButtonSection {
+   display: flex;
+   justify-content: flex-end;
+   width: 80%;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+#randomButton {
+   color: white;
+   background-color: var(--wild-red);
+   border: solid 1px var(--wild-red);
+   min-width: 120px;
+   padding: 5px 30px;
+   cursor: pointer;
+   transition: all .7s;
+   border-radius: 5px;
+   margin: 10px 0 15px 0;
+   font-size: 16px;
+}
+
 /* ------------------------ MEDIA QUERIES 960px ---- */
 
 @media screen and (max-width: 1280px) {
@@ -825,5 +849,8 @@ aside#partners h2:after {
    }
    div.card-buttons {
       padding: 0 25px;
+   }
+   #randomButtonSection {
+      width: 100%;
    }
 }
