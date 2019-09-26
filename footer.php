@@ -1,6 +1,6 @@
     </main>
 
-    <a href="#topbar" id="top-btn"><i class="fas fa-angle-double-up"></i></a>
+    <a href="" id="top-btn"><i class="fas fa-angle-double-up"></i></a>
 
     <footer>
         <p>Made with <i class="fas fa-heart"></i> by <a href="https://www.wildcodeschool.com/">Wild Code School</a>.

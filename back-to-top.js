@@ -9,10 +9,15 @@ window.addEventListener('scroll', () => {
     }
 });
 
-document.addEventListener('click', () => {
-    const clickfunc = document.getElementById("top-btn");
 
 
+window.addEventListener('click', () => {
+    const top = document.getElementById("topbar");
+    var scrollOptions = {
+        
+        behavior: scrollInput.clicked ? 'smooth' : 'auto'
+    }
+    window.scrollTo(scrollOptions);
 });
 
 
