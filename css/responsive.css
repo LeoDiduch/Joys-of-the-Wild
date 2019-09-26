@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 :root {
-   --gradient: radial-gradient( circle farthest-corner at 0% 0%,  rgba(247,108,108,1) 0%, rgb(238, 237, 237) 38%);
+   --gradient: radial-gradient( circle farthest-corner at 0% 0%,  rgba(247,108,108,1) 0%, rgb(238, 237, 237) 110%);
    --mobile-gradient: radial-gradient( circle farthest-corner at 0% 0%,  rgba(247,108,108,1) 0%, rgb(238, 237, 237) 98%);
    --wild-red: rgb(250, 82, 82);
    --opa-blue: #61616113;
@@ -733,6 +733,26 @@ aside#you-may-like, aside#partners {
    cursor: pointer;
    margin: 5px;
  }
+
+ /* Random page*/
+
+#randomButtonSection {
+   display: flex;
+   justify-content: flex-end;
+}
+
+#randomButton {
+   color: white;
+   background-color: var(--wild-red);
+   border: solid 1px var(--wild-red);
+   min-width: 120px;
+   padding: 5px 30px;
+   cursor: pointer;
+   transition: all .7s;
+   border-radius: 5px;
+   margin: 15px 0;
+   font-size: 16px;
+}
 
 /* ---------- FOOTER ---------- */
 footer {
