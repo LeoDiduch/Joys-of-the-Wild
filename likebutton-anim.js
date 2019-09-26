@@ -21,12 +21,12 @@ function anim() {
     icon.classList.toggle("white");
 
     // text switch else/if
-    let textSwitch = document.getElementsById("like-btn-text");
+    let textSwitch = document.getElementById("like-btn-text");
     if (textSwitch.innerHTML === "Wild It !") {
-        textSwitch.innerHTML === "WILDED !";
+        textSwitch.innerHTML = "WILDED !";
         textSwitch.style.color="white";
     } else {
-        textSwitch.innerHTML === "Wild It !";
+        textSwitch.innerHTML = "Wild It !";
         textSwitch.style.color="black";
     }
 }

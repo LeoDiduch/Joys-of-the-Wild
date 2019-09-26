@@ -25,7 +25,7 @@
 <body>
     <header>
         <div id="logo-div">
-            <h1><a href="index.php" id="logo"><img src="img/Wild-Logo.png" alt="wild-code-school-logo">JOYS OF THE WILD</a></h1>
+            <h1><a href="index.php" id="logo"><img src="img/Wild-Logo.png" alt="wild-code-school-logo">WILD IT !</a></h1>
         </div>
 
         <div id="interface">

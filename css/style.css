@@ -46,6 +46,7 @@ img {
 * {
    box-sizing: border-box;
    font-weight: 400;
+   scroll-behavior: smooth;
 }
 
 html,
@@ -321,7 +322,6 @@ main aside#mobile-nav {
 /* ---------- FOOTER ---------- */
 
 a#top-btn {
-   display: none;
    padding: 5px 10px;
    position: fixed;
    bottom: 40px;
@@ -329,7 +329,9 @@ a#top-btn {
    z-index: 999;
    border: solid 2px var(--wild-red);
    border-radius: 5px;
-   background-color: white;
+   background-color:white;
+   transition: all 1s;
+   opacity: 0;
 }
 
 a#top-btn i {
@@ -612,6 +614,10 @@ div.card-buttons button i {
    margin-right: 5px;
 }
 div.card-buttons button p {
+   display: inline-block;
+   color: black;
+}
+div.card-buttons button p#like-btn-text {
    display: inline-block;
    color: black;
 }
