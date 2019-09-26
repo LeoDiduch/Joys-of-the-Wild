@@ -108,7 +108,7 @@
         </div>
     </article>
 
-    <article class="card" id="cardFour ">
+    <article class="card" id="cardFour">
 
         <div class="info-post">
             <img src="img/Wild-Logo.png" alt="">
@@ -138,6 +138,7 @@
             </div>
         </div>
     </article>
+
     <article class="card" id="cardFive">
 
         <div class="info-post">
@@ -160,7 +161,7 @@
         </figure>
 
         <div class="card-buttons">
-            <button id="like-btn" class="primary-btn" onclick="anim()"></button>
+            <button class="primary-btn"><i class="fas fa-thumbs-up"></i> Wild It !</button>
             <div class="share">
                 <ul>
                     <li><a href=""><i class="fab fa-facebook-square"></i></a></li>
