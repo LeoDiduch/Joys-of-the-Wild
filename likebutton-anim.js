@@ -28,6 +28,7 @@ function anim() {
         }
         let counter = getRandomInt(100);
         text.innerHTML = counter;
+        text.style.color="white";
     } else {
         textSwitch.innerHTML = "Wild It !";
         textSwitch.style.color="black";
