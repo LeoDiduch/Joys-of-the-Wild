@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 :root {
-   --gradient: radial-gradient( circle farthest-corner at 0% 0%,  rgba(247,108,108,1) 0%, rgb(238, 237, 237) 38%);
+   --gradient: radial-gradient(circle farthest-corner at 0% 0%, rgba(247, 108, 108, 1) 0%, rgb(238, 237, 237) 38%);
    --wild-red: rgb(250, 82, 82);
    --opa-blue: #61616113;
 }
@@ -109,6 +109,7 @@ button {
    cursor: pointer;
    border: solid 1px transparent;
 }
+
 .primary-btn {
    border: none;
    padding: 8px 50px;
@@ -277,6 +278,7 @@ main aside#sidebar-nav ul li a {
    font-size: 16px;
    transition: all .7s;
 }
+
 main aside#sidebar-nav ul li a:hover i {
    transform: rotate(360deg);
    color: var(--wild-red);
@@ -306,6 +308,7 @@ main aside#sidebar-nav ul li a i {
    color: lightgray;
    transition: all .7s
 }
+
 /* ---------- MENU MOBILE ---------- */
 main div#burger {
    display: none;
@@ -316,6 +319,22 @@ main aside#mobile-nav {
 }
 
 /* ---------- FOOTER ---------- */
+
+a#top-btn {
+   display: none;
+   padding: 5px 10px;
+   position: fixed;
+   bottom: 40px;
+   right: 20px;
+   z-index: 999;
+   border: solid 2px var(--wild-red);
+   border-radius: 5px;
+   background-color: rgba(0, 0, 0, 0.178);
+}
+
+a#top-btn i {
+   color: var(--wild-red);
+}
 
 footer {
    display: flex;
@@ -341,9 +360,11 @@ footer i {
    padding-top: 100px;
    min-height: calc(100vh - 84px);
 }
+
 #sign-up-form-container form#sign-up-form img {
    margin-bottom: 20px;
 }
+
 #login-logo {
    display: flex;
    flex-direction: column;
@@ -363,9 +384,11 @@ footer i {
    width: 40%;
    font-weight: 700;
 }
+
 #sign-up-form label {
    font-weight: 300;
 }
+
 #sign-up-form input {
    border-radius: 2px;
    border: 0px;
@@ -373,6 +396,7 @@ footer i {
    background-color: transparent;
    margin-bottom: 2%;
 }
+
 #sign-up-form button {
    padding: 6px 15px;
    margin: 25px 0;
@@ -403,6 +427,7 @@ section #bottom-navbar {
    display: inline-block;
    position: relative;
 }
+
 #blank:after {
    content: "";
    display: block;
@@ -445,10 +470,12 @@ section #bottom-navbar {
    padding: 8px 20px;
    border: solid 1px black;
 }
+
 #control-btn button#add-media:hover i {
    transition: all .5s;
    color: rgb(50, 196, 31);
 }
+
 #control-btn button#add-tag:hover i {
    transition: all .5s;
    color: rgb(50, 196, 31);
@@ -469,12 +496,15 @@ section #bottom-navbar {
    transition: all .2s;
    transform-origin: center;
 }
+
 #control-send a i:hover {
    transform: scale3d(1.1, 1.1, 1.1);
 }
+
 #control-send a#send:hover i {
    color: rgb(50, 196, 31);
 }
+
 #control-send a#cancel:hover i {
    color: var(--wild-red);
 }
@@ -499,9 +529,10 @@ article.card {
    border: solid 1px transparent;
    padding: 20px;
    border-radius: 15px;
-   box-shadow: 4px 7px 17px 2px rgba(0,0,0,0.2);
+   box-shadow: 4px 7px 17px 2px rgba(0, 0, 0, 0.2);
    margin-bottom: 40px;
 }
+
 article.card:after {
    content: "";
    display: block;
@@ -570,9 +601,70 @@ div.card-buttons {
 }
 
 div.card-buttons button {
+   color: black;
    cursor: pointer;
    border: solid 1px black;
+   transition: all .7s;
+   min-width: 183px;
 }
+div.card-buttons button i {
+   display: inline-block;
+   margin-right: 5px;
+}
+div.card-buttons button p {
+   display: inline-block;
+   color: black;
+}
+
+/* ------------------------ ANIM LIKE BUTTON ------- */
+
+.green {
+   color: #43ab92;
+}
+.white {
+   color: white;
+}
+.flipped {
+   backface-visibility: visible;
+   -webkit-backface-visibility: visible;
+   backface-visibility: visible;
+   -webkit-animation-name: flip;
+   animation-name: flip;
+   -webkit-animation-duration: 1s;
+   animation-duration: 1s;
+   -webkit-animation-fill-mode: both;
+   animation-fill-mode: both;
+}
+
+@keyframes flip{
+   0% {
+      transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+      transition-timing-function: ease-in;
+      opacity: 1;
+   }
+
+   40% {
+      transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+      transition-timing-function: ease-in;
+   }
+
+   60% {
+      transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+      opacity: 1;
+   }
+
+   80% {
+      transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+   }
+
+   100% {
+      transform: perspective(400px);
+      /*background-color: #43ab92;*/
+      background-color: #43ab92;
+      border: solid 1px #43ab92;
+   }
+}
+
 div.card-buttons div.share ul {
    font-size: 0;
    list-style-type: none;
@@ -595,10 +687,6 @@ div.card-buttons div.share ul li a i:hover {
    color: rgb(250, 82, 82);
 }
 
-div.card-buttons button i {
-   color: #43ab92;
-}
-
 div#asides-partners {
    width: calc(20% - 20px);
    margin: 10px 10px 10px 0;
@@ -614,8 +702,8 @@ aside#partners {
    padding: 20px;
    border: solid 1px transparent;
    border-radius: 5px;
-   box-shadow: 4px 7px 17px 2px rgba(0,0,0,0.2);
-   
+   box-shadow: 4px 7px 17px 2px rgba(0, 0, 0, 0.2);
+
 }
 
 aside#you-may-like h2,
@@ -624,6 +712,7 @@ aside#partners h2 {
    font-size: 18px;
    font-weight: 400;
 }
+
 aside#you-may-like h2:after,
 aside#partners h2:after {
    content: "";
@@ -635,6 +724,7 @@ aside#partners h2:after {
    border: solid 1px var(--wild-red);
    border-radius: 15px;
 }
+
 /* Fin page home*/
 
 /*USER PROFILE*/
@@ -743,9 +833,10 @@ aside#partners h2:after {
    margin-top: 7px;
    min-height: calc(100vh - 84px)
 }
+
 #login-form-container div#login-logo a img {
    margin-bottom: 20px;
-} 
+}
 
 #login-form {
    display: flex;
@@ -778,6 +869,7 @@ aside#partners h2:after {
    font-weight: 700;
    color: white;
 }
+
 /* ------ HOVERS BUTTONS -------*/
 .example_f {
    border-radius: 4px;
@@ -792,37 +884,46 @@ aside#partners h2:after {
    transition: all 0.4s;
    cursor: pointer;
    margin: 5px;
- }
- .example_f span {
+}
+
+.example_f span {
    cursor: pointer;
    display: inline-block;
    position: relative;
    transition: 0.4s;
- }
- .example_f span:after {
+}
+
+.example_f span:after {
    content: '\00bb';
    position: absolute;
    opacity: 0;
    top: 0;
    right: -20px;
    transition: 0.5s;
- }
- .example_f:hover span {
+}
+
+.example_f:hover span {
    padding-right: 25px;
- }
- .example_f:hover span:after {
+}
+
+.example_f:hover span:after {
    opacity: 1;
    right: 0;
- }
+}
+
+
+
 /* ------------------------ MEDIA QUERIES 960px ---- */
 
 @media screen and (max-width: 1280px) {
    main div.container div#add-post div#post-form {
       width: 90%;
    }
+
    article.card {
       width: 100%;
    }
+
    div.card-buttons {
       padding: 0 25px;
    }

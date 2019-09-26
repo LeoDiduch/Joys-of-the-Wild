@@ -57,7 +57,7 @@
                 </figure>
 
                 <div class="card-buttons">
-                    <button class="primary-btn"><i class="fas fa-thumbs-up"></i> Wild It !</button>
+                    <button id ="like-btn" class="primary-btn" onclick="anim()"></button>
                     <div class="share">
                         <ul>
                             <li><a href=""><i class="fab fa-facebook-square"></i></a></li>
@@ -89,7 +89,7 @@
                 </figure>
 
                 <div class="card-buttons">
-                    <button class="primary-btn like-btn" onclick="flip()"><i class="fas fa-thumbs-up"></i> Wild It !</button>
+                    <button id ="like-btn" class="primary-btn" onclick="anim()"></button>
                     <div class="share">
                         <ul>
                             <li><a href=""><i class="fab fa-facebook-square"></i></a></li>
@@ -121,7 +121,7 @@
                 </figure>
 
                 <div class="card-buttons">
-                    <button class="primary-btn"><i class="fas fa-thumbs-up"></i> Wild It !</button>
+                    <button id ="like-btn" class="primary-btn" onclick="anim()"></button>
                     <div class="share">
                         <ul>
                             <li><a href=""><i class="fab fa-facebook-square"></i></a></li>
@@ -151,7 +151,7 @@
                 </figure>
 
                 <div class="card-buttons">
-                    <button class="primary-btn"><i class="fas fa-thumbs-up"></i> Wild It !</button>
+                    <button id ="like-btn" class="primary-btn" onclick="anim()"></button>
                     <div class="share">
                         <ul>
                             <li><a href=""><i class="fab fa-facebook-square"></i></a></li>
