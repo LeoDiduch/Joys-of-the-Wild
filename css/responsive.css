@@ -670,9 +670,61 @@ div.card-buttons div.share ul li a i {
 }
 div.card-buttons button {
    padding: 8px 20px;
+   min-width: 120px;
+}
+div.card-buttons button p#like-btn-text {
+   display: inline-block;
 }
 div.card-buttons button i {
+   margin-right: 5px;
+}
+/* ------------------------ ANIM LIKE BUTTON ------- */
+
+.green {
    color: #43ab92;
+}
+.white {
+   color: white;
+}
+.flipped {
+   backface-visibility: visible;
+   -webkit-backface-visibility: visible;
+   backface-visibility: visible;
+   -webkit-animation-name: flip;
+   animation-name: flip;
+   -webkit-animation-duration: 1s;
+   animation-duration: 1s;
+   -webkit-animation-fill-mode: both;
+   animation-fill-mode: both;
+}
+
+@keyframes flip{
+   0% {
+      transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+      transition-timing-function: ease-in;
+      opacity: 1;
+   }
+
+   40% {
+      transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+      transition-timing-function: ease-in;
+   }
+
+   60% {
+      transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+      opacity: 1;
+   }
+
+   80% {
+      transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+   }
+
+   100% {
+      transform: perspective(400px);
+      /*background-color: #43ab92;*/
+      background-color: #43ab92;
+      border: solid 1px #43ab92;
+   }
 }
 
 div#asides-partners {
