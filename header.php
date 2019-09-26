@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>WILD IT !</title>
+    <link rel="shortcut icon" type="image/png" href="img/Wild-Logo.png" />
 
     <link type="text/css" media="(min-width: 961px)" rel="stylesheet" href="css/style.css" />
     <link type="text/css" media="(max-width: 960px)" rel='stylesheet' href='css/responsive.css' />
