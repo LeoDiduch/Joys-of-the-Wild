@@ -3,21 +3,10 @@ window.addEventListener('scroll', () => {
     const scrollfunc = document.getElementById("top-btn");
     
     if(scrollpos >= 100) {
-        scrollfunc.style.display="inline-block";
+        scrollfunc.style.opacity="1";
+        scrollfunc.style.scrollBehavior="smooth";
     } else {
-        scrollfunc.style.display="none";
+        scrollfunc.style.opacity="0";
+        scrollfunc.style.scrollBehavior="smooth";
     }
 });
-
-
-
-window.addEventListener('click', () => {
-    const top = document.getElementById("topbar");
-    var scrollOptions = {
-        
-        behavior: scrollInput.clicked ? 'smooth' : 'auto'
-    }
-    window.scrollTo(scrollOptions);
-});
-
-
