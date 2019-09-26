@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Joys of the Wild</title>
+    <title>WILD IT !</title>
 
     <link type="text/css" media="(min-width: 961px)" rel="stylesheet" href="css/style.css" />
     <link type="text/css" media="(max-width: 960px)" rel='stylesheet' href='css/responsive.css' />
