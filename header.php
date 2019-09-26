@@ -4,15 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <title>WILD IT !</title>
-    <link rel="shortcut icon" type="image/png" href="img/Wild-Logo.png" />
+    <link rel="shortcut icon" type="image/png" href="img/iconeWildIt.png"/>
 
     <link type="text/css" media="(min-width: 961px)" rel="stylesheet" href="css/style.css" />
     <link type="text/css" media="(max-width: 960px)" rel='stylesheet' href='css/responsive.css' />
 
-    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700&display=swap" rel="stylesheet">
     <meta content="width=device-width, initial-scale=1" name="viewport">
-    <meta name="description"
-        content="Joys of the Wild is a site where you can share your feelings about IT with your Wild side !" />
+    <meta name="description" content="Joys of the Wild is a site where you can share your feelings about IT with your Wild side !" />
     <meta name="author" content="Group 1 (The finest)">
     <!--[if lt IE 9]>
        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -39,4 +38,4 @@
                 <a id="signup" class="primary-btn" href="sign-up.php">SignUp</a>
             </div>
         </div>
-    </header> 
+    </header>

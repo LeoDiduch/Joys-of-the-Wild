@@ -4,19 +4,21 @@ function randomCard() {
     const cardTwo = document.getElementById('cardTwo');
     const cardThree = document.getElementById('cardThree');
     const cardFour = document.getElementById('cardFour');
+    const cardFive = document.getElementById('cardFive');
 
     cardOne.style.display = 'none';
     cardTwo.style.display = 'none';
     cardThree.style.display = 'none';
     cardFour.style.display = 'none';
+    cardFive.style.display = 'none';
 
-    cardList = [cardOne, cardTwo, cardThree, cardFour];
+    cardList = [cardOne, cardTwo, cardThree, cardFour, cardFive];
 
     function getRandomInt(max) {
         return Math.floor(Math.random() * Math.floor(max));
     }
 
-    cardList[getRandomInt(4)].style.display = 'block';
+    cardList[getRandomInt(5)].style.display = 'block';
 }
 
 randomCard();
