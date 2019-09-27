@@ -27,7 +27,7 @@ function anim() {
             return Math.floor(Math.random() * Math.floor(max));
         }
         let counter = getRandomInt(100);
-        text.innerHTML = counter;
+        text.innerHTML = "WILDED !";
         text.style.color="white";
     } else {
         textSwitch.innerHTML = "Wild It !";
