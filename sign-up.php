@@ -2,6 +2,7 @@
 
 <?php include 'menus.php';?>
 
+    <div class="container">
         <section id="sign-up-form-container">
             <form id="sign-up-form">
                     <img src="img/Wild-Logo.png" alt="Wild Code School logo">
@@ -18,5 +19,6 @@
 
             </form>
         </section>
+    </div>
 
 <?php include 'footer.php';?>

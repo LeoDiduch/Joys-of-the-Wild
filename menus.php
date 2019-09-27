@@ -1,4 +1,4 @@
-<main>
+<main id="topbar">
         <aside id="sidebar-nav">
             <ul>
                 <li><a href="index.php"><i class="fas fa-home"></i> Home</a></li>
@@ -24,7 +24,7 @@
                 <li><a href="login.php"><i class="fas fa-power-off"></i> Disconnect</a></li>
             </ul>
             <p>Made with <i class="fas fa-heart"></i> by <a href="https://www.wildcodeschool.com/">Wild Code School.</a><br>
-            Copyright 2019®</p>
+            Copyright 2019 ®</p>
         </aside>
 
         <section>
