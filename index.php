@@ -11,6 +11,7 @@
     <!--</form>-->
     <?php
         $keyId=1;
+        foreach ($cards as $key => $cardDescriptions) {
     ?>
         <article class="card" id="card-<?=$keyId?>">
             <div class="info-post">
