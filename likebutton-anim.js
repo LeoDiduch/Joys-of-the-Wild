@@ -23,10 +23,6 @@ function anim() {
     // text switch else/if
     let textSwitch = document.getElementById("like-btn-text");
     if (textSwitch.innerHTML === "Wild It !") {
-        function getRandomInt(max) {
-            return Math.floor(Math.random() * Math.floor(max));
-        }
-        let counter = getRandomInt(100);
         text.innerHTML = "WILDED !";
         text.style.color="white";
     } else {
@@ -34,4 +30,3 @@ function anim() {
         textSwitch.style.color="black";
     }
 }
-
