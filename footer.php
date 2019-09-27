@@ -12,6 +12,7 @@
     <script type="text/javascript" src="likebutton-anim.js"></script>
     <script type="text/javascript" src="back-to-top.js"></script>
     <script type="text/javascript" src="tag-popin.js"></script>
+    <script type="text/javascript" src="media-popin.js"></script>
 </body>
 
 </html>

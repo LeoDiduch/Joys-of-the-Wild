@@ -3,7 +3,12 @@ const popin = document.getElementById("tag-popin");
 const closebtn = document.getElementById("close-tag");
 
 popinbtn.addEventListener('click', () => {
-    popin.style.display="flex";    
+    if (window.innerWidth < 961 ){
+        popin.style.display="block";  
+    } else {
+        popin.style.display="flex";  
+    }
+      
 });
 
 closebtn.addEventListener('click', () => {
