@@ -37,10 +37,11 @@
         <button id="close-tag" type="submit">Close</button>
 
     </div>
-    <?php
-    foreach ($cards as $key => $cardDescriptions) {
-        ?>
 
+
+    <?php
+        foreach ($cards as $key => $cardDescriptions) {
+    ?>
 
         <article class="card" id="cardOne">
 
@@ -61,90 +62,20 @@
             <figure class="post-media">
                 <?php
                     if (isset($cardDescriptions[6])) {
-                        ?>
-                    <img src="" alt="">
-                    <video autoplay="" loop="" muted="" playsinline="">
-                        <source src="https://ljdchost.com/038/HsO3DA6.webm" type="video/webm">
-                        <source src="https://ljdchost.com/038/HsO3DA6.mp4" type="video/mp4">
-                        <object data="https://ljdchost.com/038/HsO3DA6.gif" type="image/gif"></object>
-                    </video>
-            </figure>
-
-            <div class="card-buttons">
-                <button id="like-btn" class="primary-btn" onclick="anim()"></button>
-                <div class="share">
-                    <ul>
-                        <li><a href=""><i class="fab fa-facebook-square"></i></a></li>
-                        <li><a href=""><i class="fab fa-twitter"></i></a></li>
-                        <li><a href=""><i class="fab fa-slack-hash"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-        </article>
-
-        <article class="card" id="cardTwo">
-
-            <div class="info-post">
-                <img src="img/Wild-Logo.png" alt="">
-                <div class="profile-post">
-                    <strong>Benjamin posted :</strong>
-                    <p>26/09/2019 - 15h37</p>
-                </div>
-            </div>
-
-            <div class="card-text">
-                <p>
-                    Quand tu as fait tes quêtes Git
-                </p>
-            </div>
-
-            <img src="<?= $cardDescriptions[6] ?>" alt="">
-
-        <?php
-            } elseif (isset($cardDescriptions[5])) {
                 ?>
-            <video autoplay="" loop="" muted="" playsinline="">
-                <source src="<?= $cardDescriptions[5] ?>" type="video/webm">
-                <!--<source src="https://ljdchost.com/038/HsO3DA6.mp4" type="video/mp4">
-                <object data="https://ljdchost.com/038/HsO3DA6.gif" type="image/gif"></object>-->
-            </video>
-        <?php
-            }
-            ?>
-        </figure>
+                    <img src="<?= $cardDescriptions[6] ?>" alt="">
 
-        <div class="card-buttons">
-            <button class="primary-btn"><i class="fas fa-thumbs-up"></i><?= $cardDescriptions[7] ?> Wild It !</button>
-            <div class="card-buttons">
-                <button id="like-btn" class="primary-btn" onclick="anim()"></button>
-                <div class="share">
-                    <ul>
-                        <li><a href=""><i class="fab fa-facebook-square"></i></a></li>
-                        <li><a href=""><i class="fab fa-twitter"></i></a></li>
-                        <li><a href=""><i class="fab fa-slack-hash"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-        </article>
-
-        <article class="card" id="cardThree">
-
-            <div class="info-post">
-                <img src="img/Wild-Logo.png" alt="">
-                <div class="profile-post">
-                    <strong>Theo posted :</strong>
-                    <p>26/09/2019 - 15h37</p>
-                </div>
-            </div>
-
-            <div class="card-text">
-                <p>
-                    Quand tu essaies de gagner alors que les autres trichent !
-                </p>
-            </div>
-
-            <figure class="post-media">
-                <img src="img/Essaie-gagner.jpg" alt="">
+                <?php
+                    } elseif (isset($cardDescriptions[5])) {
+                ?>
+                <video autoplay="" loop="" muted="" playsinline="">
+                    <source src="<?= $cardDescriptions[5] ?>" type="video/webm">
+                    <!--<source src="https://ljdchost.com/038/HsO3DA6.mp4" type="video/mp4">
+                    <object data="https://ljdchost.com/038/HsO3DA6.gif" type="image/gif"></object>-->
+                </video>
+                <?php
+                    }
+                ?>
             </figure>
 
             <div class="card-buttons">
@@ -158,30 +89,10 @@
                 </div>
             </div>
         </article>
-
-        <article class="card" id="cardFour">
 
         <?php
         }
         ?>
-
-
-        <figure class="post-media">
-            <img src="https://images-cdn.9gag.com/photo/aV3wWMd_700b.jpg" alt="">
-        </figure>
-
-        <div class="card-buttons">
-            <button id="like-btn" class="primary-btn" onclick="anim()"></button>
-            <div class="share">
-                <ul>
-                    <li><a href=""><i class="fab fa-facebook-square"></i></a></li>
-                    <li><a href=""><i class="fab fa-twitter"></i></a></li>
-                    <li><a href=""><i class="fab fa-slack-hash"></i></a></li>
-                </ul>
-            </div>
-        </div>
-        </article>
-
 </div>
 
 <div id="asides-partners">
