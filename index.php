@@ -1,3 +1,4 @@
+<?php require_once ('cards_database.php'); ?>
 <?php include 'header.php'; ?>
 
 <?php include 'menus.php'; ?>
@@ -28,36 +29,50 @@
         </div>
     </div>
 
-
+<?php
+foreach ($cards as $key => $cardDescriptions) {
+?>
 
 
     <article class="card" id="cardOne">
 
         <div class="info-post">
-            <img src="img/Wild-Logo.png" alt="">
+            <img src="<?= $cardDescriptions[0] ?>" alt="">
             <div class="profile-post">
-                <strong>Loïc posted :</strong>
-                <p>26/09/2019 - 15h37</p>
+                <strong><?= $cardDescriptions[1] ?> posted :</strong>
+                <p><?= $cardDescriptions[2] ?> - <?= $cardDescriptions[3] ?></p>
             </div>
         </div>
 
         <div class="card-text">
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet repellat quo placeat.
+                <?= $cardDescriptions[4] ?>
             </p>
         </div>
 
         <figure class="post-media">
-            <img src="" alt="">
+            <?php
+                if (isset ($cardDescriptions[6])) {
+            ?>
+
+            <img src="<?= $cardDescriptions[6] ?>" alt="">
+
+            <?php
+            }
+                elseif (isset ($cardDescriptions[5])){
+            ?>
             <video autoplay="" loop="" muted="" playsinline="">
-                <source src="https://ljdchost.com/038/HsO3DA6.webm" type="video/webm">
-                <source src="https://ljdchost.com/038/HsO3DA6.mp4" type="video/mp4">
-                <object data="https://ljdchost.com/038/HsO3DA6.gif" type="image/gif"></object>
+                <source src="<?= $cardDescriptions[5] ?>" type="video/webm">
+                <!--<source src="https://ljdchost.com/038/HsO3DA6.mp4" type="video/mp4">
+                <object data="https://ljdchost.com/038/HsO3DA6.gif" type="image/gif"></object>-->
             </video>
+            <?php
+            }
+            ?>
         </figure>
 
         <div class="card-buttons">
-            <button class="primary-btn"><i class="fas fa-thumbs-up"></i> Wild It !</button>
+            <button class="primary-btn"><i class="fas fa-thumbs-up"></i><?= $cardDescriptions[7] ?>  Wild It !</button>
             <div class="share">
                 <ul>
                     <li><a href=""><i class="fab fa-facebook-square"></i></a></li>
@@ -68,100 +83,11 @@
         </div>
     </article>
 
-    <article class="card" id="cardTwo">
+    <?php
+    }
+    ?>
 
-        <div class="info-post">
-            <img src="img/Wild-Logo.png" alt="">
-            <div class="profile-post">
-                <strong>Benjamin posted :</strong>
-                <p>26/09/2019 - 15h37</p>
-            </div>
-        </div>
 
-        <div class="card-text">
-            <p>
-                Quand tu as fait tes quêtes Git
-            </p>
-        </div>
-
-        <figure class="post-media">
-            <img src="img/Jean-roch.jpg" alt="">
-        </figure>
-
-        <div class="card-buttons">
-            <button class="primary-btn like-btn" onclick="flip()"><i class="fas fa-thumbs-up"></i> Wild It !</button>
-            <div class="share">
-                <ul>
-                    <li><a href=""><i class="fab fa-facebook-square"></i></a></li>
-                    <li><a href=""><i class="fab fa-twitter"></i></a></li>
-                    <li><a href=""><i class="fab fa-slack-hash"></i></a></li>
-                </ul>
-            </div>
-        </div>
-    </article>
-
-    <article class="card" id="cardThree">
-
-        <div class="info-post">
-            <img src="img/Wild-Logo.png" alt="">
-            <div class="profile-post">
-                <strong>Theo posted :</strong>
-                <p>26/09/2019 - 15h37</p>
-            </div>
-        </div>
-
-        <div class="card-text">
-            <p>
-                Quand tu essaies de gagner alors que les autres trichent !
-            </p>
-        </div>
-
-        <figure class="post-media">
-            <img src="img/Essaie-gagner.jpg" alt="">
-        </figure>
-
-        <div class="card-buttons">
-            <button class="primary-btn"><i class="fas fa-thumbs-up"></i> Wild It !</button>
-            <div class="share">
-                <ul>
-                    <li><a href=""><i class="fab fa-facebook-square"></i></a></li>
-                    <li><a href=""><i class="fab fa-twitter"></i></a></li>
-                    <li><a href=""><i class="fab fa-slack-hash"></i></a></li>
-                </ul>
-            </div>
-        </div>
-    </article>
-    <article class="card" id="cardFour">
-
-        <div class="info-post">
-            <img src="img/Wild-Logo.png" alt="">
-            <div class="profile-post">
-                <strong>Margot posted :</strong>
-                <p>26/09/2019 - 15h37</p>
-            </div>
-        </div>
-
-        <div class="card-text">
-            <p>
-            </p>
-        </div>
-
-        <figure class="post-media">
-            <img src="https://images-cdn.9gag.com/photo/aV3wWMd_700b.jpg" alt="">
-        </figure>
-
-        <div class="card-buttons">
-            <button class="primary-btn"><i class="fas fa-thumbs-up"></i> Wild It !</button>
-            <div class="share">
-                <ul>
-                    <li><a href=""><i class="fab fa-facebook-square"></i></a></li>
-                    <li><a href=""><i class="fab fa-twitter"></i></a></li>
-                    <li><a href=""><i class="fab fa-slack-hash"></i></a></li>
-                </ul>
-            </div>
-        </div>
-    </article>
-</div>
 
 <div id="asides-partners">
     <aside id="you-may-like">
