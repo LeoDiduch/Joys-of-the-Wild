@@ -1,6 +1,6 @@
-<?php include 'header.php'; ?>
+<?php include 'PHP/header.php'; ?>
 
-<?php include 'menus.php'; ?>
+<?php include 'PHP/menus.php'; ?>
 
 <div class="container">
     <section id="randomButtonSection">
@@ -174,13 +174,8 @@
 
 </div>
 
-<div id="asides-partners">
-    <aside id="you-may-like">
-        <h2>You may like :</h2>
-    </aside>
-    <aside id="partners">
-        <h2>Partner Ads :</h2>
-    </aside>
-</div>
-<script type="text/javascript" src="random-card.js"></script>
+<?php include 'PHP/partner.php'; ?>
+
+<script type="text/javascript" src="JS/random-card.js"></script>
+
 <?php include 'footer.php'; ?>

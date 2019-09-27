@@ -10,6 +10,7 @@ $cards = [
         'https://ljdchost.com/038/HsO3DA6.webm" type="video/webm',
         NULL,
         '10',
+        'art-one'
     ],
     [
         'img/Wild-Logo.png',
@@ -19,7 +20,8 @@ $cards = [
         'Quand tu as fait tes quêtes Git',
         '',
         'img/Jean-roch.jpg',
-        '35'
+        '35',
+        'art-two'
     ],
     [
         'img/Wild-Logo.png',
@@ -29,7 +31,8 @@ $cards = [
         'Quand tu essaies de gagner alors que les autres trichent !',
         '',
         'img/Essaie-gagner.jpg',
-        '15'
+        '15',
+        'art-three'
     ],
     [
         'img/Wild-Logo.png',
@@ -39,7 +42,8 @@ $cards = [
         '',
         '',
         'https://images-cdn.9gag.com/photo/aV3wWMd_700b.jpg',
-        '17'
+        '17',
+        'art-four'
     ]
 ];
 

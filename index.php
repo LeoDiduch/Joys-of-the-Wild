@@ -1,17 +1,17 @@
 
-<?php require_once('cards_database.php'); ?>
-<?php include 'header.php'; ?>
+<?php require_once('PHP/cards_database.php'); ?>
+<?php include 'PHP/header.php'; ?>
 
-<?php include 'menus.php'; ?>
+<?php include 'PHP/menus.php'; ?>
 
 <div class="container">
 
     <!--<form action="" method="post">-->
-    <?php include 'poster.php'; ?>    
+    <?php include 'PHP/poster.php'; ?>    
     <!--</form>-->
     <?php
        foreach ($cards as $key => $cardDescriptions) {
-   ?>
+    ?>
        <article class="card" id="">
            <div class="info-post">
                <img src="<?= $cardDescriptions[0] ?>" alt="">
@@ -60,6 +60,6 @@
 
 </div>
 
-<?php include 'partner.php'; ?>
+<?php include 'PHP/partner.php'; ?>
 
-<?php include 'footer.php'; ?>
+<?php include 'PHP/footer.php'; ?>

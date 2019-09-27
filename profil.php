@@ -1,6 +1,6 @@
-<?php include 'header.php';?>
+<?php include 'PHP/header.php';?>
 
-<?php include 'menus.php';?>
+<?php include 'PHP/menus.php';?>
 
         <div class="container">
             <section id="user_profile">
@@ -47,4 +47,4 @@
             </section>
         </div>
 
-<?php include 'footer.php';?>
+<?php include 'PHP/footer.php';?>
