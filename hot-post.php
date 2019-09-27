@@ -1,7 +1,7 @@
-<?php include 'PHP/header.php';?>
+<?php include 'header.php';?>
 
-<?php include 'PHP/menus.php';?>
+<?php include 'menus.php';?>
 
-<?php include 'PHP/partner.php';?>
+<?php include 'partner.php';?>
 
-<?php include 'PHP/footer.php';?>
+<?php include 'footer.php';?>

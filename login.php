@@ -1,6 +1,6 @@
-<?php include 'PHP/header.php';?>
+<?php include 'header.php';?>
 
-<?php include 'PHP/menus.php';?>
+<?php include 'menus.php';?>
 
         <div class="container">
             <section id="login-form-container">
@@ -19,4 +19,4 @@
             </section>  
         </div>
 
-<?php include 'PHP/footer.php';?>
+<?php include 'footer.php';?>

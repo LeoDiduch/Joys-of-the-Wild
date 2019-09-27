@@ -1,6 +1,6 @@
-<?php include 'PHP/header.php'; ?>
+<?php include 'header.php'; ?>
 
-<?php include 'PHP/menus.php'; ?>
+<?php include 'menus.php'; ?>
 
 <div class="container">
     <section id="randomButtonSection">
@@ -174,7 +174,7 @@
 
 </div>
 
-<?php include 'PHP/partner.php'; ?>
+<?php include 'partner.php'; ?>
 
 <script type="text/javascript" src="JS/random-card.js"></script>
 
