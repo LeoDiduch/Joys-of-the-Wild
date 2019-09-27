@@ -475,7 +475,6 @@ section #bottom-navbar {
    transition: all .5s;
    color: rgb(50, 196, 31);
 }
-
 #control-btn button#add-tag:hover i {
    transition: all .5s;
    color: rgb(50, 196, 31);
@@ -519,7 +518,47 @@ textarea#post-text {
    border: none;
    font-family: 'Raleway', sans-serif;
 }
+/*---- Add tag popin -----*/
 
+div#tag-popin {
+   display: none;
+   align-items: center;
+   margin: 0 auto;
+   width: 80%;
+   border-bottom: solid 1px black;
+   padding: 10px;
+   margin-bottom: 40px;
+
+}
+div#tag-popin input {
+   margin-right: 10px;   
+}
+div#tag-popin button {
+   color: white;
+   background-color: var(--wild-red);
+   padding: 3px 8px;
+   border: solid 1px var(--wild-red);
+   border-radius: 5px;
+}
+div#tag-popin button#send-tag {
+   background-color: #43ab92;
+   border: solid 1px #43ab92;
+   margin-right: 10px;
+}
+div#tag-popin button#close-tag {
+   margin-right: 10px;
+   
+}
+.poped {
+   display: block;
+}
+#tag-cancel i {
+   font-size: 22px;
+   color: var(--wild-red);
+   margin-right: 10px;
+}
+
+/*---- Fin Add tag popin -----*/
 /*---- Debut css CARD -----*/
 article.card {
    display: block;
@@ -663,7 +702,6 @@ div.card-buttons button p#like-btn-text {
 
    100% {
       transform: perspective(400px);
-      /*background-color: #43ab92;*/
       background-color: #43ab92;
       border: solid 1px #43ab92;
    }

@@ -28,6 +28,14 @@
         </div>
     </div>
 
+    <div id="tag-popin">
+        <input type="text" placeholder="Add tag please.">
+        <button id="send-tag" type="submit">Add !</button>
+        <a href="" id="tag-cancel"><i class="far fa-times-circle"></i></a>
+        <button id="close-tag" type="submit">Close</button>
+
+    </div>
+
     <article class="card" id="cardOne">
 
         <div class="info-post">
