@@ -714,7 +714,7 @@ div.card-buttons button p#like-btn-text {
 /* ------------------------ ANIM LIKE BUTTON ------- */
 
 .green {
-   color: var(--light-green);
+   color: var(--pale-green);
 }
 .white {
    color: var(--white);
@@ -754,8 +754,8 @@ div.card-buttons button p#like-btn-text {
 
    100% {
       transform: perspective(400px);
-      background-color: var(--light-green);
-      border: solid 1px var(--light-green);
+      background-color: var(--pale-green);
+      border: solid 1px var(--pale-green);
    }
 }
 
@@ -1024,6 +1024,10 @@ aside#partners h2:after {
    border-radius: 5px;
    margin: 10px 0 15px 0;
    font-size: 16px;
+}
+
+div.bordel {
+   display: none;
 }
 
 /* ------------------------ MEDIA QUERIES 960px ---- */
