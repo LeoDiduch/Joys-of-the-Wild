@@ -13,6 +13,7 @@
         $keyId=1;
         foreach ($cards as $key => $cardDescriptions) {
     ?>
+        
         <article class="card" id="card-<?=$keyId?>">
             <div class="info-post">
                 <img src="<?= $cardDescriptions[0] ?>" alt="">
@@ -44,7 +45,8 @@
                     ?>
             </figure>
             <div class="card-buttons">
-                <button id="like-btn" class="primary-btn" onclick="anim()"></button>
+
+                <button id="btn-<?=$keyId?>" class="primary-btn like-btn"></button>
                 <div class="share">
                     <ul>
                         <li><a href=""><i class="fab fa-facebook-square"></i></a></li>
@@ -54,11 +56,13 @@
                 </div>
             </div>
         </article>
+
     <?php
         $keyId++;
     }
     ?>
-
+    
+    
 </div>
 
 <?php include 'partner.php'; ?>

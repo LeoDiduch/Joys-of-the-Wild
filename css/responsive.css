@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 :root {
-   --gradient: radial-gradient( circle farthest-corner at 0% 0%,  rgba(247,108,108,1) 0%, rgb(238, 237, 237) 110%);
+   --mobile-gradient: radial-gradient( circle farthest-corner at 0% 0%,  rgba(247,108,108,1) 0%, rgb(238, 237, 237) 110%);
    --wild-red: rgb(250, 82, 82);
    --opa-blue: #61616113;
    --white: white;

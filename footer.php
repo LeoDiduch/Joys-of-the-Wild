@@ -9,10 +9,11 @@
     
     <script src="https://kit.fontawesome.com/8529c819c9.js"></script>
     <script type="text/javascript" src="burger.js"></script>
-    <script type="text/javascript" src="likebutton-anim.js"></script>
     <script type="text/javascript" src="back-to-top.js"></script>
     <script type="text/javascript" src="tag-popin.js"></script>
     <script type="text/javascript" src="media-popin.js"></script>
+    <script type="text/javascript" src="media-popin.js"></script>
+    <script type="text/javascript" src="likebutton-anim.js"></script>
 </body>
 
 </html>
