@@ -707,13 +707,8 @@ div.card-buttons button span.counter-span {
 div.card-buttons button i {
    display: inline-block;
    margin-right: 10px;
-
 }
-div.card-buttons button p {
-   display: inline-block;
-   color: var(--black);
-}
-div.card-buttons button p#like-btn-text {
+div.card-buttons button p.like-btn-text {
    display: inline-block;
    color: var(--black);
 }

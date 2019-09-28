@@ -38,7 +38,6 @@ for (let i = 0; i <= 4; i++) {
             counter.innerHTML=count-=1;
         }
     });
-
     ids +=1;
 };
 

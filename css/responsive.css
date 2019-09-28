@@ -611,7 +611,7 @@ div#tag-popin {
 div#tag-popin input {
    display: block;
    margin: 0 auto 15px auto;  
-   width: 300px; 
+   width: 250px; 
 }
 div#tag-popin div.adds-controls {
    display: flex;
@@ -653,7 +653,7 @@ div#media-popin strong {
 div#media-popin input {
    display: block;
    margin: 0 auto 15px auto;  
-   width: 300px;  
+   width: 250px;  
 }
 div#media-popin div.adds-controls {
    display: flex;
@@ -679,7 +679,7 @@ div#media-popin div.adds-controls button#send-media {
 /*---- Debut css CARD -----*/
 article.card {
    display: block;
-   margin: 0 auto 20px auto;
+   margin: 0 auto 30px auto;
    width: 100%;
    background-color: var(--white);
    padding: 20px;
@@ -735,6 +735,10 @@ div.card-buttons {
 div.card-buttons button {
    cursor: pointer;
 }
+div.card-buttons button span.counter-span {
+   font-weight: 700;
+   margin-right: 5px;
+}
 div.card-buttons div.share ul {
    font-size: 0;
    list-style-type: none;
@@ -743,7 +747,7 @@ div.card-buttons div.share ul {
 }
 div.card-buttons div.share ul li {
    display: inline-block;
-   margin: 0 10px;
+   margin: 0 5px;
 }
 
 div.card-buttons div.share ul li a i {
