@@ -1,56 +1,15 @@
-
-
-/*//selector of the button
-const button = document.querySelectorAll("button");
-
-//creator for the icon
-const icon = document.createElement("i");
-icon.classList.add("fas");
-icon.classList.add("fa-thumbs-up");
-icon.classList.add("green");
-button.appendChild(icon);
-
-//creator for the text
-const text = document.createElement("p");
-text.id="like-btn-text";
-text.innerHTML = "Wild It !";
-button.appendChild(text);
-
-//onclick function
-function anim() {
-    button.classList.toggle("flipped");
-    icon.classList.toggle("white");
-
-    // text switch else/if
-    let textSwitch = document.getElementById("like-btn-text");
-    if (textSwitch.innerHTML === "Wild It !") {
-        text.innerHTML = "WILDED !";
-        text.style.color="white";
-    } else {
-        textSwitch.innerHTML = "Wild It !";
-        textSwitch.style.color="black";
-    }
-}
-
-button.addEventListener('click', () => {
-    button.classList.toggle("flipped");
-    icon.classList.toggle("white");
-
-    // text switch else/if
-    let textSwitch = document.getElementById("like-btn-text");
-    if (textSwitch.innerHTML === "Wild It !") {
-        text.innerHTML = "WILDED !";
-        text.style.color="white";
-    } else {
-        textSwitch.innerHTML = "Wild It !";
-        textSwitch.style.color="black";
-    }
-});*/
-
-let ids = 1
+let ids = 1;
 
 for (let i = 0; i <= 4; i++) {
     const button = document.getElementById('btn-'+ids);
+    let count = Math.floor(Math.random() * Math.floor(500));
+    
+    let counter = document.createElement("span");
+    counter.classList.add("counter-span");
+    counter.classList.add("green");
+    counter.id='counter-'+ids;
+    counter.innerHTML = count;
+    button.appendChild(counter);
 
     const icon = document.createElement("i");
     icon.classList.add("fas");
@@ -66,15 +25,17 @@ for (let i = 0; i <= 4; i++) {
     button.addEventListener('click', () => {
         button.classList.toggle("flipped");
         icon.classList.toggle("white");
+        counter.classList.toggle("white");
     
-        // text switch else/if
-        let textSwitch = document.getElementById('text-'+ids);
         if (text.innerHTML === "Wild It !") {
             text.innerHTML = "WILDED !";
             text.style.color="white";
+            counter.innerHTML=count+=1;
+            
         } else {
             text.innerHTML = "Wild It !";
             text.style.color="black";
+            counter.innerHTML=count-=1;
         }
     });
 

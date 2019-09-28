@@ -535,6 +535,7 @@ div#tag-popin {
 }
 div#tag-popin:before {
    content: "TAGS :";
+   text-align: right;
    display: block;
    margin-right: 5px;
    font-weight: 700;
@@ -552,8 +553,8 @@ div#tag-popin div.adds-controls button {
    border-radius: 5px;
 }
 div#tag-popin div.adds-controls button#send-tag {
-   background-color: var(--light-green);
-   border: solid 1px var(--light-green);
+   background-color: var(--pale-green);
+   border: solid 1px var(--pale-green);
    margin-right: 10px;
 }
 div#tag-popin div.adds-controls button#close-tag {
@@ -580,6 +581,7 @@ div#media-popin {
 }
 div#media-popin:before {
    content: "MEDIA :";
+   text-align: right;
    display: block;
    margin-right: 5px;
    font-weight: 700;
@@ -598,8 +600,8 @@ div#media-popin div.adds-controls button {
    border-radius: 5px;
 }
 div#media-popin div.adds-controls button#send-media {
-   background-color: var(--light-green);
-   border: solid 1px var(--light-green);
+   background-color: var(--pale-green);
+   border: solid 1px var(--pale-green);
    margin-right: 10px;
 }
 div#tag-popin div.adds-controls button#close-media {
@@ -698,9 +700,14 @@ div.card-buttons button {
    transition: all .7s;
    min-width: 183px;
 }
+div.card-buttons button span.counter-span {
+   font-weight: 700;
+   margin-right: 5px;
+}
 div.card-buttons button i {
    display: inline-block;
-   margin-right: 5px;
+   margin-right: 10px;
+
 }
 div.card-buttons button p {
    display: inline-block;
