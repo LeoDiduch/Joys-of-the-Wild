@@ -173,9 +173,10 @@
     </article>
 
 </div>
+<script type="text/javascript" src="random-card.js"></script>
 
 <?php include 'partner.php'; ?>
 
-<script type="text/javascript" src="JS/random-card.js"></script>
+
 
 <?php include 'footer.php'; ?>
