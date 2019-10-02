@@ -47,6 +47,7 @@ include 'menus.php';?>
                         <input type="password" id="new_password_verification" name="new_password_verification" maxlength="16" placeholder="Enter your new password again"/>
                         <?= $formErrors['new_password_verification'] ?>
 
+                    <?= $savedChange ?>
 
                     <input type="submit" value="Save changes" class="example_f"/>
 

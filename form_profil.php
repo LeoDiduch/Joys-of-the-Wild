@@ -37,8 +37,11 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         $formErrors['new_password_verification'] = '';
     }
 
-    if( '' == $formErrors['current_password'] && '' == $formErrors['new_password'] && '' == $formErrors['new_password_verification']){
+    if( '' == $formErrors['current_password'] && '' == $formErrors['new_password'] && '' == $formErrors['new_password_verification']) {
         $validationForm = true;
+    }
+    if($validationForm == true){
+        $savedChange = '<div>your password has been saved</div>';
 
     }
 
