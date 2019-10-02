@@ -6,7 +6,7 @@ $cards = [
         'Loïc',
         '26/09/2019',
         '15h37',
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet repellat quo placeat.',
+        'Quand tu commences un nouveau language',
         'https://ljdchost.com/038/HsO3DA6.webm" type="video/webm',
         NULL,
         '10',
