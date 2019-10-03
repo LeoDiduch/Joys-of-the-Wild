@@ -1,15 +1,5 @@
 @charset "utf-8";
 
-:root {
-   --mobile-gradient: radial-gradient( circle farthest-corner at 0% 0%,  rgba(247,108,108,1) 0%, rgb(238, 237, 237) 110%);
-   --wild-red: rgb(250, 82, 82);
-   --opa-blue: #61616113;
-   --white: white;
-   --black: black;
-   --light-breen: rgb(50, 196, 31);
-   --pale-green: #43ab92; 
-}
-
 
 header,
 section,
@@ -51,6 +41,30 @@ img {
    box-sizing: border-box;
    font-weight: 400;
    scroll-behavior: smooth;
+}
+
+.light {
+   --gradient: radial-gradient(circle farthest-corner at 0% 0%, rgba(247, 108, 108, 1) 0%, rgb(238, 237, 237) 110%);
+   --wild-red: rgb(250, 82, 82);
+   --opa-blue: rgb(250, 250, 250);
+   --white: white;
+   --black: black;
+   --shadow-black: 4px 7px 17px 5px rgba(0, 0, 0, 0.2);
+   --light-green: rgb(50, 196, 31);
+   --pale-green: #43ab92;
+   transition: all 2s;
+}
+
+.dark {
+   --gradient: radial-gradient(circle farthest-corner at 0% 0%, rgba(247, 108, 108, 1) 0%, rgb(238, 237, 237) 110%);
+   --wild-red: rgb(250, 82, 82);
+   --opa-blue: rgb(250, 250, 250);
+   --white: white;
+   --black: black;
+   --shadow-black: 4px 7px 17px 5px rgba(0, 0, 0, 0.2);
+   --light-green: rgb(50, 196, 31);
+   --pale-green: #43ab92;
+   transition: all 2s;
 }
 
 html,
@@ -136,7 +150,7 @@ label {
 /* ---------- HEADER ---------- */
 header {
    padding: 5px 20px;
-   background: var(--mobile-gradient);
+   background: var(--gradient);
    position: fixed;
    width: 100%;
    z-index: 999;
@@ -547,7 +561,7 @@ main aside#mobile-nav ul li:nth-child(5) {
    background-color: var(--white);
    width: 100%;
    display: flex;
-   margin-bottom: 20px;
+   margin-bottom: 50px;
 }
 
 #blank {
@@ -575,6 +589,7 @@ main aside#mobile-nav ul li:nth-child(5) {
 #post {
    border: solid 1px var(--black);
    padding: 10px 20px 15px 20px;
+   margin-bottom: 20px;
 }
 #post img {
    border: solid 1px var(--black);
@@ -597,11 +612,13 @@ main aside#mobile-nav ul li:nth-child(5) {
    padding: 10px;
 }
 #control-send {
-   display: flex;
-   justify-content: space-around;
+   position: absolute;
+   top: 230px;
+   right: 15px;
 }
 #control-send a {
    display: inline-block;
+   margin-left: 50px;
 }
 #control-send a i {
    font-size: 28px;
@@ -617,85 +634,236 @@ textarea#post-text {
    resize: none;
    border: none;
 }
-/*---- Add tag popin -----*/
+/* The actual popup */
 
-div#tag-popin {
-   display: none;
-   align-items: center;
-   margin: 0 auto;
-   width: 100%;
-   border-bottom: solid 1px var(--black);
-   padding: 10px;
-   margin-bottom: 40px;
+.me {
+   background-size: cover;
 }
-div#tag-popin input {
-   display: block;
-   margin: 0 auto 15px auto;  
-   width: 250px; 
+
+.modal-container, .modal-container-2 {
+   position: absolute;
+   top: 240px;
+   width: 0%;
+   transition: width 300ms cubic-bezier(0.4, 0.0, 0.2, 1),
+      height 300ms cubic-bezier(0.4, 0.0, 0.2, 1),
+      box-shadow 300ms cubic-bezier(0.4, 0.0, 0.2, 1),
+      border-radius 300ms cubic-bezier(0.4, 0.0, 0.2, 1);
 }
-div#tag-popin div.adds-controls {
-   display: flex;
-   justify-content: space-around;
+
+.modal-container-2 {
+   left: 150px;
 }
-div#tag-popin div.adds-controls button {
-   width: 80px;
-   color: var(--white);
-   background-color: var(--wild-red);
-   padding: 3px 8px;
-   border: solid 1px var(--wild-red);
+
+.email, .email-2 {
+   background: #DEDBDF;
    border-radius: 5px;
+   height: 32px;
+   overflow: hidden;
+   position: relative;
+   width: 110px;
+   -webkit-tap-highlight-color: transparent;
+   transition: width 300ms cubic-bezier(0.4, 0.0, 0.2, 1),
+      height 300ms cubic-bezier(0.4, 0.0, 0.2, 1),
+      box-shadow 300ms cubic-bezier(0.4, 0.0, 0.2, 1),
+      border-radius 300ms cubic-bezier(0.4, 0.0, 0.2, 1);
 }
-div#tag-popin div.adds-controls button#send-tag {
-   background-color: var(--pale-green);
-   border: solid 1px ;
-}
-#tag-cancel i {
-   font-size: 22px;
-   color: var(--wild-red);
 
+.email:not(.expand), .email-2:not(.expand-2) {
+   cursor: pointer;
 }
 
-/*---- Fin Add tag popin -----*/
-/*---- Add media popin -----*/
+.email:not(.expand):hover, .email-2:not(.expand-2):hover {
+   background: #C2C0C2;
+}
 
-div#media-popin {
-   display: none;
-   align-items: center;
-   margin: 0 auto;
-   width: 100%;
-   border-bottom: solid 1px var(--black);
-   padding: 10px;
-   margin-bottom: 40px;
+.from, .from-2 {
+   position: absolute;
+   transition: opacity 200ms 100ms cubic-bezier(0.0, 0.0, 0.2, 1);
 }
-div#media-popin strong {
-   display: block;
-}
-div#media-popin input {
-   display: block;
-   margin: 0 auto 15px auto;  
-   width: 250px;  
-}
-div#media-popin div.adds-controls {
+
+.from-contents, .from-contents-2 {
    display: flex;
-   justify-content: space-around;
+   flex-direction: row;
+   transform-origin: 0 0;
+   transition: transform 300ms cubic-bezier(0.4, 0.0, 0.2, 1);
 }
-div#media-popin div.adds-controls button {
-   width: 80px;
-   color: var(--white);
-   background-color: var(--wild-red);
-   padding: 3px 8px;
-   border: solid 1px var(--wild-red);
-   border-radius: 5px;
+
+.to, .to-2 {
+   opacity: 0;
+   position: absolute;
+   z-index: 990;
+   transition: opacity 100ms cubic-bezier(0.4, 0.0, 1, 1);
+   width: 100%;
 }
-div#media-popin div.adds-controls button#send-media {
+
+.to-contents, .to-contents-2 {
+   transform: scale(.55);
+   transform-origin: 0 0;
+   transition: transform 300ms cubic-bezier(0.4, 0.0, 0.2, 1);
+}
+
+.name, .name-2 {
+   font-size: 14px;
+   line-height: 33px;
+   margin-left: 10px;
+}
+
+.top, .top-2 {
+   background: var(--wild-red);
+   display: flex;
+   flex-direction: row;
+   height: 40px;
+   transition: height 300ms cubic-bezier(0.4, 0.0, 0.2, 1);
+}
+
+.name-large, .name-large-2 {
+   color: #efd8ef;
+   font-size: 16px;
+   line-height: 40px;
+   margin-left: 20px;
+}
+
+.x-touch, .x-touch-2 {
+   align-items: center;
+   align-self: center;
+   cursor: pointer;
+   display: flex;
+   height: 50px;
+   justify-content: center;
+   margin-left: auto;
+   width: 50px;
+}
+
+.x, .x-2 {
+   background: rgb(255, 255, 255);
+   border-radius: 10px;
+   height: 20px;
+   position: relative;
+   width: 20px;
+}
+
+.x-touch:hover .x, .x-touch-2:hover .x-2 {
+   background: rgb(255, 255, 255);
+}
+
+.line1, .line1-2 {
+   background: var(--wild-red);
+   height: 12px;
+   position: absolute;
+   transform: translateX(9px) translateY(4px) rotate(45deg);
+   width: 2px;
+}
+
+.line2, .line2-2 {
+   background: var(--wild-red);
+   height: 12px;
+   position: absolute;
+   transform: translateX(9px) translateY(4px) rotate(-45deg);
+   width: 2px;
+}
+
+.bottom, .bottom-2 {
+   background: #FFF;
+   color: #444247;
+   font-size: 14px;
+   min-height: 200px;
+   padding: 5px 10px;
+}
+
+.row, .row-2 {
+   display: block;
+   
+}
+.row-2 {
+   padding: 10px 0;
+   
+}
+.row input, .row-2 input {
+   width: 100%;
+   display: block;
+   margin-bottom: 5px;
+}
+
+.row p, .row-2 p {
+   font-weight: 700;
+   margin-bottom: 5px;
+}
+.row button#send-media, .row-2 button#send-tags {
+   padding: 4px 15px;
+   color: white;
    background-color: var(--pale-green);
-   border: solid 1px var(--pale-green);
+   border-radius: 5px;
+   transition: all .7s;
 }
-#media-cancel i {
-   font-size: 22px;
-   color: var(--wild-red);
+.row button#send-media:hover, .row-2 button#send-tags:hover  {
+   background-color: var(--light-green);
 }
-/*---- Fin Add media popin -----*/
+
+.twitter, .twitter-2 {
+   margin-left: 16px;
+   height: 30px;
+   position: relative;
+   top: 0px;
+   width: 30px;
+}
+
+.medium, .medium-2 {
+   height: 30px;
+   margin-left: 16px;
+   position: relative;
+   width: 30px;
+}
+
+.link, .link-2 {
+   margin-left: 16px;
+}
+
+.link a, .link-2 a {
+   color: #444247;
+   text-decoration: none;
+}
+
+.link a:hover, .link-2 a:hover {
+   color: #777579;
+}
+
+.email.expand, .email-2.expand-2 {
+   position: relative;
+   border-radius: 6px;
+   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.10), 0 6px 6px rgba(0, 0, 0, 0.16);
+   height: 200px;
+   width: calc(100% - 50px);
+}
+.email.expand {
+   left: 0px;
+
+}
+.email-2.expand-2 {
+   left: -125px;
+}
+
+.expand .from, .expand-2 .from-2  {
+   opacity: 0;
+   transition: opacity 100ms cubic-bezier(0.4, 0.0, 1, 1);
+}
+
+.expand .from-contents, .expand-2 .from-contents-2 {
+   transform: scale(1.91);
+}
+
+.expand .to, .expand-2 .to-2 {
+   opacity: 1;
+   transition: opacity 200ms 100ms cubic-bezier(0.0, 0.0, 0.2, 1);
+}
+
+.expand .to-contents, .expand-2 .to-contents-2 {
+   transform: scale(1);
+}
+
+
+
+/* ------- End popup ------------- */
+
 /*---- Debut css CARD -----*/
 article.card {
    display: block;
@@ -983,23 +1151,48 @@ input:checked + label#labelswitch:after {
    transform: translateX(-100%);
    transition: 1s;
 }
-html.transition,
-html.transition *,
-html.transition *:before,
-html.transition *:after {
-  transition: all 750ms !important;
-  transition-delay: 0 !important;
-}
 
 
 /* ------  DARK MODE END ----------- */
+@media screen and (max-width: 500px) {
+   #control-send a {
+      margin-left: 25px;
+   }
+}
 
 
-
-
-
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 405px) {
    main div#burger p {
       display: none;
+   }
+   #control-send a {
+      margin-left: 10px;
+   }
+   .modal-container-2 {
+      left: 140px;
+   }
+   .email-2.expand-2 {
+      left: -115px;
+   }
+   .email, .email-2 {
+      width: 90px;
+   }
+   .email-2 {
+      width: 80px;
+   }
+   .name i, .name-2 i {
+      display: none;
+   }
+}
+
+@media screen and (max-width: 350px) {
+   #control-send a {
+      margin-left: 10px;
+   }
+   .modal-container-2 {
+      left: 125px;
+   }
+   .email-2.expand-2 {
+      left: -100px;
    }
 }
