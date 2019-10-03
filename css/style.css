@@ -847,7 +847,7 @@ Toggle this class - hide and show the popup
 
 .email.expand, .email-2.expand-2 {
    position: relative;
-   top: 10;
+   top: 10px;
    border-radius: 6px;
    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.10), 0 6px 6px rgba(0, 0, 0, 0.16);
    height: 200px;
@@ -1375,7 +1375,7 @@ aside#partners h2:after {
    border-bottom: 1px solid;
    background-color: transparent;
    margin-bottom: 2%;
-   color: white;
+   color: black;
 }
 
 #user_profile input[type=submit] {
@@ -1574,7 +1574,7 @@ html.transition *,
 html.transition *:before,
 html.transition *:after {
    transition: all 750ms !important;
-   transition-delay: 0 !important;
+   transition-delay: 0ms !important;
 }
 
 
