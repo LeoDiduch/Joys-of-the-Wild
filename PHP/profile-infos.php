@@ -1,21 +1,33 @@
+<?php
+require_once ('src/databaseconnexion.php');
+?>
+
+<?php
+
+// On récupère tout le contenu de la table jeux_video
+$reponse = $dbh->query('SELECT * FROM user_infos ORDER BY id DESC LIMIT 0,1;');
+
+// On affiche chaque entrée une à une
+while ($donnees = $reponse->fetch())
+{
+?>
+
 <div class="container">
     <section id="user_profile">
         <div id="profile_header">
             <img src="img/Wild-Logo.png" alt="Wild Code School logo">
-            <h2>Team Wilders 1</h2>
+            <h2><?= $donnees['user_name'];?></h2>
         </div>
         <h3>Profile</h3>
         <div id="profile_items">
             <h4>Username :</h4>
-            <p>Team Wilders 1</p>
+            <p><?= $donnees['user_name'];?></p>
             <h4>Email :</h4>
-            <p>thebestwildersever@wcs.com</p>
+            <p><?= $donnees['user_email'];?></p>
             <h4>Avatar :</h4>
             <a href="avatar.jpeg">avatar.jpeg</a>
             <h4>Biography :</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore non ut corporis, vitae harum quos
-                fuga, magnam assumenda pariatur perspiciatis ipsa eaque impedit eos odio saepe quam ab eius? Minima?
-            </p>
+            <p><?= $donnees['user_biography'];?></p>
         </div>
         <form action="edit-profile.php">
             <input type="submit" value="Edit your profile" class="example_f">
@@ -38,3 +50,11 @@
             </form>
     </section>
 </div>
+
+
+<?php
+}
+
+$reponse->closeCursor(); // Termine le traitement de la requête
+
+?>
