@@ -774,7 +774,7 @@ Toggle this class - hide and show the popup
 }
 
 .x, .x-2 {
-   background: #BA87F9;
+   background: rgb(255, 255, 255);
    border-radius: 10px;
    height: 20px;
    position: relative;
@@ -782,11 +782,11 @@ Toggle this class - hide and show the popup
 }
 
 .x-touch:hover .x, .x-touch-2:hover .x-2 {
-   background: #CB9AFB;
+   background: rgb(255, 255, 255);
 }
 
 .line1, .line1-2 {
-   background: #6422EB;
+   background: var(--wild-red);
    height: 12px;
    position: absolute;
    transform: translateX(9px) translateY(4px) rotate(45deg);
@@ -794,7 +794,7 @@ Toggle this class - hide and show the popup
 }
 
 .line2, .line2-2 {
-   background: #6422EB;
+   background: var(--wild-red);
    height: 12px;
    position: absolute;
    transform: translateX(9px) translateY(4px) rotate(-45deg);
