@@ -1,7 +1,11 @@
-<?php include 'header.php';?>
+<?php require_once ('src/databaseconnexion.php');?>
 
-<?php include 'menus.php';?>
+<?php require_once ('src/form.php');?>
 
-<?php include 'sign-up-form.php';?>   
+<?php include 'PHP/header.php';?>
 
-<?php include 'footer.php';?>
+<?php include 'PHP/menus.php';?>
+
+<?php include 'PHP/sign-up-form.php';?>   
+
+<?php include 'PHP/footer.php';?>

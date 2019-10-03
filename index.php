@@ -1,11 +1,11 @@
-<?php require_once('cards_database.php'); ?>
+<?php require_once('PHP/cards_database.php'); ?>
 
-<?php include 'header.php'; ?>
+<?php include 'PHP/header.php'; ?>
 
-<?php include 'menus.php'; ?>
+<?php include 'PHP/menus.php'; ?>
 
-<?php include 'index-article-generator.php'; ?>
+<?php include 'PHP/index-article-generator.php'; ?>
 
-<?php include 'partner.php'; ?>
+<?php include 'PHP/partner.php'; ?>
 
-<?php include 'footer.php'; ?>
+<?php include 'PHP/footer.php'; ?>
