@@ -1,8 +1,15 @@
 <?php
 require_once ('src/databaseconnexion.php');
-?>
 
-<?php
+require_once('src/userfordatabase.php');
+
+try {
+    $dbh = new PDO($dsn, $user, $password);
+    $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+} catch (PDOException $error) {
+    echo 'Woops, looks like something went wrong : ' . $error->getMessage();
+}
+
 
 // On récupère tout le contenu de la table jeux_video
 $reponse = $dbh->query('SELECT * FROM user_infos ORDER BY id DESC LIMIT 0,1;');
