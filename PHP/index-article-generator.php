@@ -38,7 +38,7 @@
                     ?>
             </figure>
             <div class="card-buttons">
-
+ 
                 <button id="btn-<?= $keyId ?>" class="primary-btn like-btn"></button>
                 <div class="share">
                     <!-- AddToAny BEGIN -->
