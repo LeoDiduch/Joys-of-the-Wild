@@ -1,3 +1,18 @@
+<?php
+require_once ('src/databaseconnexion.php');
+?>
+
+<?php
+
+// On récupère tout le contenu de la table jeux_video
+$reponse = $dbh->query('SELECT * FROM user_infos ORDER BY id DESC LIMIT 0,1;');
+
+// On affiche chaque entrée une à une
+while ($donnees = $reponse->fetch())
+{
+?>
+
+
 <div class="container">
     <section id="user_profile">
         <div id="profile_header">
@@ -9,18 +24,18 @@
         <form method="post" action="<?= htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
 
             <label for="username">Username :</label>
-            <input type="text" name="username" id="username" maxlength="30" placeholder="Team Wilders 1" />
+            <input type="text" name="username" id="username" maxlength="30" placeholder="<?= $donnees['user_name'];?>" />
             <?= $formErrors['username'] ?>
 
             <label for="email">Email :</label>
-            <input type="email" name="email" id="email" placeholder="thebestwildersever@wcs.com" />
+            <input type="email" name="email" id="email" placeholder="<?= $donnees['user_email'];?>" />
             <?= $formErrors['email'] ?>
 
             <label for="avatar">Avatar :</label>
             <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg" class="example_f">
 
             <label for="biography">Biography :</label>
-            <textarea name="biography" id="biography" maxlength="500" placeholder="Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore non ut corporis, vitae harum quos fuga, magnam assumenda pariatur perspiciatis ipsa eaque impedit eos odio saepe quam ab eius? Minima?"></textarea>
+            <textarea name="biography" id="biography" maxlength="500" placeholder="<?= $donnees['user_biography'];?>"></textarea>
 
             <input type="submit" value="Save changes" class="example_f" />
 
@@ -53,3 +68,10 @@
         </form>
     </section>
 </div>
+
+<?php
+}
+
+$reponse->closeCursor(); // Termine le traitement de la requête
+
+?>
