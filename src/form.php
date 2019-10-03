@@ -72,11 +72,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 }
 
-    /*if (count($formErrors) == 0) {
-        header("location: profil.php");
-        exit();
-    }
-*/
+
 function test_input($data)
 {
     $data = trim($data);

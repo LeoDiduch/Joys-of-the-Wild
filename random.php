@@ -35,11 +35,21 @@
         <div class="card-buttons">
             <button id="btn-1" class="primary-btn like-btn"></button>
             <div class="share">
-                <ul>
-                    <li><a href=""><i class="fab fa-facebook-square"></i></a></li>
-                    <li><a href=""><i class="fab fa-twitter"></i></a></li>
-                    <li><a href=""><i class="fab fa-slack-hash"></i></a></li>
-                </ul>
+                <!-- AddToAny BEGIN -->
+                <div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+                    <ul>
+                        <li><a class="a2a_button_facebook"><i class="fab fa-facebook-square"></i></a></li>
+                        <li><a class="a2a_button_twitter"><i class="fab fa-twitter"></i></a></li>
+                        <li><a class="a2a_button_reddit"><i class="fab fa-slack-hash"></i></a></li>
+                    </ul>
+                </div>
+                <script>
+                    var a2a_config = a2a_config || {};
+                    a2a_config.locale = "fr";
+                    a2a_config.num_services = 4;
+                </script>
+                <script async src="https://static.addtoany.com/menu/page.js"></script>
+                <!-- AddToAny END -->
             </div>
         </div>
     </article>
@@ -67,11 +77,21 @@
         <div class="card-buttons">
             <button id="btn-2" class="primary-btn like-btn"></button>
             <div class="share">
-                <ul>
-                    <li><a href=""><i class="fab fa-facebook-square"></i></a></li>
-                    <li><a href=""><i class="fab fa-twitter"></i></a></li>
-                    <li><a href=""><i class="fab fa-slack-hash"></i></a></li>
-                </ul>
+                <!-- AddToAny BEGIN -->
+                <div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+                    <ul>
+                        <li><a class="a2a_button_facebook"><i class="fab fa-facebook-square"></i></a></li>
+                        <li><a class="a2a_button_twitter"><i class="fab fa-twitter"></i></a></li>
+                        <li><a class="a2a_button_reddit"><i class="fab fa-slack-hash"></i></a></li>
+                    </ul>
+                </div>
+                <script>
+                    var a2a_config = a2a_config || {};
+                    a2a_config.locale = "fr";
+                    a2a_config.num_services = 4;
+                </script>
+                <script async src="https://static.addtoany.com/menu/page.js"></script>
+                <!-- AddToAny END -->
             </div>
         </div>
     </article>
@@ -99,11 +119,21 @@
         <div class="card-buttons">
             <button id="btn-3" class="primary-btn like-btn"></button>
             <div class="share">
-                <ul>
-                    <li><a href=""><i class="fab fa-facebook-square"></i></a></li>
-                    <li><a href=""><i class="fab fa-twitter"></i></a></li>
-                    <li><a href=""><i class="fab fa-slack-hash"></i></a></li>
-                </ul>
+                <!-- AddToAny BEGIN -->
+                <div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+                    <ul>
+                        <li><a class="a2a_button_facebook"><i class="fab fa-facebook-square"></i></a></li>
+                        <li><a class="a2a_button_twitter"><i class="fab fa-twitter"></i></a></li>
+                        <li><a class="a2a_button_reddit"><i class="fab fa-slack-hash"></i></a></li>
+                    </ul>
+                </div>
+                <script>
+                    var a2a_config = a2a_config || {};
+                    a2a_config.locale = "fr";
+                    a2a_config.num_services = 4;
+                </script>
+                <script async src="https://static.addtoany.com/menu/page.js"></script>
+                <!-- AddToAny END -->
             </div>
         </div>
     </article>
@@ -130,11 +160,21 @@
         <div class="card-buttons">
             <button id="btn-4" class="primary-btn like-btn"></button>
             <div class="share">
-                <ul>
-                    <li><a href=""><i class="fab fa-facebook-square"></i></a></li>
-                    <li><a href=""><i class="fab fa-twitter"></i></a></li>
-                    <li><a href=""><i class="fab fa-slack-hash"></i></a></li>
-                </ul>
+                <!-- AddToAny BEGIN -->
+                <div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+                    <ul>
+                        <li><a class="a2a_button_facebook"><i class="fab fa-facebook-square"></i></a></li>
+                        <li><a class="a2a_button_twitter"><i class="fab fa-twitter"></i></a></li>
+                        <li><a class="a2a_button_reddit"><i class="fab fa-slack-hash"></i></a></li>
+                    </ul>
+                </div>
+                <script>
+                    var a2a_config = a2a_config || {};
+                    a2a_config.locale = "fr";
+                    a2a_config.num_services = 4;
+                </script>
+                <script async src="https://static.addtoany.com/menu/page.js"></script>
+                <!-- AddToAny END -->
             </div>
         </div>
     </article>
@@ -163,11 +203,21 @@
         <div class="card-buttons">
             <button id="btn-5" class="primary-btn like-btn"></button>
             <div class="share">
-                <ul>
-                    <li><a href=""><i class="fab fa-facebook-square"></i></a></li>
-                    <li><a href=""><i class="fab fa-twitter"></i></a></li>
-                    <li><a href=""><i class="fab fa-slack-hash"></i></a></li>
-                </ul>
+                <!-- AddToAny BEGIN -->
+                <div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+                    <ul>
+                        <li><a class="a2a_button_facebook"><i class="fab fa-facebook-square"></i></a></li>
+                        <li><a class="a2a_button_twitter"><i class="fab fa-twitter"></i></a></li>
+                        <li><a class="a2a_button_reddit"><i class="fab fa-slack-hash"></i></a></li>
+                    </ul>
+                </div>
+                <script>
+                    var a2a_config = a2a_config || {};
+                    a2a_config.locale = "fr";
+                    a2a_config.num_services = 4;
+                </script>
+                <script async src="https://static.addtoany.com/menu/page.js"></script>
+                <!-- AddToAny END -->
             </div>
         </div>
     </article>
