@@ -41,7 +41,7 @@
                     <div class="from">
                         <div class="from-contents">
                             <!--<div class="avatar me"></div>-->
-                            <div class="name"><i class="fas fa-plus"></i>  Add Media</div>
+                            <div class="name"><i class="fas fa-plus"></i> Add Media</div>
                         </div>
                     </div>
                     <div class="to">
@@ -58,10 +58,10 @@
                             </div>
                             <div class="bottom">
                                 <div class="row">
-                                    
+
                                 </div>
                                 <div class="row">
-                                    
+
                                 </div>
                             </div>
                         </div>
@@ -74,7 +74,7 @@
                     <div class="from-2">
                         <div class="from-contents-2">
                             <!--<div class="avatar me"></div>-->
-                            <div class="name-2"><i class="fas fa-plus"></i>  Add tags</div>
+                            <div class="name-2"><i class="fas fa-plus"></i> Add tags</div>
                         </div>
                     </div>
                     <div class="to-2">
@@ -91,10 +91,10 @@
                             </div>
                             <div class="bottom-2">
                                 <div class="row-2">
-                                    
+
                                 </div>
                                 <div class="row-2">
-                                    
+
                                 </div>
                             </div>
                         </div>

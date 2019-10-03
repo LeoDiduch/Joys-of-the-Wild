@@ -3,11 +3,11 @@
     <?php include 'poster.php'; ?>
 
     <?php
-        $keyId=1;
-        foreach ($cards as $key => $cardDescriptions) {
-    ?>
-        
-        <article class="card" id="card-<?=$keyId?>">
+    $keyId = 1;
+    foreach ($cards as $key => $cardDescriptions) {
+        ?>
+
+        <article class="card" id="card-<?= $keyId ?>">
             <div class="info-post">
                 <img src="<?= $cardDescriptions[0] ?>" alt="">
                 <div class="profile-post">
@@ -39,7 +39,7 @@
             </figure>
             <div class="card-buttons">
 
-                <button id="btn-<?=$keyId?>" class="primary-btn like-btn"></button>
+                <button id="btn-<?= $keyId ?>" class="primary-btn like-btn"></button>
                 <div class="share">
                     <!-- AddToAny BEGIN -->
                     <div class="a2a_kit a2a_kit_size_32 a2a_default_style">
