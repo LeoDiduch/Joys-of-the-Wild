@@ -1,6 +1,9 @@
-<?php include 'header.php';?>
+<?php
+require_once ('form_profil.php');
 
-<?php include 'menus.php';?>
+include 'header.php';
+
+include 'menus.php';?>
 
         <div class="container">
             <section id="user_profile">
@@ -28,16 +31,23 @@
                 </form>
 
                 <h3>Change your password</h3>
-                <form method="post" action="update_user_password.php">
+                <form method="post" action="<?=htmlspecialchars($_SERVER["PHP_SELF"]);?>">
 
                     <label for="current_password">Current Password :</label>
-                    <input type="password" name="current_password" id="current_password" maxlength="16" placeholder="Enter your current password"/>
+                        <input type="password" name="current_password" id="current_password" maxlength="16" placeholder="Enter your current password"/>
+                        <?= $formErrors['current_password'] ?>
+
 
                     <label for="new_password">New Password :</label>
-                    <input type="password" name="new_password" id="new_password" maxlength="16" placeholder="Enter your new password"/>
+                        <input type="password" name="new_password" id="new_password" maxlength="16" placeholder="Enter your new password"/>
+                        <?= $formErrors['new_password'] ?>
+
 
                     <label for="new_password_verification">Retype New Password :</label>
-                    <input type="text" id="new_password_verification" name="new_password_verification" maxlength="16" placeholder="Enter your new password again"/>
+                        <input type="password" id="new_password_verification" name="new_password_verification" maxlength="16" placeholder="Enter your new password again"/>
+                        <?= $formErrors['new_password_verification'] ?>
+
+                    <?= $savedChange ?>
 
                     <input type="submit" value="Save changes" class="example_f"/>
 
