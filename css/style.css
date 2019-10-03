@@ -141,6 +141,11 @@ button {
    font-weight: 500;
 }
 
+.errorForm {
+   color : var(--wild-red);
+   font-size : 0.8em;
+}
+
 /* ---------- DEBUT CSS DESKTOP ---------- */
 
 /* ---------- HEADER ---------- */
