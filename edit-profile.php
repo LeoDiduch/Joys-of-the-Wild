@@ -1,12 +1,10 @@
-<?php
+<?php require_once('PHP/form_edit_profile.php'); ?>
 
-require_once 'form_edit_profile.php';
+<?php include 'PHP/header.php';?>
 
-include 'header.php';
+<?php include 'PHP/menus.php';?>
 
-include 'menus.php';?>
-
-        <div class="container">
+        <!--<div class="container">
             <section id="user_profile">
                 <div id="profile_header">
                     <img src="img/Wild-Logo.png" alt="Wild Code School logo">
@@ -61,6 +59,8 @@ include 'menus.php';?>
                     <input type="button" value="Delete your account" class="example_f"/>
                 </form>
             </section>
-        </div>
+        </div>-->
 
-<?php include 'footer.php';?>
+<?php include 'PHP/edit-profile-form.php';?>
+
+<?php include 'PHP/footer.php';?>
