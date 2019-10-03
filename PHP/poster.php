@@ -48,7 +48,7 @@
                         <div class="to-contents">
                             <div class="top">
                                 <!--<div class="avatar-large me"></div>-->
-                                <div class="name-large">Add some media please !</div>
+                                <div class="name-large">Add some <strong>MEDIA</strong> please !</div>
                                 <div class="x-touch" onclick="document.querySelector('.email').classList.remove('expand');event.stopPropagation();">
                                     <div class="x">
                                         <div class="line1"></div>
@@ -81,7 +81,7 @@
                         <div class="to-contents-2">
                             <div class="top-2">
                                 <!--<div class="avatar-large me"></div>-->
-                                <div class="name-large-2">Add some media please !</div>
+                                <div class="name-large-2">Add some <strong>TAGS</strong> please !</div>
                                 <div class="x-touch-2" onclick="document.querySelector('.email-2').classList.remove('expand-2');event.stopPropagation();">
                                     <div class="x-2">
                                         <div class="line1-2"></div>
