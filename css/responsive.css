@@ -126,6 +126,11 @@ label {
    font-weight: 400;
 }
 
+.errorForm {
+   color : var(--wild-red);
+   font-size : 0.8em;
+}
+
 /* ---------- DEBUT CSS MOBILE ---------- */
 
 /* ---------- HEADER ---------- */
