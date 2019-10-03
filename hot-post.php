@@ -1,8 +1,8 @@
 <?php require_once('PHP/cards_database.php'); ?>
 
-<?php include 'PHP/header.php'; ?>
+<?php include ('PHP/header.php'); ?>
 
-<?php include 'PHP/menus.php'; ?>
+<?php include ('PHP/menus.php'); ?>
 
 <div class="container">
 
@@ -72,6 +72,12 @@
 
 <script type="text/javascript" src="hotPostSorting.js"></script>
 
+<<<<<<< HEAD
 <?php include 'PHP/partner.php'; ?>
 
 <?php include 'PHP/footer.php'; ?>
+=======
+<?php include ('PHP/partner.php'); ?>
+
+<?php include ('PHP/footer.php'); ?>
+>>>>>>> e788f093312c7d0acb576aa7b672402560b97839
