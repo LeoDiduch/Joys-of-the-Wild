@@ -1106,7 +1106,7 @@ footer {
 }
 
 /* ------  DARK MODE SWITCH -------- */
-input#switch[type=checkbox]{
+/*input#switch[type=checkbox]{
    cursor: pointer;
    opacity: 0;
    position: absolute;
@@ -1150,6 +1150,34 @@ input:checked + label#labelswitch:after {
 	left: calc(100% - 2px);
    transform: translateX(-100%);
    transition: 1s;
+}*/
+
+#myButton {
+	-moz-box-shadow: 3px 4px 0px 0px #899599;
+	-webkit-box-shadow: 3px 4px 0px 0px #899599;
+	box-shadow: 3px 4px 0px 0px #899599;
+	background:-moz-linear-gradient(top, #ededed 5%, #bab1ba 100%);
+	background:-webkit-linear-gradient(top, #ededed 5%, #bab1ba 100%);
+	background:-o-linear-gradient(top, #ededed 5%, #bab1ba 100%);
+	background:-ms-linear-gradient(top, #ededed 5%, #bab1ba 100%);
+	background:linear-gradient(to bottom, #ededed 5%, #bab1ba 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#bab1ba',GradientType=0);
+	background-color:#ededed;
+	-moz-border-radius:15px;
+	-webkit-border-radius:15px;
+	border-radius:15px;
+	border:1px solid #d6bcd6;
+	display:inline-block;
+	cursor:pointer;
+	color:#3a8a9e;
+	font-family:Arial;
+	font-size:17px;
+	padding:7px 20px;
+	text-decoration:none;
+   text-shadow:0px 1px 0px #e1e2ed;
+   width: 30px;
+   height: 15px;
+   margin-right: 10px;
 }
 
 

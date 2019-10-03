@@ -7,7 +7,7 @@
             <li><a href="random.php"><i class="fas fa-random"></i> Random</a></li>
             <li><a href="profil.php"><i class="fas fa-user-circle"></i> Your Profile</a></li>
             <li><a href="login.php"><i class="fas fa-power-off"></i> Disconnect</a></li>
-            <li><?php include 'switch.php'; ?></li>
+            <li><?php include 'switch.php'; ?> <p>Dark-mode</p></li>
         </ul>
 
     </aside>

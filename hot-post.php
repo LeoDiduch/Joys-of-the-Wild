@@ -72,12 +72,6 @@
 
 <script type="text/javascript" src="hotPostSorting.js"></script>
 
-<<<<<<< HEAD
-<?php include 'PHP/partner.php'; ?>
-
-<?php include 'PHP/footer.php'; ?>
-=======
 <?php include ('PHP/partner.php'); ?>
 
 <?php include ('PHP/footer.php'); ?>
->>>>>>> e788f093312c7d0acb576aa7b672402560b97839
