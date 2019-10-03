@@ -1,12 +1,4 @@
-<?php
-
-require_once 'form_edit_profile.php';
-
-include 'header.php';
-
-include 'menus.php';?>
-
-        <div class="container">
+<div class="container">
             <section id="user_profile">
                 <div id="profile_header">
                     <img src="img/Wild-Logo.png" alt="Wild Code School logo">
@@ -14,15 +6,13 @@ include 'menus.php';?>
                 </div>
 
                 <h3>Profile</h3>
-                <form method="post" action="<?=htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+                <form method="post" action="update_user_profile.php">
 
                     <label for="username">Username :</label>
                     <input type="text" name="username" id="username" maxlength="30" placeholder="Team Wilders 1" />
-                    <?= $formErrors['username'] ?>
 
                     <label for="email">Email :</label>
                     <input type="email" name="email" id="email" placeholder="thebestwildersever@wcs.com" />
-                    <?= $formErrors['email'] ?>
 
                     <label for="avatar">Avatar :</label>
                     <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg" class="example_f">
@@ -37,24 +27,18 @@ include 'menus.php';?>
 
 
                 <h3>Change your password</h3>
-                <form method="post" action="<?=htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+                <form method="post" action="edit-profile.php">
 
                     <label for="current_password">Current Password :</label>
                     <input type="password" name="current_password" id="current_password" maxlength="16" placeholder="Enter your current password"/>
-                    <?= $formErrors['current_password'] ?>
 
                     <label for="new_password">New Password :</label>
                     <input type="password" name="new_password" id="new_password" maxlength="16" placeholder="Enter your new password"/>
-                    <?= $formErrors['new_password'] ?>
 
                     <label for="new_password_verification">Retype New Password :</label>
                     <input type="password" id="new_password_verification" name="new_password_verification" maxlength="16" placeholder="Enter your new password again"/>
-                    <?= $formErrors['new_password_verification'] ?>
-
-                    <?= $savedChange ?>
 
                     <input type="submit" value="Save changes" class="example_f"/>
-
                 </form>
 
                 <form>
@@ -62,5 +46,3 @@ include 'menus.php';?>
                 </form>
             </section>
         </div>
-
-<?php include 'footer.php';?>

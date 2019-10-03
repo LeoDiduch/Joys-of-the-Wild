@@ -26,15 +26,16 @@ for (let i = 0; i <= 4; i++) {
         button.classList.toggle("flipped");
         icon.classList.toggle("white");
         counter.classList.toggle("white");
-    
+        
         if (text.innerHTML === "Wild It !") {
             text.innerHTML = "WILDED !";
             text.style.color="white";
             counter.innerHTML=count+=1;
             
+            
         } else {
             text.innerHTML = "Wild It !";
-            text.style.color="black";
+            text.style.color="var(--black)";
             counter.innerHTML=count-=1;
         }
     });
