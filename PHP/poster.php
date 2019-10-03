@@ -1,4 +1,4 @@
-<div id="add-post">
+<form id="add-post" action="" method="">
     <div id="post-form">
         <div id="post">
             <img src="img/Wild-Logo.png" alt="" id="profile-photo">
@@ -7,7 +7,7 @@
 
         <div id="control">
             <div class="modal-container">
-<!--onclk1-->   <div class="email">
+                <div class="email">
                     <div class="from">
                         <div class="from-contents">
                             <div class="name"><i class="fas fa-plus"></i> Add Media</div>
@@ -17,7 +17,7 @@
                         <div class="to-contents">
                             <div class="top">
                                 <div class="name-large">Add some <strong>MEDIA</strong> please !</div>
-<!--onclk2-->                   <div class="x-touch">
+                                <div class="x-touch">
                                     <div class="x">
                                         <div class="line1"></div>
                                         <div class="line2"></div>
@@ -48,7 +48,7 @@
                 <div class="email-2">
                     <div class="from-2">
                         <div class="from-contents-2">
-                            <div class="name-2"><i class="fas fa-plus"></i> Add tags</div>
+                            <div class="name-2"><i class="fas fa-plus"></i> Add Tags</div>
                         </div>
                     </div>
                     <div class="to-2">
@@ -88,4 +88,4 @@
             <div class="clear"></div>
         </div>
     </div>
-</div>
+</form>

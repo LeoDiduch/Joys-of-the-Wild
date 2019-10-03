@@ -31,6 +31,3 @@ closer2.addEventListener('click', () => {
   email.style.visibility="visible";
 });
 
-/* onclick="this.classList.add('expand')" */
-
-/* onclick="document.querySelector('.email').classList.remove('expand');event.stopPropagation();" */
