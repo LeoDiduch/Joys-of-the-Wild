@@ -1,6 +1,6 @@
-<?php include 'header.php'; ?>
+<?php include 'PHP/header.php'; ?>
 
-<?php include 'menus.php'; ?>
+<?php include 'PHP/menus.php'; ?>
 
 <div class="container">
     <section id="randomButtonSection">
@@ -173,10 +173,10 @@
     </article>
 
 </div>
-<script type="text/javascript" src="random-card.js"></script>
+<script type="text/javascript" src="JS/random-card.js"></script>
 
-<?php include 'partner.php'; ?>
+<?php include 'PHP/partner.php'; ?>
 
 
 
-<?php include 'footer.php'; ?>
+<?php include 'PHP/footer.php'; ?>
